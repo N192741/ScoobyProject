@@ -1,0 +1,92 @@
+<div class="fierstSection">
+  <div>
+  <img class="w-100 " src="../../assets/images/landingFram.png">
+  <img class="cat" src="../../assets/images/catfram.png">
+</div>
+<!----------services-->
+<div class="services ">
+  <div class=" d-flex px-3 ">
+    <div class=" px-4 py-1 item border mx-3">
+      <img class="py-1" src="../../assets/images/veterinary 1.png" alt="">
+      <div class="py-1 text-center"><a routerLink="/login">Veterinary</a></div>
+    </div>
+    <div class="px-4 py-1 item border mx-3">
+      <img class="py-1" src="../../assets/images/dog (2) 1.png" alt="">
+      <div class="py-1 text-center"><a routerLink="/login">Day Care
+        </a></div>
+    </div>
+    <div class="px-4 py-1 item border mx-3">
+      <img class="py-1" src="../../assets/images/pet-supplies 1.png" alt="">
+      <div class="py-1 text-center"><a routerLink="/login">Supplies</a></div>
+    </div>
+    <div class="px-4 py-1 item border mx-3">
+      <img class="py-1" src="../../assets/images/adoption 1.png" alt="">
+      <div class="py-1 text-center"><a routerLink="/login">Adoption</a></div>
+    </div>
+    <div class="px-4 py-1 item border mx-3">
+      <img class="py-1" src="../../assets/images/pets 1.png" alt="">
+      <div class="py-1 text-center"><a routerLink="/login">More</a></div>
+    </div>
+
+  </div>
+
+
+ </div>
+</div>
+<!--------secondSection-->
+<div class="secondSection">
+  <div class="d-flex px-5 ">
+    <div class="w-100 ">
+      <img class="w-100" src="../../assets/images/landingPage.png">
+
+    </div>
+    <div class="infoo w-100  px-5 py-4">
+      <h2>Your Pet lives for the day,
+        the hour, even for the moment. </h2>
+        <p class="py-2">All employees at Scooby have been carefully selected.
+          Each employee always has the safety
+          and care of your Pet in mind.</p>
+
+        <p class="mb-4"> Contact Us to schedule your services today!</p>
+<div class="about d-flex ">
+  <div class="aboutus d-flex   py-2 px-5">
+    <a routerLink="/login" class="px-2">About Us</a>
+    <img class="" src="../../assets/images/arow.png">
+  </div>
+  <a routerLink="/login" class="learnMore py-2 mx-2 px-5">Learn more</a>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+<!----------thirdSection-->
+<div class="thiredDiv ">
+  <h4 class="px-5">Grooming Reviews</h4>
+  <div class="   slider ">
+    <owl-carousel-o [options]="customOptions" class=" ">
+
+      <ng-container *ngFor="let review of reviews" class="">
+        <ng-template carouselSlide [id]="review._id">
+          <div class="w-100 reviewDiv ">
+            <img class="w-100  "  [src]="review.serviceImage" >
+            <div class="w-100 d-flex reviewDescription reviewDescriptionrigt reviewDescriptionLeft ">
+              <div class="w-100 py-4  px-3 reviewDescriptionrigt ">
+                <h6 class=" fw-bolder mb-0 py-1">{{review.serviceType}}</h6>
+                <p  class="mb-0 py-1">{{review.city}}</p>
+              </div>
+              <div class="w-100 reviewDescriptionLeft left py-4 px-3 ">
+                <p class="mb-0 py-1">From${{review.price}}</p>
+              </div>
+            </div>
+          </div>
+
+
+        </ng-template>
+
+      </ng-container>
+
+    </owl-carousel-o>
+  </div>
+</div>

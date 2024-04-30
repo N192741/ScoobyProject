@@ -1,0 +1,270 @@
+.discButton {
+  background-color: rgba(81, 57, 115, 1);
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 23.44px;
+text-align: center;
+color: rgba(254, 251, 251, 1);
+
+}
+.reviewButton{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: center;
+  color: rgba(96, 92, 92, 1);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.ra8iiSection p{
+  font-family: Roboto;
+font-size: 23px;
+font-weight: 500;
+line-height: 27.65px;
+text-align: left;
+line-height: 1.5;
+color: rgba(96, 92, 92, 1);
+
+}
+.purpule{
+  color: rgba(81, 57, 115, 1);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.65px;
+  text-align: left;
+  line-height: 1.5;
+}
+.ra8iiSection img{
+  width: 660px;
+  height: 430px;
+  border-radius: 0px;
+}
+.p2{
+  padding-right:3%;
+}
+.finialSection h4{
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 46.88px;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+
+
+}
+.book{
+  background-color: rgba(255, 255, 255, 1);
+
+}
+.book h2{
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 800;
+line-height: 28.13px;
+text-align: left;
+color: rgba(81, 57, 115, 1);
+}
+.bookForm label{
+  color: rgba(15, 15, 15, 0.8);
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 23.44px;
+text-align: left;
+}
+.shape{
+  border-radius: 13px;
+  width:100%
+}
+.option{
+  font-size: 17px;
+}
+.book button{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 23.44px;
+text-align: center;
+color: rgba(245, 243, 243, 1);
+background-color: rgba(81, 57, 115, 1);
+border-radius: 30px;
+border-width: 0px;
+}
+.yellow{
+  color: rgba(253, 202, 37, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-align:left;
+}
+.black{
+ color: rgba(15, 15, 15, 1);
+ font-family: Roboto;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 16px;
+ letter-spacing: 0.5px;
+ text-align: left;
+
+}
+.mainImage img{
+  width: 670px;
+  height: 450px;
+}
+.smallIamge img{
+  width: 145px;
+  height: 150px;
+}
+.payMent{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 23.44px;
+text-align: left;
+color: rgba(81, 57, 115, 1);
+
+}
+.divShape {
+  width:70px;
+margin: auto;
+height: 40px;
+border-radius: 11px;
+}
+.visa{
+  width: 50px;
+  height: 15px;
+}
+.meeza{
+  width: 30px;
+  height: 30px;
+}
+.paypal{
+  width:60px;
+  height: 15px;
+}
+.vodafone{
+  width:60px;
+  height:30px;
+}
+a{
+  text-decoration: none;
+}
+.serviceDiv {
+height: 335px;
+border-radius: 13px;
+border-width:2px;
+background-color: rgba(241, 240, 240, 1);
+
+}
+.serviceDiv img{
+  width:200px;
+  height: 200px;
+}
+.imgDiv{
+  padding-left: 13%;
+}
+.serviceDiv p{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 0.5px;
+white-space: 1px;
+color: rgba(15, 15, 15, 0.6);
+line-height: 1;
+}
+.serviceDiv h5{
+  font-family: Roboto;
+font-size: 28px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.5px;
+color: rgba(15, 15, 15, 1);
+
+}
+.borderbootom{
+  border-bottom-left-radius:  13px;
+  border-bottom-right-radius: 13px;
+  border-width: 1px;
+}
+.oneReview img{
+  width: 70px;
+  height:70px;
+  border-radius: 50%;
+}
+.creatReview h3{
+  font-family: Roboto;
+font-size: 26px;
+font-weight: 600;
+line-height: 28.13px;
+text-align: left;
+color: rgba(81, 57, 115, 1);
+}
+.creatReview button{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  text-align: center;
+  width: 60%;
+  color: rgba(254, 251, 251, 1);
+  background: rgba(81, 57, 115, 1);
+border-radius: 25px;
+border-width: 0px;
+margin-left:20%;
+}
+.creatReview{
+border-radius: 10px;
+border-width: 1px;
+margin-right: 8%;
+}
+.labeledit {
+
+  height:150px;
+}
+.labeledit2{
+  border-radius: 0px;
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.41px;
+text-align: start;
+color: rgba(15, 15, 15, 0.4);
+
+}
+.reviews{
+  margin-left: 5%;
+}
+.oneReview h5{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 500;
+line-height: 25.78px;
+text-align: left;
+color: rgba(15, 15, 15, 1);
+}
+.date{
+  padding-left: 2%;
+  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.75px;
+text-align: left;
+color: rgba(15, 15, 15, 0.5);
+padding-top: 1%;
+}
+.realReview{
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.41px;
+text-align: left;
+color: rgba(15, 15, 15, 0.5);
+
+}

@@ -1,0 +1,132 @@
+.cat{
+  position:absolute;
+  top: 55px;
+  right: 0px;
+  width: 850px;
+}
+.services a{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+color: rgba(15, 15, 15, 0.95);
+text-decoration: none;
+}
+.item{
+  background: rgba(241, 240, 240, 1);
+  border-radius: 12px;
+  border-width: 1px;
+
+}
+.services{
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.secondSection{
+  margin-top: 8%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.infoo h2{
+  font-family: Roboto;
+font-size: 34px;
+font-weight: 700;
+line-height: 44px;
+text-align: left;
+color: rgba(15, 15, 15, 0.95);
+
+
+}
+.infoo p{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: rgba(15, 15, 15, 0.7);
+
+}
+.aboutus a{
+color: rgba(245, 243, 243, 1);
+font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+text-decoration: none;
+}
+.aboutus img{
+  width: 17px;
+  height: 17px;
+margin-top: 5px;
+}
+.aboutus {
+  background: rgba(81, 57, 115, 1);
+border-radius: 17px;
+
+}
+.learnMore{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 500;
+line-height: 25.78px;
+text-align: center;
+color: rgba(81, 57, 115, 1);
+
+}
+.thiredDiv{
+  margin-top:6%;
+  margin-right:6% ;
+  margin-left: 6%;
+}
+.thiredDiv h4{
+  font-family: Roboto;
+font-size: 40px;
+font-weight: 700;
+line-height: 46px;
+color: rgba(15, 15, 15, 0.95);
+
+
+}
+.slider{
+  padding-top:3%;
+}
+.sliderreview{background-color: rgba(254, 251, 251, 0.904);
+}
+.reviewDiv{
+border-radius: 10px;
+}
+.reviewDiv img{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  }
+  .reviewDescription{background-color: rgba(255, 255, 255, 1);
+  }
+ .reviewDescriptionrigt { border-bottom-right-radius:16px ;}
+
+
+.reviewDescriptionrigt h6{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 23.44px;
+color: rgba(15, 15, 15, 0.95);
+
+
+}
+ .reviewDescriptionrigt p{
+  font-family: Roboto;
+font-size: 15px;
+color: rgba(15, 15, 15, 0.5);
+
+
+ }
+ .reviewDescriptionLeft{border-bottom-left-radius:16px ;
+}
+.left{
+  text-align: end;
+}
+.services img{
+  width: 100px;
+  height: 100px;
+}

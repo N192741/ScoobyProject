@@ -1,0 +1,73 @@
+<div class="d-flex vh-100 ">
+  <img src="../../assets/images/Rectangle 8.jpg" class=" w-100 bg-info" alt="not fuond">
+  <div class=" w-100 py-5 mx-5 px-5 ">
+<h1 class="py-3 lead">Sign Up </h1>
+<p class="py-2 lead ">Welcome Back!</p>
+
+<div *ngIf="error" class="alert alert-danger">
+<h6>{{error}}</h6>
+</div>
+
+<form  (ngSubmit)="submitSignUp(signupForm)" [formGroup]="signupForm">
+  <label class="labels py-1" for="name">Name</label>
+  <input type="text" formControlName="name" class=" py-2 mb-2 border border-2 rounded-pill form-control" id="name">
+<div *ngIf="signupForm.get('name') ?.errors && signupForm.get('name')?.touched" class=" alert alert-danger my-2 py-2">
+  <p *ngIf="signupForm.get('name') ?.errors ?.required" class="lead errors mb-0">name is required</p>
+  <p *ngIf="signupForm.get('name') ?.errors ?.minlength" class="lead errors mb-0">mimmum length is </p>
+  <p *ngIf="signupForm.get('name') ?.errors ?.maxlength" class="lead errors mb-0">maxmum length is 15 </p>
+</div>
+
+  <label class="labels py-1" for="email">Email</label>
+  <input type="email" formControlName="email" class="mb-2 py-2 form-control  border border-2 rounded-pill" id="email">
+  <div  *ngIf="signupForm.get('email')?.errors && signupForm.get('email')?.touched" class="alert alert-danger my-2 py-2">
+<p *ngIf="signupForm.get('email')?.errors?.required" class="lead errors mb-0">email is required</p>
+<p *ngIf="signupForm.get('email')?.errors?.email"  class="lead errors mb-0"> email is invalid</p>
+  </div>
+
+  <label  class="labels py-1" for="password">Password</label>
+  <input type="password" formControlName="password" class=" mb-2  py-2  form-control  border border-2 rounded-pill" id="password">
+  <div *ngIf="signupForm.get('password')?.errors && signupForm.get('password')?.touched" class=" alert alert-danger my-2 py-2">
+    <p *ngIf="signupForm.get('password')?.errors?.required" class="lead errors mb-0">password is required</p>
+    <p *ngIf="signupForm.get('password')?.errors?.pattern" class="lead errors mb-0">
+      password must start with uppercase and 4 letters minmum 8 letters maxmum</p>
+  </div>
+    <button  type="submit" class=" py-3 b2 b1 lead border border-1 rounded-pill btn mt-2">Sign Up</button>
+</form>
+<!--paragraph-->
+<div class="text-center mx-2 paragraph  py-3 px-5  ">
+<p class="   para">By clicking Sign up or Log in, I agree to  <a routerLink="/privecy" class=" para">Scooby’s
+  Terms of Service </a>and<a routerLink="/privecy" class=" para"> Privacy Policy.</a> </p>
+</div>
+
+<div class="container py-2">
+  <div><h2 class="lead">OR</h2></div>
+ </div>
+ <!--google and facebook icon---->
+ <div class=" py-3 google-face d-flex justify-content-between">
+
+  <!--facebook contener-->
+<div class="face border border-2 rounded-pill  ">
+  <div class="py-3  ">
+ <img class="mx-2 face-image " src="../../assets/images/facebook.png">
+<a>Login with Facebook</a>
+</div>
+</div>
+
+<!--google contener-->
+<div class=" face border border-2 rounded-pill ">
+  <div class=" py-3  ">
+
+  <img  class="mx-2 google-image"src="../../assets/images/google.png">
+ <a> Login with Google</a>
+
+</div>
+</div>
+  </div>
+  <div class="text-center finial py-3 ">
+    <p class="lead  ">
+        Already a member?<a routerLink="/login">Log in</a>
+    </p>
+</div>
+
+</div>
+  </div>

@@ -1,0 +1,237 @@
+
+<div class="firstDiv w-100">
+  <img class="w-100  bgImg" src="../../assets/images/Rectangle 11233.png" alt="">
+  <h2>Find what you are looking for</h2>
+    <h2 class="onther py-5 ">near you </h2>
+  <img class=" dogImg " src="../../assets/images/dog-tv3 1.png">
+  <!-----book section------>
+  <form class=" searchForm shape border px-5" (ngSubmit)="submitsearch(searchForm)"
+    [formGroup]="searchForm">
+    <div class="py-2 px-4  d-flex aldgin-items-center justify-content-between mb-0">
+      <div class="px-2  w-100">
+         <label class=" py-1" for="lookingFor">I’m looking for</label>
+     <select class="select py-2 w-100 shape border form-control" name="lookingFor" id="lookingFor" aria-placeholder="selectservice">
+ <option>Select Service</option>
+ <option >Pet Boarding</option>
+ <option >Pet Grooming</option>
+ <option >Pet Sitting</option>
+ <option >Pet Training</option>
+ <option >Pet Walking</option>
+ <option >Pet Taxi</option>
+         </select>
+      </div>
+
+<div class="px-2 w-100 ">
+  <label class="py-1 " for="Near">Near</label>
+  <input type="" formControlName="Near" placeholder="Your location"
+   class="py-2 w-100 shape border form-control" id="Near">
+</div>
+
+    </div>
+
+    <div class=" py-2 px-4 mb-2 d-flex aldgin-items-center justify-content-between mb-0">
+      <div class="   px-2  w-100">
+         <label class="py-1 " for="Dates"> Dates</label>
+        <input type="date" formControlName=" Dates"
+         class="py-2 w-100 shape border form-control" id=" Dates">
+
+        </div>
+
+<div class="  search  px-2 w-100 ">
+  <button type="submit" class="shape border px-4 w-100"><i class="fas fa-search"></i>
+    search</button>
+</div>
+
+    </div>
+   </form>
+</div>
+<div class="secondeSection py-5 px-4 ">
+  <div class="d-flex justify-content-between">
+  <div class="miniiServieces  w-100">
+    <h3 class="py-2">Scroll down to browse Pet Services near you</h3>
+    <div class="">
+      <div *ngFor="let service of serviecs" class="w-100 d-flex borderDesign my-4">
+        <div class="imgDiv  imgBorder">
+          <img class="mb-0 imgBorder" [src]=" service.serviceImage">
+        </div>
+        <div class="w-100 infooSection py-4 px-3 mb-0 infooSectionBorder">
+          <div class="d-flex justify-content-between py-1">
+             <a class="serviceType" [routerLink]="['/discerption',service.serviceProfile]">{{service.serviceType}}</a>
+            <p class="from">From<span class="yellow"> ${{service.price}}</span></p>
+          </div>
+          <p class="city py-1">{{service.city}}</p>
+          <p class="py-1 description">{{service.description.slice(0,35)}}...</p>
+          <p class="py-1 rate">{{service.rate}} Reviews</p>
+        </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="map py-2  w-100">
+        <div class="mapouter py-2 ">
+          <div class="gmap_canvas borderDesign"><iframe width="770" height="510" id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=egypt&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                  scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br>
+              <style>
+                  .mapouter {
+                      position: relative;
+                      text-align: right;
+                      height: 400px;
+                      width: 550px;
+                  }
+              </style><a href="https://embedgooglemap.2yu.co">html embed google map</a>
+              <style>
+                  .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      height: 400px;
+                      width: 550px;
+                  }
+              </style>
+          </div>
+      </div>
+      <div class="my-5 second py-5 px-4">
+<h5 class="payh5 py-2">Pay via Scooby to enjoy all this benefits.</h5>
+<div class="d-flex py-2">
+  <div>
+    <img class="px-1" src="../../assets/images/Vector (1) - Copy.png">
+  </div>
+  <div class="px-3">
+    <h4 class="h6">Special Offers & Premium Protection</h4>
+    <p>Enjoy peace of mind with special offers
+      for your pet with every booking.</p>
+  </div>
+</div>
+<div class="d-flex py-2">
+  <div>
+    <img class="px-1" src="../../assets/images/Vector (2) - Copy.png">
+  </div>
+  <div class="px-3">
+    <h4 class="h6">Special Offers & Premium Protection</h4>
+    <p>Enjoy peace of mind with special offers
+      for your pet with every booking.</p>
+  </div>
+</div>
+<div class="d-flex py-2">
+  <div>
+    <img class="px-1" src="../../assets/images/Vector (3) - Copy.png">
+  </div >
+  <div class="px-3">
+    <h4 class="h6">Reservation guarantee</h4>
+    <p>We help to find a replacement for last
+      minute cancelations or you get a full refund.</p>
+  </div>
+</div>
+</div>
+
+      </div>
+      </div>
+      <div class="finalService my-5">
+        <h4 class="py-5 text-center ">Don't have time to find what you want? Let us help you!</h4>
+       <button type="" class=" mb-3  py-2">Find Pet lover</button>
+
+      </div>
+    </div>
+
+
+
+
+<!----why scooby------->
+<div class="infoo  py-5 ">
+  <h4>Why rely on Scooby?</h4>
+  <div class="d-flex ">
+
+  <div class=" ">
+    <div class="py-4 infosection">
+    <div class="d-flex py-3">
+      <img src="../../assets/images/pets 1.png">
+      <h6 class="mb-0 px-2">Great for your pet</h6>
+    </div>
+    <p>Get a pet lover to care, not a cagePersonal care and attentionStay in a home near yoursStay in familiar surroundings and items</p>
+
+</div>
+<div class="py-4 infosection">
+  <div class="d-flex py-3">
+    <img src="../../assets/images/pets 1.png">
+    <h6 class="mb-0 px-2">A real community</h6>
+  </div>
+  <p>Scooby team are genuine pet lovers
+    from your local neighborhood</p>
+</div>
+
+<div class="py-4 infosection">
+  <div class="  d-flex py-3">
+    <img src="../../assets/images/pets 1.png">
+    <h6 class="mb-0 px-2">Veterinary Coverage</h6>
+  </div>
+  <p>Enjoy peace of mind with veterinary offers
+    coverage for your pet with every booking.
+    No hidden gap payments or subscription costs.</p>
+</div>
+  </div>
+
+  <div class=" ">
+  <div class=" w-100">
+    <div class=" ">
+      <div class="py-4 infosection">
+      <div class="d-flex py-3">
+       <img src="../../assets/images/pets 1.png">
+        <h6 clas="mb-0 px-2">Personalised and flexible pet care</h6>
+      </div>
+      <p>Scooby pet lovers provide one-on-one love
+        and attention in a cozy home space.</p>
+    </div>
+    <div class=" ">
+      <div class="py-4 infosection">
+      <div class="d-flex py-3">
+        <img src="../../assets/images/pets 1.png">
+        <h6  class="mb-0 px-2">Great for you</h6>
+      </div>
+      <p>Simple reservation onlineDaily updates with photos and chatsCustomer service always there for youPayment protection</p></div>
+    <div class=" ">
+      <div class="py-4 infosection">
+      <div class="  d-flex py-3 ">
+        <img src="../../assets/images/pets 1.png">
+        <h6  class="mb-0 px-2 ">Trust and Safety</h6>
+      </div>
+      <p>Profiles that have been reviewedPrevious jobs' reviews and ratingsA community of pet lovers?Communicate directly within platformYour pet is insured</p>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!----blogs--------->
+<div class=" mx-5 px-5 ">
+  <div class="px-5 header py-4">
+   <h3>Blogs</h3>
+  <p>Because we love to talk about pets.</p>
+  </div>
+  <div class=" px-5">
+    <div  class="d-flex">
+    <div *ngFor="let blog of blogs.slice(0, 3)" class="blog   w-100 mx-2">
+      <img [src]="blog.blogImage" class="w-100  " >
+      <div class="desc py-2 w-100"><a class="mb-0 py-3  px-3">{{blog.description}}</a></div>
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+

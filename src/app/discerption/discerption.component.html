@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+ <div class="firstSection mx-5 my-5">
+<div class="d-flex  mx-5">
+    <div class="images  col-lg-7 mx-2 ">
+      <div class="mainImage px-2 mb-0">
+       <img class="mb-0" [src]="imagesArray[1]" alt="">
+
+      </div>
+      <div class="d-flex py-3 mx-0 px-0"  >
+        <div class="smallIamge border py-2 px-2 mx-1 " *ngFor="let image of imagesArray">
+          <img (click)="gethandel($event)" [src]="image" alt="">
+       </div>
+      </div>
+    </div>
+      <div class="book  border col-lg-5 py-5 px-5 mx-2 " >
+      <h2 class="py-1">{{serviceProfile.name}}</h2>
+      <p class="black py-2 mb-4">From<span class="yellow"> ${{serviceProfile.from}}</span> UpTo<span class="yellow"> ${{serviceProfile.to}}</span></p>
+
+      <form class=" bookForm " (ngsubmit)="submitBook(bookForm)"
+      [formGroup]="bookForm">
+      <label class=" py-1" for="duration">Duration</label>
+      <select class="select py-2 mb-3 shape  form-control option" name="duration" id="duration" aria-placeholder="select">
+       <option class="option">Select</option>
+       <option  class="option" >Full Day</option>
+       <option  class="option" >Half Day</option>
+       <option  class="option" >More than 1 Day</option>
+               </select>
+
+      <div class="px-2 w-100 ">
+      <label class="py-1" for="date">Date</label>
+      <input type="date" formcontrolname="date" placeholder="Your location"
+      class="py-2 shape form-control option" id="date">
+      </div>
+      <button type="submit" [disabled]="bookForm.invalid" class=" w-100 py-3 my-3 ">Make reservation</button>
+
+      </form>
+      <div class="border my-4 py-3 px-2 payMent">
+       <h4 class="">Payment Methods</h4>
+       <div class="py-3 d-flex">
+        <div class="divShape border mx-1 px-2 py-1">
+          <img class="visa" src="../../assets/images/visa.png" alt="">
+        </div>
+        <div class="divShape  border mx-1 px-3 py-1">
+          <img class="meeza" src="../../assets/images/meeza.png" alt="">
+        </div>
+        <div class="divShape  border mx-1 py-1 px-1">
+          <img class="paypal" src="../../assets/images/paypal.png" alt="">
+        </div>
+        <div class="divShape  border mx-1 py-1 px-1">
+          <img class="vodafone" src="../../assets/images/vodafone.png" alt="">
+        </div>
+       </div>
+      </div>
+
+        </div>
+</div>
+ </div>
+
+<!---------seconde section-->
+<div class="secondSection ">
+  <div class="d-flex mx-5 px-5 py-5">
+    <button class="py-3 border discButton  " (click)="showDescription()" [hidden]="isDescriptionVisible" >Discerption</button>
+    <button class="py-2 border  reviewButton "(click)="showReviews()" [hidden]="isReviewVisible" >Reviews</button>
+
+  </div>
+  <div class=" ra8iiSection py-4 px-5 mx-5" *ngIf="isDescriptionVisible">
+    <p class="lead py-3"><span class="purpule">Looking for peace of mind when it comes to your furry friend?</span> Our pet care service  offers a wagging tail
+      (or purrfect cuddle) worth of options! Whether you need someone to play fetch, administer medication,
+      or provide a loving home away from home, we've got you covered.</p>
+      <div class="py-3">
+      <p class=" mb-0">We cater to all preferences, with in-home care or boarding facilities like pet hotels. You can</p>
+<div class="d-flex ">
+  <div class="col-lg-5 p2"><p>choose from basic services like feeding and
+    exercise, or add on extras like training,
+    transportation, and even medical care.
+    No matter  your pet's needs,
+    there's a care plan to match.</p>
+    <p class="py-4">
+   <span class="purpule p2 "> Busy schedule? Traveling the world? </span>
+Our pet care services are your lifesaver!
+Let us take the worry out of pet parenthood,
+so you can focus on what matters most.
+Your happy, healthy pet awaits!
+    </p>
+  </div>
+  <div class="col-lg-5"><img src="../../assets/images/large 1.png " alt="not found"></div>
+
+</div>
+  </div>
+
+</div>
+</div>
+<!-----------------reviewSection-->
+<div class="d-flex " *ngIf="isReviewVisible">
+  <div class="reviews">
+<div class="content mx-4" [hidden]="">
+<div *ngFor="let review of reviewsArray">
+  <div class="d-flex my-3 oneReview py-2 px-3">
+    <div class=""><img class="" [src]="review.user.profileImage" alt=""></div>
+    <div class=" px-2  ">
+      <div class="d-flex algin-items-center">
+        <h5>{{review.name}}</h5>
+        <p class="date">{{review.createdAt | date:'d MMMM'}}</p>
+      </div>
+      <p class="realReview py-2">{{review.review}}</p>
+    </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+<div class="col-lg-4 border py-4 px-3 my-3 creatReview">
+  <h3 class="mb-4">Write a Review</h3>
+  <form (ngsubmit)="submitReview(reviewForm)"
+  [formGroup]="reviewForm">
+  <input type="text" formcontrolname="name" placeholder="Name"
+    class="py-3 my-4  form-control labeledit2" id="name">
+    <input type="email" formcontrolname="email" placeholder="Email"
+    class="py-3 my-4 form-control labeledit2" id="email">
+    <input type="text" formcontrolname="yourReview" placeholder="Your Review"
+    class=" my-4  form-control labeledit labeledit2 " id="review">
+    <button type="submit" [disabled]="bookForm.invalid" class="  py-3 my-2 ">Submit Review</button>
+  </form>
+</div>
+</div>
+<!----finial section------>
+<div class="px-5 mx-2 py-5 finialSection ">
+  <h4 cass="b-w py-2">More Services</h4>
+  <div class=" py-4 slider ">
+    <owl-carousel-o [options]="customOptions" class=" ">
+      <ng-container *ngFor="let service of services" class="">
+        <ng-template carouselSlide [id]="service._id">
+          <a [routerLink]="['/discerption',service.serviceProfile]"  >
+          <div class="w-100 serviceDiv ">
+            <div class=" py-3 imgDiv"><img class=" "  [src]="service.icon" alt="" ></div>
+            <div class=" py-2 text-center px-2  borderbootom">
+              <h5 class=""  >{{service.name}}</h5>
+              <p class="">{{service.description}}</p>
+            </div>
+            </div>
+          </a>
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o>
+  </div>
+</div>

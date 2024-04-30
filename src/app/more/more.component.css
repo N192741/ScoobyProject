@@ -1,0 +1,89 @@
+.headers h1{
+  font-family: Roboto;
+font-size: 42px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0.5px;
+text-align: center;
+color: rgba(15, 15, 15, 0.95);
+}
+.headers h2{
+  font-family: Roboto;
+font-size: 30px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.5px;
+text-align: center;
+color: rgba(15, 15, 15, 0.6);
+
+}
+.headers{
+  margin-top: 3%;
+}
+.finialdiv{
+margin-left:17%;
+background-color: rgba(241, 240, 240, 1);
+border-radius: 15px;
+}
+.finialdiv img{
+  width: 200px;
+  height: 200px;
+margin-left: 15%;
+}
+.finialdiv a{
+  text-decoration: none;
+  font-family: Roboto;
+font-size: 28px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.5px;
+color: rgba(15, 15, 15, 0.95);
+}
+.finialdiv p{
+  font-family: Roboto;
+font-size: 19px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.5px;
+
+color: rgba(15, 15, 15, 0.6);
+
+}
+.borderForImages{
+  border-radius: 15px;
+  margin-left: 6%;
+  background-color:  rgba(241, 240, 240, 1);
+
+
+}
+.borderForImages img{
+  width: 200px;
+  height: 200px;
+  margin-left: 15%;
+}
+.borderForImages a{
+  text-decoration: none;
+  font-family: Roboto;
+font-size: 28px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.5px;
+color: rgba(15, 15, 15, 0.95);
+
+}
+
+.borderForImages p{
+font-family: Roboto;
+font-size: 19px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.5px;
+
+color: rgba(15, 15, 15, 0.6);
+margin-top: 3%;
+}
+.borderSmall{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 120px;
+}

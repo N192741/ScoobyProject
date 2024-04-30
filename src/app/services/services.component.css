@@ -1,0 +1,304 @@
+.firstDiv h2{
+  position: absolute;
+  top: 150px;
+  left: 130px;
+  font-family: Roboto;
+font-size: 48px;
+font-weight: 800;
+line-height: 48px;
+letter-spacing: 0.05em;
+color: rgba(245, 243, 243, 1);
+
+}
+.firstDiv{
+  height:520px;
+}
+.bgImg{
+  height:520px ;
+}
+.onther{
+margin-left:18%;
+}
+.dogImg{
+  position: absolute;
+  top:60px;
+right:155px;
+width:420px ;
+}
+.searchForm{
+  width:57% ;
+  position: absolute;
+  top:52%;
+  left:18%;
+  background-color:  rgba(245, 243, 243, 1);
+
+}
+.searchForm input{
+  background-color:  rgba(245, 243, 243, 1);
+}
+.select{
+  background-color:  rgba(245, 243, 243, 1);
+}
+
+.search{
+  padding-top: 31px;
+}
+.search button{
+  background: rgba(81, 57, 115, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: center;
+  color: rgba(245, 243, 243, 1);
+  padding-top: 11px;
+  padding-bottom:11px ;
+
+}
+.shape{
+  border-radius: 12px;
+  border-width: 1px;
+}
+.miniiServieces h3{
+  color: rgba(15, 15, 15, 0.95);
+  font-family: Roboto;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+}
+.secondeSection{
+  background-color: rgb(248, 246, 246);
+
+}
+.secondeSection h4{
+  font-family: Roboto;
+font-size: 30px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0.5px;
+text-align: center;
+color: rgba(15, 15, 15, 0.8);
+
+}
+.infoo{
+  background: rgba(241, 236, 236, 1);
+padding-left: 150px;
+padding-right: 150px;
+}
+.infoo h4{
+  font-family: Roboto;
+font-size: 38px;
+font-weight: 700;
+line-height: 44px;
+text-align: left;
+
+}
+.infosection{
+  padding-right:160px ;
+}
+.infosection img{
+  width: 40px;
+height: 40px;
+}
+.infosection h6{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 23px;
+color: rgba(15, 15, 15, 0.95);
+padding-top: 10px;
+}
+.infosection p{
+  font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.09px;
+color: rgba(15, 15, 15, 0.6);
+
+
+}
+.desc{
+  text-align: center;
+  background: rgba(15, 15, 15, 0.6);
+  position: absolute;
+  bottom:0px ;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.desc a{
+  color:  rgba(245, 243, 243, 1);
+  height: 70px;
+  padding-top: 10px;
+  text-decoration: none;
+
+}
+.blog{
+  position: relative;
+  height: 250px;
+  border-radius: 10px;
+
+}
+.blog img{
+  height: 100%;
+  border-radius: 8px;
+}
+.header h3{
+  color: rgba(15, 15, 15, 0.95);
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+  }
+  .header p{
+    color: rgba(15, 15, 15, 0.8);
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32.81px;
+    text-align: left;
+
+  }
+  .imgDiv img{
+    height:100%;
+    width: 210px;
+  }
+.borderDesign{
+  border-radius: 17px;
+  border-width:0px;
+
+}
+.infooSectionBorder{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 17px;
+}
+.imgBorder{
+  border-top-left-radius: 17px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 0px;
+}
+.infooSection{
+  background-color: rgba(255, 255, 255, 1);
+
+}
+.serviceType{
+  color: rgba(81, 57, 115, 1);
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 500;
+line-height: 25.78px;
+text-align: center;
+text-decoration: none;
+
+}
+.from{
+  font-family: Roboto;
+font-size: 18px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0.5px;
+text-align: center;
+color: rgba(15, 15, 15, 1);
+
+}
+.yellow{
+  color: rgba(253, 202, 37, 1);
+}
+.city{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 23.44px;
+color: rgba(15, 15, 15, 1);
+
+}
+.description{
+  font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.09px;
+color: rgba(15, 15, 15, 0.5);
+
+}
+.rate{
+  font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.09px;
+color: rgba(15, 15, 15, 0.5);
+
+
+}
+.payh5{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 500;
+line-height: 25.78px;
+text-align: left;
+color: rgba(81, 57, 115, 1);
+
+}
+.second{
+  background-color: rgba(255, 255, 255, 1);
+  width:550px;
+
+}
+.miniiServieces{
+  margin-right: 2%;
+  margin-left: 4%;
+}
+.map{
+  margin-right: 4%;
+  margin-left: 2%;
+}
+.second img{
+  width: 50px;
+  height: 40px;
+}
+.second h4{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 600;
+line-height: 23.44px;
+text-align: left;
+color: rgba(15, 15, 15, 1);
+
+}
+.second p{
+  font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 18.75px;
+text-align: left;
+color:rgba(15, 15, 15, 0.5);
+
+}
+.finalService h4{
+  font-family: Roboto;
+font-size: 30px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0.5px;
+color: rgba(15, 15, 15, 0.8);
+}
+.finalService button{
+  padding-left: 5%;
+  padding-right: 5%;
+  border-width: 0px;
+  border-radius: 10px;
+  background-color: rgba(81, 57, 115, 1);
+  color: rgba(254, 251, 251, 1);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.5px;
+  text-align: center;
+margin-left:40%
+}
