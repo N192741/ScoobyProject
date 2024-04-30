@@ -44,16 +44,16 @@ class=" d-flex align-items-center justify-content-between py-0  px-5">
 
               <div  class="d-flex  justify-content-end align-items-center py-3">
                   <div *ngIf="isLogin" class="soicalMedia d-flex  align-items-center">
-                    <div class="icoon mx-1  border   rounded-circle  ">
-                      <i class="icoon mx-1  fas fa-search fa-sm d-flex align-items-center "></i></div>
+                    <div class="icoon mx-1 cart border   rounded-circle  ">
+                      <i class="icoon mx-1  fas fa-search fa-sm d-flex align-items-center " routerLink="/services"></i></div>
 
-                      <div class=" icoon  mx-1 face  border   rounded-circle ">
-                        <i class=" icoon  mx-1 fas fa-heart fa-sm "></i></div>
+                      <div class=" icoon cart  mx-1 face  border   rounded-circle ">
+                        <i class=" icoon  mx-1 fas fa-heart fa-sm " routerLink="/favorite"></i></div>
 
-                        <div class="icoon mx-1 face  border   rounded-circle ">
-                          <i class="icoon mx-1  fas fa-shopping-cart fa-sm  "></i></div>
+                        <div class="icoon mx-1 cart face  border   rounded-circle ">
+                          <i class="icoon mx-1 cart fas fa-shopping-cart fa-sm  " routerLink="/cart" ></i></div>
 
-                          <div class="icoon mx-1 face  border border-1  rounded-circle ">
+                          <div class="icoon  cart mx-1 face  border border-1  rounded-circle ">
                             <i class=" icoon mx-1 fas fa-user fa-sm "></i></div>
 
 
@@ -61,7 +61,7 @@ class=" d-flex align-items-center justify-content-between py-0  px-5">
 
 
               <ul *ngIf="!isLogin" class="sign-links-ul d-flex justify-content-end list-unstyled ">
-                <li><a  class="mx-2" routerLink="signup">SignUp</a></li>
+                <li><a  class="mx-2" routerLink="/signup">SignUp</a></li>
                   <li ><a  class="mx-2" routerLink="/login">Login</a></li>
               </ul>
 

@@ -127,13 +127,19 @@ color: rgba(15, 15, 15, 0.6);
   bottom:0px ;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
+  height: 75px;
 }
 .desc a{
   color:  rgba(245, 243, 243, 1);
   height: 70px;
   padding-top: 10px;
   text-decoration: none;
-
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
 }
 .blog{
   position: relative;

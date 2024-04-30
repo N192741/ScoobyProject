@@ -62,11 +62,14 @@ padding: 0px;
   height: 28px;
   color: #DEDEDE;
   border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
+}
+.cart{
+  padding-right: 1%;
+  padding-top: 1%;
 }
 a{
   font-family: Roboto;
