@@ -1,0 +1,238 @@
+<!DOCTYPE html><div class="firstsection w-100">
+
+  <img class="w-100 cover  homeimg" src="../../assets/images/home.png"
+  alt="not found">
+  <h2 class="  h2Paragraph">
+    Find a loving local pet sitter or dog Walker</h2>
+    <p class="lead text-center h3Paragraph">Who treats your pet like family</p>
+
+    <form class=" searchForm shape border" (ngSubmit)="submitSearch(searchForm)"  [formGroup]="searchForm">
+    <div class="py-2 px-4  d-flex aldgin-items-center justify-content-between mb-0">
+      <div class="px-2  w-100">
+         <label class=" py-1" for=" Dates">I’m looking for</label>
+         <select class="select py-2 w-100 shape border form-control" name="lookingFor" id="lookingFor" aria-placeholder="selectservice">
+          <option>Select Service</option>
+          <option >Pet Boarding</option>
+          <option >Pet Grooming</option>
+          <option >Pet Sitting</option>
+          <option >Pet Training</option>
+          <option >Pet Walking</option>
+          <option >Pet Taxi</option>
+                  </select>
+
+        </div>
+
+<div class="px-2 w-100 ">
+  <label class="py-1 " for="Near">Near</label>
+  <input type="" formControlName="Near" placeholder="Your location"
+   class="py-2 w-100 shape border form-control" id="Near">
+</div>
+
+    </div>
+
+    <div class=" py-2 px-4 mb-2 d-flex aldgin-items-center justify-content-between mb-0">
+      <div class="   px-2  w-100">
+         <label class="py-1 " for="Dates"> Dates</label>
+        <input type="date" formcontrolname=" Dates"
+         class="py-2 w-100 shape border form-control" id=" Dates">
+
+        </div>
+
+<div class="  search  px-2 w-100 ">
+  <button type="submit" class="shape border  w-100"><i class="fas fa-search"></i>
+    search</button>
+</div>
+
+    </div>
+   </form>
+   <!----------services------->
+   <div class="services">
+    <div class=" d-flex  ">
+      <div class=" px-4 py-1 item border mx-3">
+        <img class="py-1" src="../../assets/images/veterinary 1.png" alt="">
+        <div class="py-1 text-center"><a routerLink="/veterinary">Veterinary</a></div>
+      </div>
+      <div class="px-4 py-1 item border mx-3">
+        <img class="py-1" src="../../assets/images/dog (2) 1.png" alt="">
+        <div class="py-1 text-center"><a routerLink="/discerption">Day Care
+          </a></div>
+      </div>
+      <div class="px-4 py-1 item border mx-3">
+        <img class="py-1" src="../../assets/images/pet-supplies 1.png" alt="">
+        <div class="py-1 text-center"><a routerLink="/shop">Supplies</a></div>
+      </div>
+      <div class="px-4 py-1 item border mx-3">
+        <img class="py-1" src="../../assets/images/adoption 1.png" alt="">
+        <div class="py-1 text-center"><a routerLink="/adoption">Adoption</a></div>
+      </div>
+      <div class="px-4 py-1 item border mx-3">
+        <img class="py-1" src="../../assets/images/pets 1.png" alt="">
+        <div class="py-1 text-center"><a routerLink="/more">More</a></div>
+      </div>
+
+    </div>
+
+
+   </div>
+   <!---------paragraphs-->
+   <div class= " secondSection ">
+      <h3 class="  py-2 text-center">Scooby made it easy for you</h3>
+<p class=" lead py-2 text-center">Search and connect with trusted
+   pet services providers. It's easy as 1, 2, 3.</p>
+   <!--------steps-->
+   <div class= " px-5 py-3  mx-5 d-flex justify-content-between">
+    <div class="px-3 d-flex align-items-center">
+       <div class="iconDiv border border-1 rounded py-2 px-2">
+      <img src="../../assets/images/Vector.png">
+    </div>
+    <div class="border border-1 rounded "><p class="mb-0 py-2 divstep text-center"> 
+      Find pet Service provider</p></div>
+
+   </div>
+   <div class="px-3 py-3  d-flex align-items-center">
+    <div class=" iconDiv border border- rounded py-2 px-2">
+      <img  src="../../assets/images/Vector (1).png">
+ </div>
+ <div class=" border border-1 rounded px-2"><p class="mb-0 py-2 divstep text-center"> 
+   Find pet Service provider</p></div>
+</div>
+<div class="px-3 d-flex align-items-center">
+  <div class="iconDiv border border-1 rounded py-2 px-2">
+    <img  src="../../assets/images/Vector (2).png">
+</div>
+<div class=" border border-1 rounded px-2 "><p class="mb-0 py-2 divstep text-center"> 
+ Find pet Service provider</p></div>
+</div>
+  </div>
+  <div class="finalsteps py-2  d-flex px-5 mx-5">
+    <div class=" w-100 px-3 "><p class="">Search, select your services and find
+      experienced pet lover nearby</p></div>
+      <div class=" w-100 px-3"><p class="">Get to know your pet lover in person</p></div>
+      <div class=" w-100 px-3 " ><p class="">Book your pet lover through our safe online
+        system, with flexible cancellations
+        in case your plans change.</p></div>
+      </div>
+
+
+</div >
+<!----------sliderreview-->
+<div class="sliderreview">
+<div class="   px-5 py-4">
+  <h5>Pet owners Reviews</h5>
+  <div class="   slider ">
+    <owl-carousel-o [options]="customOptions" class=" ">
+
+      <ng-container *ngFor="let review of reviews" class="">
+        <ng-template carouselSlide [id]="review._id">
+          <div class="w-100 reviewDiv ">
+            <img class="w-100  "  [src]="review.serviceImage" >
+            <div class="w-100 d-flex reviewDescription reviewDescriptionrigt reviewDescriptionLeft ">
+              <div class="w-100 py-4  px-3 reviewDescriptionrigt ">
+                <a [routerLink]="['/discerption',review.serviceProfile]" class=" fw-bolder mb-0 py-1">{{review.serviceType}}</a>
+                <p  class="mb-0 py-1">{{review.city}}</p>
+              </div>
+              <div class="w-100 reviewDescriptionLeft left py-4 px-3 ">
+                <p class="mb-0 py-1">From <span class="yelllow">${{review.price}}</span></p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+
+
+ <div class="morereview mb-5">
+  <a [routerLink]="['/discerption','']">Show more reviews by happy pet owners></a>
+ </div></div></div>
+ <!--------ra8iiiii 3n el project-->
+ <div class="infoo  py-5 ">
+  <h4>Why rely on Scooby?</h4>
+  <div class="d-flex ">
+
+  <div class=" ">
+    <div class="py-4 infosection">
+    <div class="d-flex py-3">
+      <img src="../../assets/images/pets 1.png">
+      <h6 class="mb-0 px-2">Great for your pet</h6>
+    </div>
+    <p>Get a pet lover to care, not a cagePersonal care and attentionStay in a home near yoursStay in familiar surroundings and items</p>
+
+</div>
+<div class="py-4 infosection">
+  <div class="d-flex py-3">
+    <img src="../../assets/images/pets 1.png">
+    <h6 class="mb-0 px-2">A real community</h6>
+  </div>
+  <p>Scooby team are genuine pet lovers
+    from your local neighborhood</p>
+</div>
+
+<div class="py-4 infosection">
+  <div class="  d-flex py-3">
+    <img src="../../assets/images/pets 1.png">
+    <h6 class="mb-0 px-2">Veterinary Coverage</h6>
+  </div>
+  <p>Enjoy peace of mind with veterinary offers
+    coverage for your pet with every booking.
+    No hidden gap payments or subscription costs.</p>
+</div>
+  </div>
+
+  <div class=" ">
+  <div class=" w-100">
+    <div class=" ">
+      <div class="py-4 infosection">
+      <div class="d-flex py-3">
+       <img src="../../assets/images/pets 1.png">
+        <h6 clas="mb-0 px-2">Personalised and flexible pet care</h6>
+      </div>
+      <p>Scooby pet lovers provide one-on-one love
+        and attention in a cozy home space.</p>
+    </div>
+    <div class=" ">
+      <div class="py-4 infosection">
+      <div class="d-flex py-3">
+        <img src="../../assets/images/pets 1.png">
+        <h6  class="mb-0 px-2">Great for you</h6>
+      </div>
+      <p>Simple reservation onlineDaily updates with photos and chatsCustomer service always there for youPayment protection</p></div>
+    <div class=" ">
+      <div class="py-4 infosection">
+      <div class="  d-flex py-3 ">
+        <img src="../../assets/images/pets 1.png">
+        <h6  class="mb-0 px-2 ">Trust and Safety</h6>
+      </div>
+      <p>Profiles that have been reviewedPrevious jobs' reviews and ratingsA community of pet lovers?Communicate directly within platformYour pet is insured</p>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!-----blogs------>
+<div class=" mx-5 px-5 ">
+  <div class="px-5 header py-4">
+   <h3>Blogs</h3>
+  <p>Because we love to talk about pets.</p>
+  </div>
+  <div class=" px-5">
+    <div  class="d-flex">
+    <div *ngFor="let blog of blogs.slice(0, 3)" class="blog   w-100 mx-2">
+      <img [src]="blog.blogImage" class="w-100  " >
+      <div class="desc py-2 w-100"><a class="mb-0 py-3  px-3">{{blog.description}}</a></div>
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
