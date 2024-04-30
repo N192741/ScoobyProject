@@ -1,0 +1,73 @@
+<nav  [ngStyle]="{'background-color':isLogin?'rgba(81, 57, 115, 1)': 'rgba(255, 255, 255, 1)
+'}"
+class=" d-flex align-items-center justify-content-between py-0  px-5">
+  <div class=" d-flex align-items-center mx-5  ">
+<div class=" imgg">
+  <img src="../../assets/images/icon.png " style="width: 50px; height: 50px;" >
+</div>
+
+      <ul class="list-unstyled ms-5 d-flex justify-content-around  algin-items-center ">
+          <li >
+              <a [ngStyle]="{'color':isLogin?'  rgba(245, 243, 243, 1) ':' rgba(15, 15, 15, 0.95)'}"
+
+              [routerLink]="isLogin? '/home' : '/landing-page'" class="mx-2">Home</a>
+          </li>
+          <li>
+           <a [ngStyle]="{'color':isLogin?'  rgba(245, 243, 243, 1) ':' rgba(15, 15, 15, 0.95)'}"
+           [routerLink]="isLogin? '/aboutus' : '/landing-page'" class="mx-2">About Us</a>
+          </li>
+          <li *ngIf="!isLogin">
+            <a  [routerLink]="isLogin? '/contactus' : '/landing-page'"   class="mx-2">Contact Us</a>
+          </li>
+          <li>
+            <a [ngStyle]="{'color':isLogin?'  rgba(245, 243, 243, 1) ':' rgba(15, 15, 15, 0.95)'}"
+            [routerLink]="isLogin? '/services' : '/landing-page'"   class="mx-2">Services</a>
+              <li *ngIf="!isLogin" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                  </a>
+                  <ul  class="dropdown-menu">
+                    <li><a class="dropdown-item" >Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+          </li>
+          <li *ngIf="isLogin">
+            <a [ngStyle]="{'color':isLogin?'  rgba(245, 243, 243, 1) ':' rgba(15, 15, 15, 0.95)'}"
+            [routerLink]="isLogin? '/shop' : '/landing-page'"   class="mx-2">Shop</a>
+          </li>
+
+      </ul>
+  </div>
+
+
+              <div  class="d-flex  justify-content-end align-items-center py-3">
+                  <div *ngIf="isLogin" class="soicalMedia d-flex  align-items-center">
+                    <div class="icoon mx-1  border   rounded-circle  ">
+                      <i class="icoon mx-1  fas fa-search fa-sm d-flex align-items-center "></i></div>
+
+                      <div class=" icoon  mx-1 face  border   rounded-circle ">
+                        <i class=" icoon  mx-1 fas fa-heart fa-sm "></i></div>
+
+                        <div class="icoon mx-1 face  border   rounded-circle ">
+                          <i class="icoon mx-1  fas fa-shopping-cart fa-sm  "></i></div>
+
+                          <div class="icoon mx-1 face  border border-1  rounded-circle ">
+                            <i class=" icoon mx-1 fas fa-user fa-sm "></i></div>
+
+
+                  </div>
+
+
+              <ul *ngIf="!isLogin" class="sign-links-ul d-flex justify-content-end list-unstyled ">
+                <li><a  class="mx-2" routerLink="signup">SignUp</a></li>
+                  <li ><a  class="mx-2" routerLink="/login">Login</a></li>
+              </ul>
+
+          </div>
+
+          <a *ngIf="isLogin" class="logout " (click)="callLogOut(userData)" routerLink="/login" >LogOut</a>
+  </nav>
+
+
