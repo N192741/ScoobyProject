@@ -1,0 +1,60 @@
+
+<div class="container">
+    <div>
+        <div class="fav pt-2">Favorites</div>
+        <div class="pt-2">
+        <div class="brdr"></div>
+        </div>
+    </div>
+<div class="row pt-4">
+    <div class="col-md-4">
+        <div class="button  my-5">
+          <div> 
+             <button class="default-button">
+                Default
+            </button>
+            </div>
+        
+        <div class="pt-3">
+            <button class="adopt-me-button ">Adopt Me</button>
+        </div>
+    </div>
+    </div>
+   <div class="col-md-8">
+    <div class="row big">
+    <div *ngFor="let product of favoriteProducts" class="col-md-4 py-3  ">
+        <div class="product-cart p-2 position-relative ">
+            <div>
+                <img class="product-img " [src]="product.productImage">
+            </div>
+
+            <div class="d-flex justify-content-between flex-column ">
+                <!-- <i class="fas fa-heart position-absolute top-0 end-0" (click)="goToFavoritePage(product)"></i> -->
+                <h5 class="pt-3 name">{{product.name}}</h5>
+                <h6 class="">{{product.desc}}</h6>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between pt-2 h">
+                        <div class="EGP ">EGP</div>
+                        <p class="px-1">{{product.priceAfterDiscount}}</p>
+                        <small class="discount-price px-1 ">{{product.price}}</small>
+                        <div class="off">{{product.discount}}% OFF</div>
+                        <i class="fas fa-heart position-absolute top-0 end-0 pt-2 pr-2" [ngClass]="{ 'favorite': product.favorite }" (click)="toggleFavorite(product)"></i>
+                    </div>
+
+                    <div class="d-flex justify-content-end  ">
+
+                        <button class="add-button d-flex align-items-center button" (click)="addToCart(product)">
+                            <img src="../../assets/images/la_cart-plus.png">
+                            Add
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+   </div>
+</div>
+</div>

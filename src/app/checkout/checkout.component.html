@@ -1,0 +1,149 @@
+<div class="container">
+  <div class=" pt-2  d-flex px-5 ">
+    <div class="cart-1">checkout</div>
+
+  </div>
+  <div class="pt-2 px-5">
+    <div class="brdr-1"></div>
+  </div>
+  <div class=" d-flex px-5 pt-5">
+
+    <div class="col-md-7 Billing mx-3 ">
+      <div class="row px-5 mx-3 py-3 details">
+        <div class="title">Billing Details</div>
+        <form class="billing-form py-3">
+          <div class="name-inputs">
+            <div class="input-container">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" class="border px-2">
+            </div>
+
+            <div class="input-container">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name" class="border px-2">
+            </div>
+          </div>
+          <div class="row">
+            <label for="country" class="pt-4">Country / Region</label>
+            <input type="text" id="country" name="country" placeholder="Your country" class="border">
+          </div>
+
+
+
+
+
+          <label for="Street Address" class="pt-4">Street Address:</label>
+          <div class="row ">
+            <input type="text" id="Street Address" name="Street Address" placeholder="Street name and house"
+              class="border">
+            <input type="text" id="Street Address" name="Street Address" placeholder="City" class="mt-2 border">
+            <input type="text" id="Street Address" name="Street Address" placeholder="Post code" class="mt-2 border">
+
+          </div>
+
+          <label for="Additional Information" class="pt-4">Additional Information</label>
+          <div class="row">
+
+            <input type="text" id="Street Address" name="Street Address" placeholder="Your phone number" class="border">
+            <input type="text" id="Street Address" name="Street Address" placeholder="Your email address"
+              class="mt-2 border">
+            <input type="text" id="Street Address" name="Street Address" placeholder="Other Notes (optional)"
+              class="mt-2 Other-Notes ">
+
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+
+
+    <div class="col-md-5 px-4">
+      <div class="row small-order px-4">
+        <h4 class="Order-Summary py-3">Order Summary </h4>
+        <div class="row">
+          <div *ngFor="let product of cartProducts" class="py-3">
+            <div class="d-flex mt-1 h">
+              <div>
+                <img [src]="product.product.productImage" class="small-img">
+              </div>
+
+              <div class="small-carts">
+                <div class="small-desc"> {{product.product.desc}}</div>
+                <div class="d-flex mt-3  position-relative">
+                  <!-- <div class="d-flex small-counter  px-1 mt-3">
+                <button class="m-btn  px-1  ">-</button>
+                <p class="s-num  px-2">1</p>
+                <button class="m-btn  px-1 ">+</button>
+              </div> -->
+                  <div class="d-flex small-price align-items-center ">
+                    <div class="i"><i class="fas fa-times ft"></i></div>
+                    <div class="small-after">{{product.product.priceAfterDiscount}}</div>
+                    <div class="EGP-s">EGP</div>
+
+                  </div>
+                  <div class=" i position-absolute top-0 end-0">
+                    <span class="circle-icon ">
+                      <i class="fas fa-times " (click)="deleteItemFromCart(product.product._id)"></i>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="brdr-s mt-5"></div>
+        <div class="section pt-3">
+          <div class="d-flex justify-content-between">
+            <p>Subtotal</p>
+            <p>{{totalCartPrice}} EGP</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p>Shipping</p>
+            <p class="free-s">FREE</p>
+          </div>
+
+        </div>
+
+        <div class="brdr-s mt-3"></div>
+        <div class="d-flex justify-content-between pt-3">
+          <p>Total </p>
+          <p>{{totalCartPrice}} EGP</p>
+        </div>
+
+      </div>
+      <div class="pay-s px-4 mt-3 row pt-3">
+        <div class="px-2">
+          <input type="radio" id="cashOnDelivery" name="paymentMethod" value="cashOnDelivery">
+          <label for="cashOnDelivery">cash On delivery</label>
+          <h6 class="comment">Pay with cash upon delivery.</h6>
+        </div>
+
+        <div>
+          <input type="radio" id="payOnline" name="paymentMethod" value="payOnline">
+          <label for="payOnline">pay Online</label>
+
+          <div class=" row d-flex align-items-around pt-1 ">
+            <img src="../../assets/images/Frame 280382.png" class="Methods" alt="">
+            <img src="../../assets/images/Frame 280383.png" class="Methods" alt="">
+            <img src="../../assets/images/Frame 280384.png" class="Methods" alt="">
+            <img src="../../assets/images/Frame 280385.png" class="Methods" alt="">
+          </div>
+          <div class="pt-4">
+            <div class="d-flex">
+              <h6 class="com-1">By clicking the button below, I agree to</h6>
+              <h6 class="com-2">Scooby’s</h6>
+            </div>
+            <h6 class="com-2"> Terms of Service and Privacy Policy.</h6>
+
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-order mt-4 mb-5">Place Order</button>
+    </div>
+  </div>
+</div>

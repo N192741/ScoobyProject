@@ -1,0 +1,92 @@
+<div class="container">
+   <div class=" pt-2  d-flex  ">
+      <div class="cart-1">Cart</div>
+      <div class="cart-length px-2 pt-2">({{cartProducts.length}} items)</div>
+   </div>
+   <div class="pt-2">
+   <div class="brdr-1"></div>
+   </div>
+   <div class=" row pt-4 px-5 mx-3">
+      <div class="col-md-8">
+
+         <div class="row ">
+            <div *ngFor="let product of cartProducts" class="py-3">
+               <div class="carts d-flex pt-2 align-items-between position-relative  py-2">
+                  <div>
+                     <img [src]="product.product.productImage">
+                  </div>
+                  <div class="carts-details px-4">
+                     <div class="carts-disc">{{product.product.desc}}</div>
+                     <div class="carts-sallary d-flex align-items-center  pt-3">
+                        <div class="EGP-2 ">EGP</div>
+                        <div class="sallary-2 px-1">{{product.product.priceAfterDiscount}}</div>
+                        <div class="price-2 px-1">{{product.product.price}}</div>
+                        <div class="discount-2">{{product.product.discount}}% OFF</div>
+
+                     </div>
+                     <div class="Free-Delivery pt-3">Free Delivery</div>
+                     <div class="d-flex counter px-1 mt-3">
+                        <button (click)="decreaseQuantity(product)" class="btn-1 px-1 ">-</button>
+                        <p class="num px-2">{{ product.quantity }}</p>
+                        <button (click)="increaseQuantity(product)" class="btn-1 px-1 ">+</button>
+                     </div>
+                 
+                  </div>
+                  <i class="fas fa-trash-alt position-absolute top-0 end-0 p-2"
+                     (click)="deleteItemFromCart(product.product._id)"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="row crt p-3 mt-3">
+            <h4 class="Order-Summary">Order Summary  </h4>
+            <div class=" d-flex justify-content-center">
+               <input class="input py-2" type="text" [(ngModel)]="couponCode" placeholder="Coupon code">
+               <button class="btn py-2" (click)="applyCoupon()">Apply</button>
+            </div>
+            <div>
+               <div class=" d-flex justify-content-between pt-3">
+                  <p class="design">subtotal</p>
+                  <p>{{totalCartPrice}} EGP</p>
+               </div>
+
+               <div class=" d-flex justify-content-between py-1">
+                  <p class="design">shipping </p>
+                  <p class="shipping-FREE">FREE</p>
+               </div>
+               <div class="">
+                  <div class=" total-price d-flex justify-content-between py-2">
+                     <p class="design">Total</p>
+                     <p>{{totalCartPrice}} EGP</p>
+                  </div>
+                  <button class="checkout" routerLink="/checkout">checkout</button>
+                  
+               </div>
+              
+            </div>
+
+
+
+
+         </div>
+
+         <div class="row crt p-3 my-3 ">
+            <div class="Payment-Methods">Payment Methods</div>
+            <div class="  d-flex align-items-around pt-3">
+               <img src="../../assets/images/Frame 280382.png" class="Methods"  alt="">
+               <img src="../../assets/images/Frame 280383.png" class="Methods"  alt="">
+               <img src="../../assets/images/Frame 280384.png" class="Methods"  alt="">
+               <img src="../../assets/images/Frame 280385.png"  class="Methods" alt="">
+            </div>
+
+         </div>
+
+      </div>
+
+
+
+
+
+   </div>
+</div>

@@ -1,0 +1,158 @@
+.carts {
+    border: 1px solid #0c0c0c;
+}
+
+.EGP-2 {
+    color: rgba(0, 0, 0, 0.478);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-right: 2%;
+}
+
+.sallary-2 {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.carts-disc {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.Free-Delivery {
+    color: #513973;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+
+
+}
+
+.carts-details {
+    padding-left: 4%;
+}
+
+img {
+    width: 120px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.carts {
+    width: 670px;
+    height: 170px;
+    border-radius: 8px;
+    border: 1px solid #0f0f0f33;
+}
+
+.discount-2 {
+    color: #513973;
+    font-family: Roboto;
+font-size: 13px;
+font-weight: 500;
+
+
+}
+
+.price-2 {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.478);
+}
+
+.input {
+    border: none !important;
+    width: 80%;
+}
+
+.btn {
+    background-color: #513973;
+    color: #FEFBFB;
+    width: 20%;
+}
+
+.crt {
+    border-radius: 8px;
+    border: 1px solid #0f0f0f33;
+}
+
+.total-price {
+    border-top: 1px solid #0f0f0f33;
+}
+
+.cart-1 {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 470;
+}
+
+.brdr-1 {
+    border: 0.4px solid #0f0f0f07;
+}
+
+.Methods {
+    width: 90px;
+    height: 30px;
+}
+
+.Payment-Methods {
+    color: #513973;
+    font-family: Roboto;
+}
+
+.Order-Summary {
+    color: #513973;
+}
+
+.cart-length {
+    color: #00000071;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.checkout {
+    width: 316px;
+    height: 38px;
+    border-radius: 32px;
+    background-color: #513973;
+    color: #FEFBFB;
+}
+
+.shipping-FREE {
+    color: #513973;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.design{
+color: #0c0c0ce0;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 450;
+
+
+}
+.counter{
+ width: 73px;
+height: 30px;
+padding: 2px ;
+border-radius: 27px ;
+border: 1px solid #0c0c0c57;
+
+}
+.btn-1{
+ width: 20px;
+height: 24px;
+border-radius: 50%;
+background-color: #513973;
+color: #FEFBFB;
+border: none;
+
+}
