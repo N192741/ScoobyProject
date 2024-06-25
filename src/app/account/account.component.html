@@ -1,0 +1,41 @@
+
+<div class="col-md-7 Billing   ">
+    <div class="row px-5 mx-5 py-3 details">
+      <div class="title pt-3">Account Info</div>
+      <form class="billing-form py-3"  (ngSubmit)="submitaccount(accountForm)" [formGroup]="accountForm">
+        
+          <div class="row">
+            <label for="Name "class="pt-4" > Name</label>
+            <input type="text" id="Name" name="Name" placeholder="Your name" class="border " formControlName="name">
+          </div>
+
+          
+       
+        <div class="row">
+            <label for="Bio" class="pt-4">Bio</label>
+            <input type="text" id="Bio" name="Bio" placeholder="Your Bio" class="border">
+          </div>
+
+
+
+        <div class="row">
+            <label for="Phone number" class="pt-4">Phone number</label>
+            <input type="text" id="Phone number" name="Phone number" placeholder="Your Phone number" class="border">
+          </div>
+
+          <div class="row">
+            <label for="Email address" class="pt-4">Email address</label>
+            <input type="text" id="Email address" name="Email address" placeholder="Your Email address" class="border" formControlName="email">
+          </div>
+          
+
+          <div class="row">
+            <label for="Location" class="pt-4">Location</label>
+            <input type="text" id="Location" name="Location" placeholder="Your Location" class="border">
+          </div>
+
+          <button  class="btn-order mt-4 mb-5 mt-5" type="submit">Save updates</button>
+
+      </form>
+    </div>
+  </div>

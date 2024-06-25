@@ -1,0 +1,258 @@
+<div class="section1 w-100">
+    <img class="w-100 cover big-img" src="../../assets/images/Rectangle 11233.png" alt="not found">
+    <h1 class="caption">Find your new best friend</h1>
+
+    <div class="kinds mx-3">
+        <div class=" d-flex ">
+            <div class=" px-4 py-1 item border mx-3 px-3 ">
+                <img class="pt-4 item-img " src="../../assets/images/dog (4) 1.png" alt="">
+                <div class="py-3 text-center item-txt"><a routerLink="/dogs">Dogs</a></div>
+              </div>
+
+
+              <div class=" px-4 py-1 item border mx-4 px-3 ">
+                <img class="pt-4  item-img" src="../../assets/images/munchkin 1.png" alt="">
+                <div class="py-3 text-center item-txt "><a routerLink="/cats">Cats</a></div>
+              </div>
+
+              <div class=" px-4 py-1 item border mx-3 px-3">
+                <img class="pt-4  item-img" src="../../assets/images/animal-shelter 1.png" alt="">
+                <div class="py-3 text-center item-txt "><a routerLink="/shelter">Shelters & Rescues</a></div>
+              </div>
+
+    </div>
+
+</div>
+</div>
+
+
+
+
+<div class="adoption-1  ">
+  <h4 class="title">Top Collections</h4>
+  <div class="d-flex pics pt-5">
+      <div class="fav1 row d-flex align-items-center ">
+          <div  *ngFor="let Collection of Collections.slice(0,3)" class="col-md-3  space mx-4">
+              <div class="pet-cart  mx-3 position-relative">
+                  <div>
+                     
+                      <img class="pet-img w-100 " [src]="Collection.petImage">
+                  </div>
+                  <div class="d-flex ">
+                      <div class="px-2 pt-4">
+                          <h5 class="name-pet">{{Collection.name}}</h5>
+                          <h6 class="type-pet pt-2">{{Collection.profileBio}}</h6>
+
+                      </div>
+                      <i *ngIf="Collection.favorite" class="fa-regular fas fa-heart bg-white rounded-circle position-absolute top-0 end-0 pt-2 pr-2 " [ngClass]="{ 'favorite':Collection.favorite }" (click)="toggleFavorite(Collection)"></i>
+                      <i *ngIf="!Collection.favorite" class="fa-regular bg-white rounded-circle  fa-heart  position-absolute top-0 end-0 pt-2 pr-2 "  (click)="toggleFavorite(Collection)"></i>
+                  </div>
+                  
+              </div>
+              
+          </div>
+         
+      </div>
+      <div class="meet1 text-center  ">
+          <img class="paw1 pt-4" src="../../assets/images/paw 1.png" alt="">
+          <div class="disc pt-2">
+              <h6 class="disc1 pt-2 px-3">More Pets </h6>
+              <h6 class="disc1  px-3">availabile on Scooby</h6>
+          </div>
+          <div class="pt-5">
+            <a routerLink="/meet" class="disc-end  text-center ">Meet them</a>
+        </div>
+      </div>
+  </div>
+ 
+ 
+  </div>
+
+
+
+  <div class="adoption  ">
+    <h4 class="title">Popular Cats Breeds</h4>
+    <div class="d-flex pics pt-5">
+        <div class="fav1 row d-flex align-items-center ">
+            <div  *ngFor="let Breed of Breeds.slice(0,3)" class="col-md-3  space mx-4">
+                <div class="pet-cart  mx-3 position-relative">
+                    <div>
+                       
+                        <img class="pet-img w-100 " [src]="Breed.petImage">
+                    </div>
+                    <div class="d-flex ">
+                        <div class="px-2 pt-4">
+                            <h5 class="name-pet">{{Breed.name}}</h5>
+                            <h6 class="type-pet pt-2">{{Breed.profileBio}}</h6>
+  
+                        </div>
+                        <i *ngIf="Breed.favorite" class="fa-regular fas fa-heart bg-white rounded-circle position-absolute top-0 end-0 pt-2 pr-2 " [ngClass]="{ 'favorite':Breed.favorite }" (click)="toggleFavorite(Breed)"></i>
+                        <i *ngIf="!Breed.favorite" class="fa-regular bg-white rounded-circle  fa-heart  position-absolute top-0 end-0 pt-2 pr-2 "  (click)="toggleFavorite(Breed)"></i>
+                    </div>
+                    
+                </div>
+                
+            </div>
+           
+        </div>
+        <div class="meet1 text-center  ">
+            <img class="paw1 pt-4" src="../../assets/images/paw 1.png" alt="">
+            <div class="disc pt-2">
+                <h6 class="disc1 pt-2 px-3">More Pets </h6>
+                <h6 class="disc1  px-3">availabile on Scooby</h6>
+            </div>
+            
+            <div class="pt-5">
+                <a routerLink="/meet" class="disc-end  text-center ">Meet them</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    
+  <div class="adoption  ">
+    <h4 class="title">Best Cats for kids</h4>
+    <div class="d-flex pics pt-5">
+        <div class="fav1 row d-flex align-items-center ">
+            <div  *ngFor="let kide of kids.slice(0,3)" class="col-md-3  space mx-4">
+                <div class="pet-cart  mx-3 position-relative">
+                    <div>
+                       
+                        <img class="pet-img w-100 " [src]="kide.petImage">
+                    </div>
+                    <div class="d-flex ">
+                        <div class="px-2 pt-4">
+                            <h5 class="name-pet">{{kide.name}}</h5>
+                            <h6 class="type-pet pt-2">{{kide.profileBio}}</h6>
+  
+                        </div>
+                        <i *ngIf="kide.favorite" class="fa-regular fas fa-heart bg-white rounded-circle position-absolute top-0 end-0 pt-2 pr-2 " [ngClass]="{ 'favorite':kide.favorite }" (click)="toggleFavorite(kide)"></i>
+                        <i *ngIf="!kide.favorite" class="fa-regular bg-white rounded-circle  fa-heart  position-absolute top-0 end-0 pt-2 pr-2 "  (click)="toggleFavorite(kide)"></i>
+                    </div>
+                    
+                </div>
+                
+            </div>
+           
+        </div>
+        <div class="meet1 text-center  ">
+            <img class="paw1 pt-4" src="../../assets/images/paw 1.png" alt="">
+            <div class="disc pt-2">
+                <h6 class="disc1 pt-2 px-3">More Pets </h6>
+                <h6 class="disc1  px-3">availabile on Scooby</h6>
+            </div>
+            
+            <div class="pt-5">
+                <a routerLink="/meet" class="disc-end  text-center ">Meet them</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div>
+        <h5 class="Planning ">Planning to Adopt</h5>
+        <div class="d-flex align-items-center parts ">
+            <div class="  part1 px-4 py-4">
+                
+                    <img class="Planning-img" src="../../assets/images/pet-care (3) 1.png" alt="">
+                    <h6 class="big pt-4">Checklist for new adopters</h6>
+                    <div class="pt-2">
+                        <h6 class="small">Make the adoption transition</h6>
+                        <h6 class="small">as smooth as possible</h6>
+                    </div>
+                    <button class="Planning-btn mt-5">Learn more</button>
+                
+               
+                
+                </div>
+        
+        
+                <div class="  part2 px-4 py-4 mx-4">
+                
+                    <img class="Planning-img" src="../../assets/images/favourite 1.png" alt="">
+                    <h6 class="big pt-4">COVID-19 Resources</h6>
+                    <div class="pt-2">
+                        <h6 class="small">Find out how you can</h6>
+                        <h6 class="small"> help dogs and cats</h6>
+                    </div>
+                    <button class="Planning-btn mt-5">Learn more</button>
+                
+               
+                
+                </div>
+        
+                <div class="  part3 px-4 py-4">
+                
+                    <img class="Planning-img" src="../../assets/images/pet (2) 1.png" alt="">
+                    <h6 class="big pt-4">Pet adoption FAQs</h6>
+                    <div class="pt-2">
+                        <h6 class="small">Answer all questions you haven’t </h6>
+                        <h6 class="small">thought of for your adoption</h6>
+                    </div>
+                    <button class="Planning-btn mt-5">Learn more</button>
+                
+               
+                
+                </div>
+        </div>
+        
+        
+            </div>
+
+
+            <div class="sliderpets ">
+                <div class="  ">
+                    <div class="text-center ">
+                        <h4 class="disc-Successful">Successful Adoptions</h4>
+                        <h6 class="disc-slide pt-3">Slide to see some of the animals we helped rehome in Egypt</h6>
+                    </div>
+        
+                    
+                        <div class="  slider  ">
+                            <owl-carousel-o [options]="customOptions" class=" ">
+                        
+                              <ng-container  *ngFor="let SuccessfullAdoption of  SuccessfullAdoptions " >
+                                <ng-template carouselSlide [id]="SuccessfullAdoption._id">
+                                  <a class=" " [routerLink]="[]">
+                                    <img class="w-100 slider-img"  [src]="SuccessfullAdoption.petImage" alt="" >
+                                  </a>
+                                </ng-template>
+                            </ng-container>
+                          </owl-carousel-o>
+                          <div class="right-gray">
+                            <img class="right-img" src="../../assets/images/Vector.png" alt="">
+                          </div>
+                          <div class="left-gray">
+                            <img class="right-img" src="../../assets/images/Vector 2.png" alt="">
+                          </div>
+                        </div>
+                  <div class="m-auto px-4">
+                    <a class="button" routerLink="/new-page" target="_blank">See More</a>
+                  </div>
+                </div>
+            </div>
+
+
+            <div class=" mx-5 px-5 pt-5">
+                <div class="px-5 header py-4">
+                 <h3>Blogs</h3>
+                <p>Because we love to talk about pets.</p>
+                </div>
+                <div class=" px-5">
+                  <div  class="d-flex">
+                  <div *ngFor="let blog of blogs.slice(3, 6)" class="blog   w-100 mx-2">
+                    <img [src]="blog.plogImage" class="w-100  " >
+                    <div class="desc py-3 px-3 w-100"><a class="mb-0">{{blog.description}}</a></div>
+                  </div>
+                </div>
+              
+                </div>
+              
+              
+              </div>
+    
+    
+    

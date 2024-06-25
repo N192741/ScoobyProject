@@ -1,0 +1,403 @@
+.big-img{
+    position: relative;
+}
+.caption{
+    position: absolute;
+    top: 40%;
+left:34%;
+font-family:Roboto;
+color: #FEFBFB;
+}
+.kinds{
+    position: absolute;
+    top:70%;
+    left:20%;
+   
+}
+.item{
+    background:#FFFFFF;
+    border-radius: 12px;
+    border-width: 1px;
+    width: 250px;
+    height: 220px;
+  }
+ .item-img{
+  padding-left: 40px;
+ }
+ 
+ .adoption{
+    padding-top: 8%;
+    padding-left: 5%;
+    font-family:  Roboto;
+   
+  }
+  .adoption-1{
+    padding-top: 16%;
+    padding-left: 5%;
+    font-family:  Roboto;
+   
+  }
+  .pet-img{
+  
+   width: 300px ;
+    height: 205.9px;
+    
+    border-radius: 7% 7% 0 0;
+
+
+  }
+  .name-pet{
+font-family: Roboto;
+font-size: 22px;
+font-weight: 550;
+line-height: 16px;
+
+
+
+  }
+  .type-pet{
+
+font-family: Roboto;
+font-size: 16px;
+font-weight: 450;
+line-height: 16px;
+
+text-align: left;
+
+color: #747070;
+
+  }
+  .pet-cart{
+    width: 290px;
+    height: 340px;
+border:1px solid #DEDCE2 ;
+border-radius: 7%;
+  }
+ .space{
+ padding-left: 3%;
+ margin-left: 3% !important;
+ }
+  .meet1{
+   
+    border-radius: 
+    16px;
+    border:1px solid #DEDCE2 ;
+    background-color:#513973 ;
+   
+   /* width: 230px;
+   height: 300px; */
+   width: 290px;
+    height: 340px;
+   
+
+  }
+  .paw1{
+    width: 100px;
+height: 100px;
+object-fit: contain;
+
+  }
+  .disc1{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+color: #FEFBFB;
+
+  }
+  .disc{
+    border-bottom: 0.3px solid #ffffffa5;
+    padding-bottom: 20px;
+  }
+  .disc-end{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+color:#FEFBFB;
+  }
+  .title{
+    padding-left: 85px;
+    font-family: Roboto;
+font-size: 30px;
+font-weight: 600;
+line-height: 40px;
+
+
+  }
+  .item-txt{
+    font-family: Roboto;
+font-size: 19px;
+font-weight: 550;
+line-height: 28.13px;
+text-align: center;
+
+  }
+ 
+  .fav1{
+    
+    
+    width:1010px;
+    height: 300px;
+    
+   
+  }
+
+  i{
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+  .fa-regular{
+    color: #513973;
+  }
+ 
+
+  .fa-heart {
+    font-size: 40px;
+
+  }
+  .fa-heart.bg-white.rounded-circle {
+    padding: 5px;
+  }
+  .fa-regular.bg-white.rounded-circle.fa-heart {
+    padding: 5px;
+    font-size: 19px;
+    border-radius: 49px;
+  }
+  .position-absolute.top-0.end-0.pt-2.pr-2 {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .Planning{
+    font-family: Roboto;
+font-size: 30px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: center;
+padding-top: 7%;
+  }
+  .part1{
+ 
+    width: 395px;
+    height: 380px;
+
+
+    /* width: 300px;
+height: 350px; */
+padding: 22px 12px 22px 12px;
+border-radius: 8px ;
+border: 1px solid #DEDCE2;
+
+  }
+   .part2{
+    /* width: Hug (369px)px;
+height: Hug (420px)px; */
+
+
+
+width: 395px;
+height: 380px;
+padding: 22px 12px 22px 12px;
+border-radius: 8px ;
+border: 1px solid #DEDCE2;
+
+  }
+  .part3{
+
+    width: 395px;
+    height: 380px;
+padding: 22px 12px 22px 12px;
+border-radius: 8px ;
+border: 1px solid #DEDCE2;
+
+  }
+  .big{
+    font-family: Roboto;
+font-size: 25px;
+font-weight: 550;
+line-height: 26px;
+letter-spacing: 0.05em;
+text-align: center;
+color: #513973;
+  }
+  .Planning-img{
+    width: 120px;
+height: 120px;
+margin-left: 30%;
+object-fit: contain;
+  }
+  .small{
+    font-family: Roboto;
+font-size: 19px;
+font-weight: 450;
+line-height: 20px;
+letter-spacing: 0.05em;
+text-align: center;
+color: #888080;
+padding: 0%;
+  }
+  .Planning-btn{
+    width:152px;
+height: 40px;
+padding: 2px 14px 2px 14px;
+gap: 10px;
+border-radius: 24px ;
+
+
+border: 2px solid #513973;
+text-align: center;
+margin-left: 26%;
+  }
+  .parts{
+    padding-left: 10%;
+    padding-top: 4%;
+  }
+  .pics{
+    margin-left: 1.4%;
+  }
+  .sliderpets{
+    background-color: #513973;
+    /* width:1,340px;
+height: 700px;
+top: 2067px;
+padding: 50px 152px 50px 152px;
+gap: 10px;
+margin-top: 11%; */
+width: 1,440px;
+height: 745px;
+top: 2067px;
+padding: 50px 152px 50px 152px;
+gap: 10px;
+opacity: 0px;
+
+margin-top: 8%;
+  }
+  .disc-Successful{
+    font-family: Roboto;
+font-size: 38px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: center;
+color: #FEFBFB;
+  }
+  .disc-slide{
+    font-family: Roboto;
+font-size: 22px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.05em;
+text-align: center;
+color: #CDC6C6;
+  }
+  .slider-img{
+    width: 330px;
+height: 395px;
+
+
+  }
+  .slider{
+
+/* width: 1500px;
+height: 389px;
+padding-right: 24%; */
+position: relative;
+margin-top: 7%;
+  }
+  .header h3{
+    color: rgba(15, 15, 15, 0.95);
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    }
+    .header p{
+      color: rgba(15, 15, 15, 0.8);
+      font-family: Roboto;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 32.81px;
+      text-align: left;
+    
+    }
+    .desc{
+  
+      background: rgba(15, 15, 15, 0.6);
+      position: absolute;
+      bottom:0px ;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      height: 75px;
+    }
+    .desc a{
+      color:  rgba(245, 243, 243, 1);
+      height: 70px;
+      padding-top: 10px;
+      text-decoration: none;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0.5px;
+      text-align: left;
+    
+      
+    }
+    .blog{
+      position: relative;
+      height: 250px;
+      border-radius: 10px;
+    
+    }
+    .blog img{
+      height: 100%;
+      border-radius: 8px;
+    }
+    .right-gray{
+      position: absolute;
+      z-index: 99999999999;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      width: 135px ;
+      height: 395px;
+      background-color:rgba(255,255,255,0.4) ;
+     
+    }
+    .left-gray{
+      position: absolute;
+      z-index: 99999999999;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      width: 137px ;
+      height: 395px;
+      background-color:rgba(255,255,255,0.4) ;
+     
+    }
+    .right-img{
+    padding-top: 170px;
+    padding-left:50px ;
+
+    }
+    .button {
+      width: Hug (200px)px;
+height: Hug (32px)px;
+padding: 11px 45px 11px 45px;
+gap: 10px;
+border-radius: 32px;
+background-color:#FFFFFF;
+color: 
+#513973;
+text-decoration: none;
+cursor: pointer;
+display: inline-block;
+margin-top: 4%;
+margin-left: 45%;
+   
+    }
+    
+   

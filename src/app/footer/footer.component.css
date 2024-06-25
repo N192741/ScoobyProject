@@ -33,4 +33,16 @@ a{
 .n{
     background-color: #513973;
 }
-
+/* 
+@media screen and (min-width:0px) and (max-width:600px){
+   
+  .part1{
+    width: 100%;
+  }
+.part2{
+    width: 100%; 
+}
+.part3{
+    width: 100%; 
+}
+} */

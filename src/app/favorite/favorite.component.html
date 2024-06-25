@@ -1,22 +1,21 @@
 
 <div class="container">
     <div>
-        <div class="fav pt-2">Favorites</div>
+        <div class="fav pt-5">Favorites</div>
         <div class="pt-2">
         <div class="brdr"></div>
         </div>
     </div>
 <div class="row pt-4">
-    <div class="col-md-4">
-        <div class="button  my-5">
+    <div class="col-md-4 ">
+        <div class="buttons  my-5">
           <div> 
-             <button class="default-button">
-                Default
-            </button>
+            <a class="default-button" routerLink="/favorite" target="_blank"> Default</a>
             </div>
         
         <div class="pt-3">
-            <button class="adopt-me-button ">Adopt Me</button>
+            <a class="adopt-me-button" routerLink="/fav" target="_blank" >Adopt Me </a>
+            <!-- <button class="adopt-me-button ">Adopt Me</button> -->
         </div>
     </div>
     </div>
@@ -29,7 +28,7 @@
             </div>
 
             <div class="d-flex justify-content-between flex-column ">
-                <!-- <i class="fas fa-heart position-absolute top-0 end-0" (click)="goToFavoritePage(product)"></i> -->
+      
                 <h5 class="pt-3 name">{{product.name}}</h5>
                 <h6 class="">{{product.desc}}</h6>
                 <div class="d-flex justify-content-between align-items-center">

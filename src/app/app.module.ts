@@ -27,6 +27,14 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MoreComponent } from './more/more.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { RouterModule } from '@angular/router';
+import { AdoptionComponent } from './adoption/adoption.component';
+import { DogsComponent } from './dogs/dogs.component';
+import { CatsComponent } from './cats/cats.component';
+import { FavComponent } from './fav/fav.component';
+import { MeetComponent } from './meet/meet.component';
+import { AccountComponent } from './account/account.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -48,12 +56,22 @@ import { RouterModule } from '@angular/router';
     LandingPageComponent,
     MoreComponent,
     ResetpasswordComponent,
+    AdoptionComponent,
+    DogsComponent,
+    CatsComponent,
+    FavComponent,
+    MeetComponent,
+    AccountComponent,
+   
+  
 
     
     
   ],
   imports: [
-    BrowserModule,
+
+
+  BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
@@ -64,7 +82,8 @@ import { RouterModule } from '@angular/router';
     ToastrModule.forRoot()
     
   ],
-  providers: [],
+  providers: [  { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

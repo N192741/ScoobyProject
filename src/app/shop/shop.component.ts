@@ -86,16 +86,13 @@ export class ShopComponent implements OnInit {
 
       this._toaster.success('product added successfuly');
 
-      // this.productName = response.data;
-      // إجراء طلب GET للـ API لاسترداد بيانات العربة
-
-      // يمكنك تحديث بيانات العربة في الصفحة هنا
+      
     });
 
   }
 
 
-  // ... الرموز الأخرى
+  
 }
 
 

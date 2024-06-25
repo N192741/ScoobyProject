@@ -53,9 +53,21 @@ class=" d-flex align-items-center justify-content-between py-0  px-5">
                         <div class="icoon mx-1 cart face  border   rounded-circle ">
                           <i class="icoon mx-1 cart fas fa-shopping-cart fa-sm  " routerLink="/cart" ></i></div>
 
-                          <div class="icoon  cart mx-1 face  border border-1  rounded-circle ">
-                            <i class=" icoon mx-1 fas fa-user fa-sm "></i></div>
+                          <div class="icoon  cart mx-1 face  border border-1  rounded-circle account-dropdown">
+                            <i class=" icoon mx-1 fas fa-user fa-sm "  (click)="toggleDropdownMenu()"  ></i>
+                            <div *ngIf="showDropdownMenu"  class="  ac-drop P-3" >
+                              <div class="d-flex">
+                                <img src="../../assets/images/Group 30.png" class="user-img" alt="">
+                                <a class="dropdown-item us-name PX-2 " >{{userName}}</a>
+                              </div>
+                              <a class="dropdown-item PX-2" routerLink="/account">Account Info</a>
+                              <a class="dropdown-item PX-2 Setting" >Settings</a>
+                              <a class="dropdown-item PX-2"  (click)="callLogOut()">Sign Out</a>
+                            </div>
 
+                          </div>
+
+                            
 
                   </div>
 

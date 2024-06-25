@@ -1,0 +1,68 @@
+.Billing {
+    border: 1px solid  #FFFFFF ;
+    width: 625px;
+  height: 682px;
+  border-radius: 4px ;
+  margin-left: 28%;
+  margin-top: 4%;
+  }
+  
+  .billing-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-container {
+    flex: 1;
+  }
+  
+  .title {
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 500;
+    color: #513973;
+  
+  }
+  
+  .Other-Notes {
+    width: 592px;
+    height: 144px;
+    padding-bottom: 99px;
+    border-radius: 12px;
+    border: 1px solid #0f0f0f26;
+  }
+  .border{
+    border-radius: 8px;
+    border: 1px solid #0f0f0fee;
+  }
+  label{
+    font-family: Roboto;
+  font-size: 14px;
+  font-weight: 450;
+  }
+  ::placeholder{
+    font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  color:#0f0f0f96;
+  
+  
+  
+  }
+  .details{
+    background-color: #FFFFFF;
+  }
+
+  .btn-order{
+    width: 145px;
+  height: 40px;
+  border-radius: 24px ;
+  color: #FFFFFF;
+  background-color: #513973;
+  border: none;
+  }

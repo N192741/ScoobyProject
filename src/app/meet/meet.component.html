@@ -1,0 +1,112 @@
+<div class="container">
+    <div class="row">
+        <div class=" col-md-4">
+            <div class="category my-5">
+
+                <div class="category-head pb-1">
+                    <h5>categories</h5>
+                </div>
+                
+                <div class="category-disc py-1">
+                    <div *ngFor="let item of items">
+                        <label class="py-1">
+                            <input type="checkbox" (change)="checkboxChanged($event.target,item)">
+                            {{ item.label }}
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-md-8 pt-5">
+          
+            <div class="row big">
+                <div *ngFor="let product of productName.slice(0,51)" class="col-md-4 py-3  ">
+                    <div class="product-cart position-relative ">
+                        <div>
+                            <img class="product-img " [src]="product.petImage">
+                        </div>
+
+                        <div class="d-flex justify-content-between flex-column ">
+                            <div class="px-2 pt-2">
+                                <h5 class=" name">{{product.name}}</h5>
+                                <h6 class="name-Bio">{{product.profileBio}}</h6>
+                            </div>
+                           
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between pt-3 h">
+                                    
+                                    <i *ngIf="product.favorite" class="fas fa-heart position-absolute top-0 end-0 pt-2 pr-2 " [ngClass]="{ 'favorite': product.favorite }" (click)="toggleFavorite(product)"></i>
+                                    <i *ngIf="!product.favorite" class="fa-regular fa-heart  position-absolute top-0 end-0 pt-2 pr-2 "  (click)="toggleFavorite(product)"></i>
+                                </div>
+
+                               
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+    </div>
+
+
+
+    
+
+</div>
+
+<div>
+    <h5 class="Planning ">Planning to Adopt</h5>
+    <div class="d-flex  parts ">
+        <div class="  part1 px-4 py-4">
+            
+                <img class="Planning-img" src="../../assets/images/pet-care (3) 1.png" alt="">
+                <h6 class="big-new pt-4">Checklist for new adopters</h6>
+                <div class="pt-2">
+                    <h6 class="small">Make the adoption transition</h6>
+                    <h6 class="small">as smooth as possible</h6>
+                </div>
+                <button class="Planning-btn mt-5">Learn more</button>
+            
+           
+            
+            </div>
+    
+    
+            <div class="  part2 px-4 py-4 mx-4">
+            
+                <img class="Planning-img" src="../../assets/images/favourite 1.png" alt="">
+                <h6 class="big-new pt-4">COVID-19 Resources</h6>
+                <div class="pt-2">
+                    <h6 class="small">Find out how you can</h6>
+                    <h6 class="small"> help dogs and cats</h6>
+                </div>
+                <button class="Planning-btn mt-5">Learn more</button>
+            
+           
+            
+            </div>
+    
+            <div class="  part3 px-4 py-4">
+            
+                <img class="Planning-img" src="../../assets/images/pet (2) 1.png" alt="">
+                <h6 class="big-new pt-4">Pet adoption FAQs</h6>
+                <div class="pt-2">
+                    <h6 class="small">Answer all questions you haven’t </h6>
+                    <h6 class="small">thought of for your adoption</h6>
+                </div>
+                <button class="Planning-btn mt-5">Learn more</button>
+            
+           
+            
+            </div>
+    </div>
+    
+    
+        </div>

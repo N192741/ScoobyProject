@@ -63,6 +63,15 @@ export class ProductsService {
     return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/minusquantity/66138da36320a6b3105e2ad1?productId=${productId}`, {});
   }
 
+
+  placeCashOrder(cartId: string): Observable<any> {
+    return this._httpClient.post(`https://scoobyfamily.onrender.com/scooby/api/order/cashorder/66138da36320a6b3105e2ad1?cartId=${cartId}`, {});
+  }
+
+  getCheckoutSession(cartId: string): Observable<any> {
+    return this._httpClient.get(`https://scoobyfamily.onrender.com/scooby/api/order/checkout-session/66138da36320a6b3105e2ad1?cartId=${cartId}`);
+  }
+
 }
 
 

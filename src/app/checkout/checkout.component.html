@@ -1,6 +1,6 @@
 <div class="container">
   <div class=" pt-2  d-flex px-5 ">
-    <div class="cart-1">checkout</div>
+    <div class="cart-1 pt-4">checkout</div>
 
   </div>
   <div class="pt-2 px-5">
@@ -72,11 +72,7 @@
               <div class="small-carts">
                 <div class="small-desc"> {{product.product.desc}}</div>
                 <div class="d-flex mt-3  position-relative">
-                  <!-- <div class="d-flex small-counter  px-1 mt-3">
-                <button class="m-btn  px-1  ">-</button>
-                <p class="s-num  px-2">1</p>
-                <button class="m-btn  px-1 ">+</button>
-              </div> -->
+               
                   <div class="d-flex small-price align-items-center ">
                     <div class="i"><i class="fas fa-times ft"></i></div>
                     <div class="small-after">{{product.product.priceAfterDiscount}}</div>
@@ -117,13 +113,13 @@
       </div>
       <div class="pay-s px-4 mt-3 row pt-3">
         <div class="px-2">
-          <input type="radio" id="cashOnDelivery" name="paymentMethod" value="cashOnDelivery">
+          <input type="radio" id="cashOnDelivery" name="paymentMethod" value="cashOnDelivery" [(ngModel)]="paymentMethod" (change)="handlePaymentMethodChange()">
           <label for="cashOnDelivery">cash On delivery</label>
           <h6 class="comment">Pay with cash upon delivery.</h6>
         </div>
 
         <div>
-          <input type="radio" id="payOnline" name="paymentMethod" value="payOnline">
+          <input type="radio" id="payOnline" name="paymentMethod" value="payOnline" [(ngModel)]="paymentMethod" (change)="handlePaymentMethodChange()" >
           <label for="payOnline">pay Online</label>
 
           <div class=" row d-flex align-items-around pt-1 ">
@@ -143,7 +139,7 @@
         </div>
       </div>
 
-      <button class="btn-order mt-4 mb-5">Place Order</button>
+      <button class="btn-order mt-4 mb-5"  (click)="placeOrder()" >Place Order</button>
     </div>
   </div>
 </div>

@@ -1,8 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormControl,Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,29 +11,31 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _AuthService: AuthService,private _Router:Router ) { }
-  error:string='';
+  constructor(private _AuthService: AuthService, private _Router: Router) { }
+  error: string = '';
 
-  loginForm:FormGroup=new FormGroup({
+  loginForm: FormGroup = new FormGroup({
 
-    email :new FormControl(null,[Validators.email,Validators.required]),
-    password :new FormControl(null,[Validators.required, Validators.pattern(/^[A-Z][a-z]{4,9}$/)]),
+    email: new FormControl(null, [Validators.email, Validators.required]),
+    password: new FormControl(null, [Validators.required, Validators.pattern(/^[A-Z][a-z]{4,9}$/)]),
 
-    } );
-  submitLogin(formInfo:FormGroup ){
-    this._AuthService.login(formInfo.value).subscribe((response)=>{
+  });
+  submitLogin(formInfo: any) {
+    this._AuthService.login(formInfo.value).subscribe((response) => {
 
-if(response.status == 'success'){
-  localStorage.setItem('userToken',JSON.stringify(response.token));
-  this._AuthService.setUserData();
-this._Router.navigate(['/home']);
-}
+      if (response.status == 'success') {
+        localStorage.setItem('userToken', JSON.stringify(response.token));
+        localStorage.setItem('userName', JSON.stringify(response.data.result.name));
+        this._AuthService.setUserData();
+        this._Router.navigate(['/home']);
+      }
 
- else {
+      else {
 
-this.error="email or password is wrong ";
 
-}
+        this.error = "email or password is wrong ";
+
+      }
     });
   }
 

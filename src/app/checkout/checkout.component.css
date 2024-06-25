@@ -1,5 +1,5 @@
 .Billing {
-  border: 1px solid black;
+  border: 1px solid  #FFFFFF ;
   width: 625px;
 height: 682px;
 border-radius: 4px ;
@@ -99,25 +99,6 @@ font-weight: 600;
 
  
  
-/* .small-counter{
-   width: 68px;
-height: 25px;
-padding: 2px ;
-border-radius: 27px ;
-border: 1px solid #0c0c0c57;
-padding-left: 13px !important; 
-
-
- width: 70px;
-height: 25px;
-padding: 2px ;
-border-radius: 27px ;
-border: 1px solid #0c0c0c57;
-margin-left: 8px;
-margin-bottom: 8px; 
-  
- 
-} */
 .ft{
   width: 1px;
 padding-right: 6px;
@@ -156,29 +137,6 @@ color: #0f0f0f6a;
   padding-left: 120px;
   padding-right: 180px;
 }
-
-/* .b-btn{
-  width: 16px;
-height: 20px;
-border-radius: 50%;
-background-color: #513973;
-color: #FEFBFB;
-border: none;
-
-
-} */
-
-
-/* .m-btn{
-
-  width: 16px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #513973;
-  color: #FEFBFB;
-  border: none;
-  
-} */
 
 .brdr-s{
   border: 0.5px solid #0f0f0f40;
