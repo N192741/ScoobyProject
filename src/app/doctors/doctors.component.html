@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<div class="page">
+    <div class="firstSection">
+      <h1>We<span class="white"> care </span>about your Pets</h1>
+      <div class="d-flex all ">
+      <div class="border section mx-3 py-3">
+        <img class="mb-4 forall" src="../../assets/images/veterinary 1.png" alt="">
+        <a routerLink="/doctors">Doctors</a>
+      </div>
+      <div class="border section mx-3 py-3">
+        <img  class="mb-4 hospitall" src="../../assets/images/veterinary (3) 1.png" alt="">
+        <a>Clinics</a>
+      </div>
+      <div class="border section mx-3 py-3 ">
+        <img class="mb-4 medicin" src="../../assets/images/pills-bottle 1.png" alt="">
+        <a class="Pharmacy" routerLink="/shop">Pharmacy</a>
+      </div>
+        </div>
+  </div>
+  <div class="secondSection col-lg-10 m-auto ">
+    <h1>Meet Our Best Doctors
+    </h1>
+    <p class="py-3">
+      We change your life & world with our valuable expert Doctors team
+    </p>
+    <div class="d-flex allDoctors my-4 col-lg-9 ">
+      <div *ngFor="let doctor of doctors.slice(0,4)" class="doctor  mx-3 my-2">
+      <img class="mb-4 " [src]="doctor.doctorImage">
+      <h6 class="name">{{doctor.name}}</h6>
+      <p class="descrpition">{{doctor.specialized_in.slice(0,1)}}</p>
+      </div>
+      </div>
+      <div class="d-flex allDoctors my-4 col-lg-9 ">
+        <div *ngFor="let doctor of doctors.slice(4,8)" class="doctor  mx-3 my-2">
+        <img class="mb-4 " [src]="doctor.doctorImage">
+        <h6 class="name">{{doctor.name}}</h6>
+        <p class="descrpition">{{doctor.specialized_in.slice(0,1)}}</p>
+        </div>
+        </div>
+        <div class="d-flex allDoctors my-4 col-lg-9 ">
+          <div *ngFor="let doctor of doctors.slice(8,12)" class="doctor  mx-3 my-2">
+          <img class="mb-4 " [src]="doctor.doctorImage">
+          <h6 class="name">{{doctor.name}}</h6>
+          <p class="descrpition">{{doctor.specialized_in.slice(0,1)}}</p>
+          </div>
+          </div>
+  </div>
+
+
+</div>

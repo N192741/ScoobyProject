@@ -3,8 +3,7 @@ import { FormGroup,FormControl,Validators } from '@angular/forms';
 import { HomeService } from '../home.service';
 import { ActivatedRoute } from '@angular/router';
 import { BookService } from '../book.service';
-
-
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-services',
@@ -17,27 +16,35 @@ export class ServicesComponent implements OnInit {
   serviecs:any[]=[];
   priceItem:number;
   rating = 2;
-  constructor(private _HomeService:HomeService,private route:ActivatedRoute,private _BookService:BookService) { }
-  searchForm:FormGroup=new FormGroup({
-    lookingFor:new FormControl(null),
-    Near:new FormControl(null,),
-    Dates:new FormControl(null,)
+  stars:any []=['../../assets/images/material-symbols-light_star.png',
+    '../../assets/images/material-symbols-light_star.png',
+  '../../assets/images/material-symbols-light_star.png',
+  '../../assets/images/material-symbols-light_star.png',
+  '../../assets/images/material-symbols-light_star.png'];
+  SuccessfullAdoptions:any []=[];
+  constructor(private _HomeService:HomeService,private route:ActivatedRoute,
+    private _BookService:BookService,private _toaster:ToastrService) { }
+  bookForm:FormGroup=new FormGroup({
+    serviceType:new FormControl(null),
+    location:new FormControl(null,),
+    date:new FormControl(null,)
   });
-  search(searchInfo:FormGroup){}
+  submitbook(formInfo:FormGroup ){
+    this._HomeService.BookService(formInfo.value).subscribe((response)=>{
 
-  submitsearch(forminfo:FormGroup){
-    this._BookService.Book(forminfo.value).subscribe((response)=>{});
+      if(response.status == 'success'){
+        this._toaster.success('Book done successfuly');
+        console.log('book done');
+   } });
   }
   ngOnInit(): void {
-
-
 
     this._HomeService.getBlogs('blogs').subscribe((response)=>{
       this.blogs=response.data;
           })
 
 this._HomeService.getServiecs('Serviecs').subscribe((response)=>{
-  this.serviecs=response.allServices.slice(0,5);
+  this.serviecs=response.shuffledServices;
 })
   }
 

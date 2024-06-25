@@ -1,45 +1,39 @@
-<!DOCTYPE html><div class="firstsection w-100">
-
-  <img class="w-100 cover  homeimg" src="../../assets/images/home.png"
+<!DOCTYPE html>
+<div class="firestSection">
+  <img class=" cover  homeimg" src="../../assets/images/home.png"
   alt="not found">
-  <h2 class="  h2Paragraph">
+  <h2 class="h2Paragraph">
     Find a loving local pet sitter or dog Walker</h2>
-    <p class="lead text-center h3Paragraph">Who treats your pet like family</p>
+    <p class=" h3Paragraph">Who treats your pet like family</p>
+    <form class=" searchForm shape border" (ngSubmit)="submitbook(bookForm)"  [formGroup]="bookForm">
+    <div class="py-2 px-4 firstSearchform ">
+      <div class="px-2 itemSearch ">
 
-    <form class=" searchForm shape border" (ngSubmit)="submitSearch(searchForm)"  [formGroup]="searchForm">
-    <div class="py-2 px-4  d-flex aldgin-items-center justify-content-between mb-0">
-      <div class="px-2  w-100">
-         <label class=" py-1" for=" Dates">I’m looking for</label>
-         <select class="select py-2 w-100 shape border form-control" name="lookingFor" id="lookingFor" aria-placeholder="selectservice">
-          <option>Select Service</option>
-          <option >Pet Boarding</option>
-          <option >Pet Grooming</option>
-          <option >Pet Sitting</option>
-          <option >Pet Training</option>
-          <option >Pet Walking</option>
-          <option >Pet Taxi</option>
+         <label class=" " for="serviceType">I’m looking for</label>
+         <select class="select  shape border form-control"  formControlName="serviceType" aria-placeholder="selectservice" id="serviceType">
+          <option id="serviceType" formControlName="serviceType">Select Service</option>
+          <option id="serviceType" formControlName="serviceType">Pet Boarding</option>
+          <option id="serviceType"formControlName="serviceType" >Pet Grooming</option>
+          <option id="serviceType"formControlName="serviceType">Pet Sitting</option>
+          <option id="serviceType" formControlName="serviceType">Pet Training</option>
+          <option id="serviceType" formControlName="serviceType">Pet Walking</option>
+          <option id="serviceType" formControlName="serviceType">Pet Taxi</option>
                   </select>
-
         </div>
-
-<div class="px-2 w-100 ">
-  <label class="py-1 " for="Near">Near</label>
-  <input type="" formControlName="Near" placeholder="Your location"
-   class="py-2 w-100 shape border form-control" id="Near">
+<div class="px-2 itemSearch">
+  <label class=" " for="location">Near</label>
+  <input type="text" formControlName="location" placeholder="Your location"
+   class="  shape border form-control" id="location">
 </div>
-
     </div>
-
-    <div class=" py-2 px-4 mb-2 d-flex aldgin-items-center justify-content-between mb-0">
-      <div class="   px-2  w-100">
-         <label class="py-1 " for="Dates"> Dates</label>
-        <input type="date" formcontrolname=" Dates"
-         class="py-2 w-100 shape border form-control" id=" Dates">
-
+    <div class=" py-2 px-4 seconedSearchform">
+      <div class="   px-2  itemSearch">
+         <label class=" " for="date"> Dates</label>
+        <input type="date" formControlName="date"
+         class="  shape border form-control" id="date">
         </div>
-
-<div class="  search  px-2 w-100 ">
-  <button type="submit" class="shape border  w-100"><i class="fas fa-search"></i>
+<div class="    px-2 itemSearch">
+  <button type="submit" class="shape border "><i class="fas fa-search "></i>
     search</button>
 </div>
 
@@ -47,68 +41,67 @@
    </form>
    <!----------services------->
    <div class="services">
-    <div class=" d-flex  ">
-      <div class=" px-4 py-1 item border mx-3">
+    <div class=" d-flex services2 ">
+      <div class="  item smallservices border ">
         <img class="py-1" src="../../assets/images/veterinary 1.png" alt="">
-        <div class="py-1 text-center"><a routerLink="/veterinary">Veterinary</a></div>
+        <div class="py-1 text-center"><a routerLink="/vet">Veterinary</a></div>
       </div>
-      <div class="px-4 py-1 item border mx-3">
-        <img class="py-1" src="../../assets/images/dog (2) 1.png" alt="">
-        <div class="py-1 text-center"><a routerLink="/discerption">Day Care
+      <div class=" item smallservices border ">
+        <img class="" src="../../assets/images/dog (2) 1.png" alt="">
+        <div class="py-1 text-center"><a routerLink="/more">Day Care
           </a></div>
       </div>
-      <div class="px-4 py-1 item border mx-3">
-        <img class="py-1" src="../../assets/images/pet-supplies 1.png" alt="">
+      <div class="smallservices  item border ">
+        <img class="" src="../../assets/images/pet-supplies 1.png" alt="">
         <div class="py-1 text-center"><a routerLink="/shop">Supplies</a></div>
       </div>
-      <div class="px-4 py-1 item border mx-3">
-        <img class="py-1" src="../../assets/images/adoption 1.png" alt="">
+      <div class="item border smallservices ">
+        <img class="" src="../../assets/images/adoption 1.png" alt="">
         <div class="py-1 text-center"><a routerLink="/adoption">Adoption</a></div>
       </div>
-      <div class="px-4 py-1 item border mx-3">
-        <img class="py-1" src="../../assets/images/pets 1.png" alt="">
+      <div class="item border smallservices ">
+        <img class="" src="../../assets/images/pets 1.png" alt="">
         <div class="py-1 text-center"><a routerLink="/more">More</a></div>
       </div>
-
     </div>
 
-
-   </div>
+</div>
+    </div>
    <!---------paragraphs-->
    <div class= " secondSection ">
       <h3 class="  py-2 text-center">Scooby made it easy for you</h3>
 <p class=" lead py-2 text-center">Search and connect with trusted
    pet services providers. It's easy as 1, 2, 3.</p>
    <!--------steps-->
-   <div class= " px-5 py-3  mx-5 d-flex justify-content-between">
+   <div class= " px-3 py-3  mx-5 d-flex justify-content-between ">
     <div class="px-3 d-flex align-items-center">
-       <div class="iconDiv border border-1 rounded py-2 px-2">
-      <img src="../../assets/images/Vector.png">
+       <div class="iconDiv border border-1 rounded py-2 px-2 ">
+      <img src="../../assets/images/searchvector.png" alt="" class=" my-2">
     </div>
-    <div class="border border-1 rounded "><p class="mb-0 py-2 divstep text-center"> 
+    <div class="infoooo border border-1 rounded px-2 "><p class="mb-0 py-3 divstep "> 
       Find pet Service provider</p></div>
 
    </div>
    <div class="px-3 py-3  d-flex align-items-center">
     <div class=" iconDiv border border- rounded py-2 px-2">
-      <img  src="../../assets/images/Vector (1).png">
+      <img  src="../../assets/images/Vector (1).png" alt="" class=" my-2">
  </div>
- <div class=" border border-1 rounded px-2"><p class="mb-0 py-2 divstep text-center"> 
-   Find pet Service provider</p></div>
+ <div class="infoooo border border-1 rounded px-2"><p class="mb-0 py-3 divstep"> 
+  Arrange a meet & greet</p></div>
 </div>
 <div class="px-3 d-flex align-items-center">
-  <div class="iconDiv border border-1 rounded py-2 px-2">
-    <img  src="../../assets/images/Vector (2).png">
+  <div class="iconDiv border border-1 rounded py-1 px-2">
+    <img  src="../../assets/images/Vector (2).png" alt="" class="my-2">
 </div>
-<div class=" border border-1 rounded px-2 "><p class="mb-0 py-2 divstep text-center"> 
- Find pet Service provider</p></div>
+<div class="infoooo border border-1 rounded px-2 "><p class="mb-0 py-3 divstep "> 
+  Book your appointment</p></div>
 </div>
   </div>
-  <div class="finalsteps py-2  d-flex px-5 mx-5">
-    <div class=" w-100 px-3 "><p class="">Search, select your services and find
+  <div class="finalsteps py-2  d-flex px-4  mx-5">
+    <div class=" w-100 pp1  "><p class="">Search, select your services and find
       experienced pet lover nearby</p></div>
-      <div class=" w-100 px-3"><p class="">Get to know your pet lover in person</p></div>
-      <div class=" w-100 px-3 " ><p class="">Book your pet lover through our safe online
+      <div class="w-100  pp2 "><p class="">Get to know your pet lover in person</p></div>
+      <div class="w-100  pp3 " ><p class="">Book your pet lover through our safe online
         system, with flexible cancellations
         in case your plans change.</p></div>
       </div>
@@ -124,18 +117,23 @@
 
       <ng-container *ngFor="let review of reviews" class="">
         <ng-template carouselSlide [id]="review._id">
-          <div class="w-100 reviewDiv ">
-            <img class="w-100  "  [src]="review.serviceImage" >
+          <a class="w-100 reviewDiv " [routerLink]="['/discerption',review.serviceProfile._id]">
+            <img class=" "  [src]="review.serviceImage" >
             <div class="w-100 d-flex reviewDescription reviewDescriptionrigt reviewDescriptionLeft ">
               <div class="w-100 py-4  px-3 reviewDescriptionrigt ">
-                <a [routerLink]="['/discerption',review.serviceProfile]" class=" fw-bolder mb-0 py-1">{{review.serviceType}}</a>
+                <a [routerLink]="['/discerption',review.serviceProfile]" class=" fw-bolder mb-1 py-1">{{review.serviceType}}</a>
                 <p  class="mb-0 py-1">{{review.city}}</p>
               </div>
-              <div class="w-100 reviewDescriptionLeft left py-4 px-3 ">
+              <div class="w-100 reviewDescriptionLeft left py-4 px-3  ">
+                <div class="d-flex rate justify-content-end">
+                  <img src="../../assets/images/material-symbols-light_star.png" alt=""
+                  *ngFor="let star of stars.slice(0,review.rate)" class="star mb-1">
+                </div>
+
                 <p class="mb-0 py-1">From <span class="yelllow">${{review.price}}</span></p>
               </div>
             </div>
-          </div>
+          </a>
         </ng-template>
       </ng-container>
     </owl-carousel-o>
@@ -143,7 +141,7 @@
 
 
  <div class="morereview mb-5">
-  <a [routerLink]="['/discerption','']">Show more reviews by happy pet owners></a>
+  <a >Show more reviews by happy pet owners></a>
  </div></div></div>
  <!--------ra8iiiii 3n el project-->
  <div class="infoo  py-5 ">
@@ -170,7 +168,7 @@
 
 <div class="py-4 infosection">
   <div class="  d-flex py-3">
-    <img src="../../assets/images/pets 1.png">
+    <img src="../../assets/images/pets 1.png" alt="">
     <h6 class="mb-0 px-2">Veterinary Coverage</h6>
   </div>
   <p>Enjoy peace of mind with veterinary offers
@@ -184,7 +182,7 @@
     <div class=" ">
       <div class="py-4 infosection">
       <div class="d-flex py-3">
-       <img src="../../assets/images/pets 1.png">
+       <img src="../../assets/images/pets 1.png" alt="">
         <h6 clas="mb-0 px-2">Personalised and flexible pet care</h6>
       </div>
       <p>Scooby pet lovers provide one-on-one love
@@ -193,14 +191,14 @@
     <div class=" ">
       <div class="py-4 infosection">
       <div class="d-flex py-3">
-        <img src="../../assets/images/pets 1.png">
+        <img src="../../assets/images/pets 1.png" alt="">
         <h6  class="mb-0 px-2">Great for you</h6>
       </div>
       <p>Simple reservation onlineDaily updates with photos and chatsCustomer service always there for youPayment protection</p></div>
     <div class=" ">
       <div class="py-4 infosection">
       <div class="  d-flex py-3 ">
-        <img src="../../assets/images/pets 1.png">
+        <img src="../../assets/images/pets 1.png" alt="">
         <h6  class="mb-0 px-2 ">Trust and Safety</h6>
       </div>
       <p>Profiles that have been reviewedPrevious jobs' reviews and ratingsA community of pet lovers?Communicate directly within platformYour pet is insured</p>
@@ -222,14 +220,12 @@
   <div class=" px-5">
     <div  class="d-flex">
     <div *ngFor="let blog of blogs.slice(0, 3)" class="blog   w-100 mx-2">
-      <img [src]="blog.plogImage" class="w-100  " >
+      <img [src]="blog.plogImage" class="w-100  " alt="">
       <div class="desc py-3 px-3 w-100"><a class="mb-0">{{blog.description}}</a></div>
     </div>
   </div>
 
   </div>
-
-
 </div>
 
 

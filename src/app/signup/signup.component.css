@@ -82,9 +82,7 @@ color: rgba(14, 14, 14, 1);
 }
 .b1{
   background-color: rgba(81, 57, 115, 1);
-
   width: 100%;
-
   color: rgba(255, 243, 243, 1);
   font-weight: 500;
   font-size: 20px;
@@ -135,3 +133,79 @@ color: rgba(15, 15, 15, 0.8);
   font-weight: 400;
   line-height: 23.44px;
  }
+
+
+ @media screen and (min-width:0px) and (max-width:600px) {
+
+  .first{
+    width:100%;
+    .first1{
+      width: 100%;
+    }
+  }
+  .second{
+    width: 100%;
+    padding: 10%;
+
+  }
+
+ }
+@media screen and (min-width:601px) and (max-width:768px) {
+
+  .first{
+    width:100%;
+    .first1{
+      width: 100%;
+    }
+  }
+  .second{
+    width: 100%;
+    padding: 10%;
+
+  }}
+  @media screen and (min-width:769px) and (max-width:992px) {
+
+      .first{
+        width:100%;
+        .first1{
+          width: 100%;
+        }
+      }
+      .second{
+        width: 100%;
+        padding: 10%;
+
+      }}
+      @media screen and (min-width:1201px)  {
+        .page{
+          display: flex;
+        }
+        .first1{
+          width: 100%;
+        }
+          .first{
+            width:100%;
+
+          }
+          .second{
+            width: 100%;
+            padding:2% 4%;
+
+          }}
+          @media screen and (min-width:993px) and (max-width:1200px) {
+            .page{
+              display: flex;
+            }
+            .first1{
+              width: 100%;
+            }
+              .first{
+                width:100%;
+
+              }
+              .second{
+                width: 100%;
+                padding:2% 4%;
+
+              }}
+

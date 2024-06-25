@@ -3,38 +3,37 @@
   <img class="w-100  bgImg" src="../../assets/images/Rectangle 11233.png" alt="">
   <h2>Find what you are looking for</h2>
     <h2 class="onther py-5 ">near you </h2>
-  <img class=" dogImg " src="../../assets/images/dog-tv3 1.png">
+  <img class=" dogImg " src="../../assets/images/dog-tv3 1.png" alt="">
   <!-----book section------>
-  <form class=" searchForm shape border px-5" (ngSubmit)="submitsearch(searchForm)"
-    [formGroup]="searchForm">
+  <form class=" searchForm shape border px-5" (ngSubmit)="submitbook(bookForm)"
+    [formGroup]="bookForm">
     <div class="py-2 px-4  d-flex aldgin-items-center justify-content-between mb-0">
       <div class="px-2  w-100">
-         <label class=" py-1" for="lookingFor">I’m looking for</label>
-     <select class="select py-2 w-100 shape border form-control" name="lookingFor" id="lookingFor" aria-placeholder="selectservice">
- <option>Select Service</option>
- <option >Pet Boarding</option>
- <option >Pet Grooming</option>
- <option >Pet Sitting</option>
- <option >Pet Training</option>
- <option >Pet Walking</option>
- <option >Pet Taxi</option>
+         <label class=" py-1" for="serviceType">I’m looking for</label>
+     <select class="select py-2 w-100 shape border" formControlName="serviceType" id="serviceType" aria-placeholder="selectservice">
+ <option formControlName="serviceType" id="serviceType">Select Service</option>
+ <option formControlName="serviceType" id="serviceType" >Pet Boarding</option>
+ <option formControlName="serviceType" id="serviceType">Pet Grooming</option>
+ <option formControlName="serviceType" id="serviceType">Pet Sitting</option>
+ <option formControlName="serviceType" id="serviceType" >Pet Training</option>
+ <option formControlName="serviceType" id="serviceType" >Pet Walking</option>
+ <option formControlName="serviceType" id="serviceType">Pet Taxi</option>
          </select>
       </div>
 
 <div class="px-2 w-100 ">
-  <label class="py-1 " for="Near">Near</label>
-  <input type="" formControlName="Near" placeholder="Your location"
-   class="py-2 w-100 shape border form-control" id="Near">
+  <label class="py-1 " for="location">Near</label>
+  <input type="text" formControlName="location" placeholder="Your location"
+   class="py-2 w-100 shape border form-control" id="location">
 </div>
 
     </div>
 
     <div class=" py-2 px-4 mb-2 d-flex aldgin-items-center justify-content-between mb-0">
       <div class="   px-2  w-100">
-         <label class="py-1 " for="Dates"> Dates</label>
-        <input type="date" formControlName=" Dates"
-         class="py-2 w-100 shape border form-control" id=" Dates">
-
+         <label class="py-1 " for="date"> Dates</label>
+        <input type="date" formControlName="date"
+         class="py-2 w-100 shape border form-control" id="date">
         </div>
 
 <div class="  search  px-2 w-100 ">
@@ -50,23 +49,28 @@
   <div class="miniiServieces  w-100">
     <h3 class="py-2">Scroll down to browse Pet Services near you</h3>
     <div class="">
-      <div *ngFor="let service of serviecs" class="w-100 d-flex borderDesign my-4">
+      <div *ngFor="let serviec of serviecs.slice(0,5)" class="w-100 d-flex borderDesign my-4">
         <div class="imgDiv  imgBorder">
-          <img class="mb-0 imgBorder" [src]=" service.serviceImage">
+          <img class="mb-0 imgBorder" [src]=" serviec.serviceImage">
         </div>
         <div class="w-100 infooSection py-4 px-3 mb-0 infooSectionBorder">
           <div class="d-flex justify-content-between py-1">
-             <a class="serviceType" [routerLink]="['/discerption',service.serviceProfile]">{{service.serviceType}}</a>
-            <p class="from">From<span class="yellow"> ${{service.price}}</span></p>
+             <a class="serviceType" [routerLink]="['/discerption',serviec.serviceProfile._id]">{{serviec.serviceType}}</a>
+            <p class="from">From<span class="yellow"> ${{serviec.price}}</span></p>
           </div>
-          <p class="city py-1">{{service.city}}</p>
-          <p class="py-1 description">{{service.description.slice(0,35)}}...</p>
-          <p class="py-1 rate">{{service.rate}} Reviews</p>
+          <p class="city py-1">{{serviec.city}}</p>
+          <p class="py-1 description">{{serviec.serviceProfile.description.slice(0,40)}}...</p>
+          <div class="d-flex  mb-0">
+            <div class="d-flex rating mb-0">
+              <img src="../../assets/images/material-symbols-light_star.png" alt=""
+              *ngFor="let star of stars.slice(0,serviec.rate)"></div>
+
+            <p class="py-1 rate"> {{serviec.rate}} Reviews</p>
+          </div>
+
         </div>
 
           </div>
-
-
         </div>
 
       </div>

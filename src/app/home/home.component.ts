@@ -3,8 +3,8 @@ import { FormGroup,FormControl,Validators } from '@angular/forms';
 import { HomeService } from '../home.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { BookService } from '../book.service';
-
-
+import { AuthService } from '../auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-home',
@@ -14,18 +14,26 @@ import { BookService } from '../book.service';
 export class HomeComponent implements OnInit {
 blogs:any []=[];
 reviews:any []=[];
-  constructor(private _HomeService:HomeService,private _BookService:BookService) { }
-  searchForm:FormGroup=new FormGroup({
-  lookingFor:new FormControl(null),
-  Near:new FormControl(null,),
-  Dates:new FormControl(null,)
+stars:any []=['../../assets/images/material-symbols-light_star.png',
+  '../../assets/images/material-symbols-light_star.png',
+'../../assets/images/material-symbols-light_star.png',
+'../../assets/images/material-symbols-light_star.png',
+'../../assets/images/material-symbols-light_star.png'];
+  constructor(private _HomeService:HomeService,private _BookService:BookService,
+    private _toaster:ToastrService,private _AuthService:AuthService) { }
+  bookForm:FormGroup=new FormGroup({
+  serviceType:new FormControl(null),
+  location:new FormControl(null,),
+  date:new FormControl(null,)
   });
-  search(searchInfo:FormGroup){
-  }
-  submitSearch(forminfo:FormGroup){
-    this._BookService.Book(forminfo.value).subscribe((response)=>{});
-  }
+  submitbook(formInfo:FormGroup ){
+    this._HomeService.BookService(formInfo.value).subscribe((response)=>{
 
+      if(response.status == 'success'){
+        this._toaster.success('Book done ');
+        console.log('book done');
+   } });
+  }
   ngOnInit(): void {
 
     this._HomeService.getBlogs('blogs').subscribe((response)=>{
@@ -34,7 +42,7 @@ this.blogs=response.data;
 
 
    this._HomeService.getreviews('reviews').subscribe((response)=>{
-    this.reviews=response.allServices;
+    this.reviews=response.shuffledServices;
    })
   }
   @ViewChild('owlCarousel') owlCarousel: any;
@@ -44,7 +52,7 @@ this.blogs=response.data;
     touchDrag: false,
     pullDrag:false,
     dots:false,
-    nav:true,
+    nav:false,
     margin:20,
     center:true,
     rewind:true,

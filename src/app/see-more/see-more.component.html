@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<div class="col-lg-10 m-auto my-5 all">
+<h1 class=" text-center header mb-4">Successful Adoptions</h1>
+<p class="text-center py-2">Slide to see some of the animals we helped rehome in Egypt</p>
+<div class="d-flex ">
+<div class="col-lg-3" *ngFor="let SuccessfullAdoption of SuccessfullAdoptions.slice(0,4)">
+<img class="my-3 mx-3" [src]="SuccessfullAdoption.petImage" alt="">
+</div>
+</div>
+<div class="d-flex">
+  <div class="col-lg-3" *ngFor="let SuccessfullAdoption of SuccessfullAdoptions.slice(4,8)">
+  <img class="my-3 mx-3" [src]="SuccessfullAdoption.petImage" alt="">
+  </div>
+  </div>
+  <div class="d-flex">
+    <div class="col-lg-3" *ngFor="let SuccessfullAdoption of SuccessfullAdoptions.slice(8,12)">
+    <img class="my-3 mx-3" [src]="SuccessfullAdoption.petImage" alt="">
+    </div>
+    </div>
+    <div class="d-flex">
+      <div class="col-lg-3" *ngFor="let SuccessfullAdoption of SuccessfullAdoptions.slice(12,16)">
+      <img class="my-3 mx-3" [src]="SuccessfullAdoption.petImage" alt="">
+      </div>
+      </div>
+      <div class="d-flex">
+        <div class="col-lg-3" *ngFor="let SuccessfullAdoption of SuccessfullAdoptions.slice(16,20)">
+        <img class="my-3 mx-3" [src]="SuccessfullAdoption.petImage" alt="">
+        </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-lg-3" *ngFor="let SuccessfullAdoption of SuccessfullAdoptions.slice(20,24)">
+          <img class="my-3 mx-3" [src]="SuccessfullAdoption.petImage" alt="">
+          </div>
+          </div>
+</div>

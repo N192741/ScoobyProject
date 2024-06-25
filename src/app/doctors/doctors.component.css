@@ -1,0 +1,127 @@
+.firstSection{
+  height:500px;
+  background-image: url(../../assets/images/vetbackground.png);
+  background-size: cover;
+  margin-bottom: 12%;
+}
+.firstSection h1{
+  font-family: Roboto;
+font-size: 52px;
+font-weight: 900;
+line-height: 52px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(15, 15, 15, 1);
+padding-top:17%;
+}
+.white{
+  font-family: Roboto;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  text-align: center;
+ color: rgba(254, 251, 251, 1);
+
+}
+.all{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 6%;
+}
+.section{
+  width: 250px;
+  height: 220px; background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  border-color:  rgba(222, 220, 226, 1);
+  border-width: 1px;
+}
+.Pharmacy{
+  color: rgba(15, 15, 15, 1);
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.13px;
+margin-left:26% !important;
+margin-right:26% !important;
+text-decoration: none;
+}
+.section a{
+color: rgba(15, 15, 15, 1);
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.13px;
+margin-left:34%;
+margin-right: 34%;
+text-decoration: none;
+}
+
+
+.section img{
+  width: 120px;
+  height: 120px;
+
+}
+.forall{
+  margin-left:24% ;
+  margin-right:24% ;
+}
+.hospitall{
+  margin-left:23.5% ;
+  margin-right:23% ;
+}
+.medicin{
+margin-left: 26%;
+margin-right:28%;
+}
+.secondSection h1{
+  font-family: Roboto;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: left;
+color: rgba(81, 57, 115, 1);
+
+}
+.secondSection p{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.05em;
+text-align: left;
+color: rgba(15, 15, 15, 1);
+
+}
+.doctor{
+   width: Hug (270px)px;
+height: Hug (360px)px;
+}
+.doctor img{
+  border-radius: 50%;
+  width: 250px;
+height: 257px;
+border: .5px dashed rgb(205,198,198,.9);
+border-width: .5px 2px;
+padding-right: 7px;
+padding-left: 3px;
+padding-top: 1px;
+}
+
+.doctor h6{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 600px;
+  text-align: center;
+  color:rgb(81, 57,115,1);
+}
+.doctor p{
+font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+text-align: center;
+color:rgb(85, 81,81,1);
+
+}

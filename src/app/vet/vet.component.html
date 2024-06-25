@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<div class="page">
+ <div class="firstSection">
+<h1>We<span class="white"> care </span>about your Pets</h1>
+<div class="d-flex all ">
+<div class="border section mx-3 py-3" >
+  <img class="mb-4 forall" src="../../assets/images/veterinary 1.png">
+  <a routerLink="/doctors">Doctors</a>
+</div>
+<div class="border section mx-3 py-3">
+  <img  class="mb-4 hospitall" src="../../assets/images/veterinary (3) 1.png">
+  <a>Clinics</a>
+</div>
+<div class="border section mx-3 py-3 ">
+  <img class="mb-4 medicin" src="../../assets/images/pills-bottle 1.png" alt="">
+  <a class="Pharmacy " routerLink="/shop" >Pharmacy</a>
+</div>
+</div>
+  </div>
+  <div class="secondSection mx-5  ">
+<h2 class="mb-5">Providing our best veterinary Services</h2>
+<div class="d-flex smalls">
+  <div class="border mx-2 smallInfo">
+    <img  class="my-4 " src="../../assets/images/veterinary (4) 1.png" alt="">
+    <h5 class="mb-4">Pet Vaccination</h5>
+    <p class="mb-5"> Keep your pet healthy and happy
+      get them vaccinated!</p>
+    <div class="border learn m-auto "><a routerLink="/learn-more-adoption" class="">Learn more</a></div>
+    </div>
+
+ <div class="border mx-2 smallInfo">
+      <img  class="my-4 " src="../../assets/images/vet 1.png" alt="">
+      <h5 class="mb-4">Pet Veterinary</h5>
+      <p class="mb-5"> Keep your pet healthy and happy
+        with monthly checkup</p>
+      <div class="border learn m-auto "><a routerLink="/learn-more-adoption" class="">Learn more</a></div>
+      </div>
+
+      <div class="border mx-2 smallInfo">
+        <img  class="my-4 " src="../../assets/images/surgery 1.png" alt="">
+        <h5 class="mb-4">Pet Surgery</h5>
+        <p class="mb-5 py-2"> Keep your pet healthy and
+          happy </p>
+        <div class="border learn m-auto "><a routerLink="/learn-more-adoption" class="">Learn more</a></div>
+        </div>
+</div>
+  </div>
+  <div class="thirdSection ">
+<h3 class="mb-4">Why relay on us?</h3>
+<p class="thirdP">We understand that your furry friend is a treasured member of your family and
+  deserves pets are the best care and attention possible.</p>
+  <div class="d-flex my-4 allItems ">
+<div class="mx-5">
+  <div class="item border px-4 py-4 my-4">
+<div class="d-flex  mb-2">
+  <img src="../../assets/images/VectorVet.png" alt="">
+  <h6 class=" py-1">Experienced, Pro staff</h6>
+</div>
+<p class="">Be confident in the treatment
+  plan and your doctor’s abilities.</p>
+  </div>
+  <div class="item border px-4 py-4 my-4">
+    <div class="d-flex  mb-2">
+      <img src="../../assets/images/VectorVet.png" alt="">
+      <h6 class=" py-1">Affordable Pricing</h6>
+    </div>
+    <p class="">Be confident in the treatment
+      plan and your doctor’s abilities.</p>
+      </div>
+</div>
+<div class="mx-5">
+  <div class="item border px-4 py-4 my-4">
+    <div class="d-flex  mb-2">
+      <img src="../../assets/images/VectorVet.png" alt="">
+      <h6 class=" py-1">Modern Pet Training</h6>
+    </div>
+    <p class="">Be confident in the treatment
+      plan and your doctor’s abilities.</p>
+      </div>
+      <div class="item border px-4 py-4 my-4">
+        <div class="d-flex  mb-2">
+          <img src="../../assets/images/VectorVet.png" alt="">
+          <h6 class=" py-1">Book Service 24/7</h6>
+        </div>
+        <p class="">Be confident in the treatment
+          plan and your doctor’s abilities.</p>
+          </div>
+</div>
+  </div>
+  </div>
+<div class="fourthSection">
+<h4>Meet Our Best Doctors</h4>
+<p class="fourthP py-3">We change your life & world with our valuable expert Doctors team</p>
+<div class="d-flex allDoctors my-4 ">
+<div *ngFor="let doctor of doctors.slice(0,4)" class="doctor mx-2 ">
+<img class="mb-4 " [src]="doctor.doctorImage">
+<p class="name">{{doctor.name}}</p>
+<p class="descrpition">{{doctor.specialized_in.slice(0,1)}}</p>
+</div>
+</div>
+<button class=" py-3"routerLink="/doctors" >See all doctors</button>
+</div>
+<div class="fifthSection">
+  <h4>Meet Our Best Clinics</h4>
+  <p class="fifthP py-3">We change your life & world with valuable expert Clinics</p>
+  <div class="d-flex allvets my-4 ">
+  <div *ngFor="let vet of vets.slice(1,5)" class=" mx-2 vet ">
+  <img class="mb-4 " [src]="vet.vetImage">
+  <p class="namevet">{{vet.vetName}}</p>
+  <p class="descrpition"></p>
+  </div>
+  </div>
+  <button class=" py-3 ">See all Clinics</button>
+  </div>
+  <div class="requestForm">
+
+    <form class=" DoctorForm  " (ngSubmit)="submitbook(bookForm)"  [formGroup]="bookForm">
+      <h3 class="mb-5">Schedule A Visit Today!</h3>
+      <input type="hidden" id="serviceType" formControlName="serviceType" >
+      <div class="d-flex justify-content-between mb-4">
+<div>
+ <label class="mb-3  " for="time">Time</label>
+  <input type="time" formControlName="time"
+  class="py-2  shape border form-control mb-4" id="time">
+</div>
+
+<div>
+  <label class="mb-3 " for="date"> Dates</label>
+          <input type="date" formControlName="date"
+           class="py-2  shape border form-control mb-4" id="date">
+</div>
+
+      </div>
+
+
+            <button type="submit" [disabled]="bookForm.invalid" class="subBook ">
+              Make reservation</button>
+
+
+             </form>
+  </div>
+</div>

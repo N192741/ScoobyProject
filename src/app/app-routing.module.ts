@@ -22,23 +22,37 @@ import { DogsComponent } from './dogs/dogs.component';
 import { CatsComponent } from './cats/cats.component';
 import { FavComponent } from './fav/fav.component';
 import { MeetComponent } from './meet/meet.component';
-import { AccountComponent } from './account/account.component';
-
-
-
+import { AccountComponent } from './account/account.component';import { LearnMoreAdoptionComponent } from './learn-more-adoption/learn-more-adoption.component';
+import { SheltersComponent } from './shelters/shelters.component';
+import { SeeMoreComponent } from './see-more/see-more.component';
+import { ShelterPetsComponent } from './shelter-pets/shelter-pets.component';
+import { VetComponent } from './vet/vet.component';
+import { DoctorsComponent } from './doctors/doctors.component';
+import { AdminComponent } from './admin/admin.component';
+import { CodePassComponent } from './code-pass/code-pass.component';
+import { ConfirmPassComponent } from './confirm-pass/confirm-pass.component';
 
 const routes: Routes = [
   {path:" ", redirectTo:"/login" , pathMatch:"full"},
   {path:"home", canActivate:[AuthGuard] ,component:HomeComponent},
+  {path:"shelters", canActivate:[AuthGuard] ,component:SheltersComponent},
+  {path:"admin", canActivate:[AuthGuard] ,component:AdminComponent},
+  {path:"doctors", canActivate:[AuthGuard] ,component:DoctorsComponent},
   {path:"footer" ,component:FooterComponent},
   {path:"landing-page" ,component:LandingPageComponent},
   {path:"more" ,component:MoreComponent},
+  {path:"confirm-pass/:userid" ,component:ConfirmPassComponent},
   {path:"services", canActivate:[AuthGuard] ,component:ServicesComponent},
+  {path:"vet", canActivate:[AuthGuard] ,component:VetComponent},
+  {path:"learn-more-adoption", canActivate:[AuthGuard] ,component:LearnMoreAdoptionComponent },
+  {path:"see-more", canActivate:[AuthGuard] ,component:SeeMoreComponent },
   {path:"discerption/:Id", canActivate:[AuthGuard] ,component:DiscerptionComponent},
+  {path:"shelter-pets/:Id", canActivate:[AuthGuard] ,component:ShelterPetsComponent},
   {path:"signup", component:SignupComponent},
   {path:"login", component:LoginComponent},
   {path:"terms", component:TermsComponent},
   {path:"resetpassword", component:ResetpasswordComponent},
+  {path:"code-pass", component:CodePassComponent},
   {path:"navbar",component:NavbarComponent},
   {path:"help", component:HelpComponent},
   {path:"shop",canActivate:[AuthGuard] , component:ShopComponent},
@@ -59,7 +73,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
  
-
 
 
 exports: [RouterModule]

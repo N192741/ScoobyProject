@@ -1,0 +1,14 @@
+.pets{
+  width: 250px;
+  height: 300px;}
+  h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500px;
+    color: rgba(81, 57, 115, 1);
+
+  }
+.page{
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}

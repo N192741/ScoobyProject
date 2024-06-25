@@ -15,25 +15,27 @@
       <div class="book  border col-lg-5 py-5 px-5 mx-2 " >
       <h2 class="py-1">{{serviceProfile.name}}</h2>
       <p class="black py-2 mb-4">From<span class="yellow"> ${{serviceProfile.from}}</span> UpTo<span class="yellow"> ${{serviceProfile.to}}</span></p>
+      <form class=" bookForm shape " (ngSubmit)="submitbook(bookForm)"  [formGroup]="bookForm">
+          <label class="py-1 " for="duration">Duration</label>
+             <select class="select py-2 w-100 shape border form-control mb-4"  formControlName="duration" aria-placeholder="selectservice" id="duration">
+              <option id="duration" formControlName="duration">Select </option>
+              <option id="duration" formControlName="duration">Full Day</option>
+              <option id="duration"formControlName="duration" >Half Day</option>
+              <option id="duration"formControlName="duration">More than 1 Day</option>
 
-      <form class=" bookForm " (ngsubmit)="submitBook(bookForm)"
-      [formGroup]="bookForm">
-      <label class=" py-1" for="duration">Duration</label>
-      <select class="select py-2 mb-3 shape  form-control option" name="duration" id="duration" aria-placeholder="select">
-       <option class="option">Select</option>
-       <option  class="option" >Full Day</option>
-       <option  class="option" >Half Day</option>
-       <option  class="option" >More than 1 Day</option>
-               </select>
+                      </select>
 
-      <div class="px-2 w-100 ">
-      <label class="py-1" for="date">Date</label>
-      <input type="date" formcontrolname="date" placeholder="Your location"
-      class="py-2 shape form-control option" id="date">
-      </div>
-      <button type="submit" [disabled]="bookForm.invalid" class=" w-100 py-3 my-3 ">Make reservation</button>
+             <label class="py-1 " for="date"> Dates</label>
+            <input type="date" formControlName="date"
+             class="py-2 w-100 shape border form-control mb-4" id="date">
 
-      </form>
+
+      <button type="submit" class="shape border py-3  w-100">
+        Make reservation</button>
+
+
+       </form>
+
       <div class="border my-4 py-3 px-2 payMent">
        <h4 class="">Payment Methods</h4>
        <div class="py-3 d-flex">
@@ -98,9 +100,13 @@ Your happy, healthy pet awaits!
   <div class="d-flex my-3 oneReview py-2 px-3">
     <div class=""><img class="" [src]="review.user.profileImage" alt=""></div>
     <div class=" px-2  ">
-      <div class="d-flex algin-items-center">
-        <h5>{{review.name}}</h5>
-        <p class="date">{{review.createdAt | date:'d MMMM'}}</p>
+      <div class="d-flex algin-items-center  mb-0 ">
+        <h5 class="mb-0">{{review.name}}</h5>
+        <p class="date mb-0">{{review.createdAt | date:'d MMMM'}}</p>
+      </div>
+      <div class="d-flex rate justify-content-start  mb-2">
+        <img src="../../assets/images/material-symbols-light_star.png" alt=""
+        *ngFor="let star of stars.slice(0,review.rate)" class="star ">
       </div>
       <p class="realReview py-2">{{review.review}}</p>
     </div>
@@ -112,18 +118,32 @@ Your happy, healthy pet awaits!
 </div>
 <div class="col-lg-4 border py-4 px-3 my-3 creatReview">
   <h3 class="mb-4">Write a Review</h3>
-  <form (ngsubmit)="submitReview(reviewForm)"
-  [formGroup]="reviewForm">
-  <input type="text" formcontrolname="name" placeholder="Name"
-    class="py-3 my-4  form-control labeledit2" id="name">
-    <input type="email" formcontrolname="email" placeholder="Email"
-    class="py-3 my-4 form-control labeledit2" id="email">
-    <input type="text" formcontrolname="yourReview" placeholder="Your Review"
-    class=" my-4  form-control labeledit labeledit2 " id="review">
-    <button type="submit" [disabled]="bookForm.invalid" class="  py-3 my-2 ">Submit Review</button>
-  </form>
+
+        <form  (ngSubmit)=" submitReview(reviewForm)" [formGroup]="reviewForm">
+
+          <input type="text" formControlName="name" class=" py-3 mb-3 border  form-control"
+          placeholder="Name" id="name">
+          <input type="email" formControlName="email" class="mb-3 py-3 form-control "
+          placeholder="Email" id="email">
+          <input type="text" formControlName="review" class="mb-3 form-control yourReview"
+          placeholder="Your Review" id="review" >
+
+
+<label for="rating w-100">Your Rate</label>
+<div>
+        <rating class="stars " id="rating" [(ngmodel)]="rate" formControlName="rating"
+        [max]="max" [readonly]="isReadonly"
+       (onHover)="hoveringOver($event)" (onleave)="resetStar()"
+       [titles]="['one','two','three']" id="rating"></rating>
+      </div>
+            <button  type="submit" class=" py-3  border btn mt-2">Submit Review</button>
+        </form>
+      </div>
+
+
+
 </div>
-</div>
+
 <!----finial section------>
 <div class="px-5 mx-2 py-5 finialSection ">
   <h4 cass="b-w py-2">More Services</h4>
