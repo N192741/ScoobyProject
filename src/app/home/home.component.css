@@ -1,72 +1,37 @@
-.body{
-
-}
-.homeimg{
-  width: 100%;
-  Height:1440;
-  position: relative;
-}
 
 .h2Paragraph{
   position: absolute;
-top: 27%;
-left:15%;
   color:  rgba(15, 15, 15, 0.95);
  font-family:Roboto;
-font-size:48px;
-Line-height:48px;
-font-weight: 800;
-
+text-align: center;
 }
 .h3Paragraph{
   position: absolute;
-  top: 40%;
-  left: 29%;
   color:  rgba(15, 15, 15, 0.95);
  font-family:Roboto;
- font-size:40px;
- font-weight: 500;
- Line-height:
-40px;
-
+text-align: center;
 }
 .searchForm{
-  width:53% ;
   position: absolute;
-  top:60%;
-  left: 23%;
   background-color:  rgba(245, 243, 243, 1);
-
 }
 .searchForm input{
-  background-color:  rgba(245, 243, 243, 1);
+  font-family: Roboto;
 }
-.search{
-  padding-top: 31px;
+
+.searchForm label{
+  font-family: Roboto;
 }
-.search button{
+.searchForm button{
   background: rgba(81, 57, 115, 1);
   font-family: Roboto;
-  font-size: 18px;
-  font-weight: 400;
   line-height: 18.75px;
   text-align: center;
   color: rgba(245, 243, 243, 1);
-  padding-top: 11px;
-  padding-bottom:11px ;
-
-
 }
 .shape{
   border-radius: 12px;
   border-width: 1px;
-}
-.services{
-  position: absolute;
- top:695px;
- left:16%
-
-
 }
 .item{
   background: rgba(241, 240, 240, 1);
@@ -75,18 +40,10 @@ font-weight: 800;
 }
 .services a{
   font-family: Roboto;
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
 color: rgba(15, 15, 15, 0.95);
 text-decoration: none;
-
 }
 
-.services img {
-width: 100px;
-height: 100px;
-}
 .secondSection{
   padding-top: 110px;
   background: rgba(241, 236, 236, 1);
@@ -103,19 +60,38 @@ line-height: 44px;
 .secondSection p
   {
     color: rgba(15, 15, 15, 0.8);
-
     font-family: Roboto;
     font-size: 22px;
     font-weight: 200;
     line-height: 28px;
-
 }
 .iconDiv{
   background: rgba(81, 57, 115, 1);
-
+width:75px ;
+height:65px ;
+}
+.iconDiv img{
+  width: 30px;
+  height: 26px;
+  object-fit: contain;
+margin-left: 20%;
+}
+.infoooo{
+  width:290px;
+  height:65px ;
+}
+.pp1{
+  margin-left: 1%;
+}
+.pp2{
+  margin-left: 4%;
+  margin-right: 3.5%;
+}
+.pp3{
+margin-left: 2%;
 }
 .divstep{
-  padding-right: 40px;
+  padding-right:0px;
 }
 .finalsteps p{
   font-family: Roboto;
@@ -206,7 +182,7 @@ text-align: left;
 
 }
 .desc{
-  
+
   background: rgba(15, 15, 15, 0.6);
   position: absolute;
   bottom:0px ;
@@ -226,7 +202,7 @@ text-align: left;
   letter-spacing: 0.5px;
   text-align: left;
 
-  
+
 }
 .blog{
   position: relative;
@@ -249,6 +225,8 @@ border-radius: 10px;
 .reviewDiv img{
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  width:355px;
+  height: 240px;
   }
   .reviewDescription{background-color: rgba(255, 255, 255, 1);
   }
@@ -280,4 +258,438 @@ color: rgba(15, 15, 15, 0.5);
 }
 .select{
   background-color:  rgba(245, 243, 243, 1);
+}
+.rate img{
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+@media screen and (min-width:0px) and (max-width:600px) {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    height:570px;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:20%;
+  left:9%;
+  font-size:24px;
+  Line-height:35px;
+  font-weight:600;
+}
+.h3Paragraph{
+  top:30%;
+  left:22%;
+ font-size:22px;
+ font-weight: 300;
+ Line-height:
+35px;
+}
+.searchForm{
+  width:55% ;
+  height:43%;
+  top:40%;
+left:22.5%;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom: 2%;
+}
+.fas .fa-search{
+  width: 8px;
+  height: 8px;
+}
+.searchForm label{
+  font-size: 12px;
+}
+.searchForm ::placeholder{
+  font-size: 12px;
+}
+.searchForm button{
+  width: 100%;
+  margin-top: 5%;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+.services2{
+  position: absolute;
+  top:95%;
+
+left:11%;
+}
+
+.services a{
+  font-size:11px;
+font-weight: 400;
+line-height: 20px;
+}
+.services img{
+  width:45px;
+  height:45px;
+}
+.smallservices{
+  padding: 5px 13px;
+  margin-left:2%;
+}
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    height:700px;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:23%;
+  left:10%;
+  font-size:32px;
+  Line-height:35px;
+  font-weight:800;
+}
+.h3Paragraph{
+  top:37%;
+  left: 22%;
+ font-size:30px;
+ font-weight:400;
+ Line-height:
+35px;
+}
+.searchForm{
+  width:50% ;
+  height:46%;
+  top:50%;
+left:25%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:1%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:14px;
+}
+.searchForm ::placeholder{
+  font-size: 14px;
+}
+.searchForm button{
+  width: 100%;
+  margin-top: 5%;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.services{
+  position: absolute;
+top:100%;
+margin-top:30px;
+left:5%;
+}
+
+.services a{
+  font-size:16px;
+font-weight: 400;
+line-height: 20px;
+}
+.services img{
+  width:70px;
+  height:70px;
+}
+.smallservices{
+  padding: 7px 17px;
+margin-left: 2.5%;
+}
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    height:750px;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:23%;
+  left:10%;
+  font-size:38px;
+  Line-height:35px;
+  font-weight:800;
+}
+.h3Paragraph{
+  top:37%;
+  left: 22%;
+ font-size:34px;
+ font-weight:400;
+ Line-height:
+35px;
+}
+.searchForm{
+  width:50% ;
+  height:53%;
+  top:55%;
+left:25%;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:2%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:16px;
+  margin-bottom: 1px;
+}
+.searchForm ::placeholder{
+  font-size: 16px;
+}
+.searchForm input{
+  padding-top:2%;
+  padding-bottom: 2%;
+}
+.searchForm .select{
+  padding-top:2%;
+  padding-bottom: 2%;
+}
+
+.searchForm button{
+  width: 100%;
+  margin-top: 4%;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.services{
+  position: absolute;
+top:100%;
+margin-top:80px;
+left: 11%;
+}
+
+.services a{
+  font-size:16px;
+font-weight: 400;
+line-height: 20px;
+}
+.services img{
+  width:75px;
+  height:75px;
+}
+.smallservices{
+  padding: 8px 19px;
+margin-left: 3%;
+}
+}
+@media screen and (min-width:993px) and (max-width:1220px) {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    height:700px;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:25%;
+  left:10%;
+  font-size:46px;
+  Line-height:38px;
+  font-weight:800;
+}
+.h3Paragraph{
+  top:43%;
+  left: 20%;
+ font-size:40px;
+ font-weight:800;
+ Line-height:
+35px;
+}
+.searchForm{
+  width:50% ;
+  height:35%;
+  top:60%;
+left:25%;
+padding-top:0%;
+padding-bottom:0%;
+padding-left: 0%;
+padding-right: 0%;
+}
+.firstSearchform{
+  display: flex;
+  justify-content:space-between;
+}
+.seconedSearchform{
+  display: flex;
+  justify-content:space-between;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:2%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:20px;
+  margin-bottom: 1.5%;
+}
+.searchForm ::placeholder{
+  font-size:20px;
+}
+.searchForm input{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom: 4%;
+}
+.searchForm .select{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom:4%;
+}
+
+.searchForm button{
+  width: 95%;
+  margin-top:15%;
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 4%;
+  padding-bottom:4%;
+}
+.services{
+  position: absolute;
+top:100%;
+margin-top:25px;
+left: 10%;
+}
+
+.services a{
+  font-size:20px;
+font-weight: 400;
+line-height: 20px;
+}
+.services img{
+  width:90px;
+  height:90px;
+}
+.smallservices{
+  padding: 15px 27px;
+margin-left:2%;
+}
+}
+@media screen and (min-width:1221px)  {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    height:700px;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:25%;
+  left:17%;
+  font-size:48px;
+  Line-height:35px;
+  font-weight:800;
+}
+.h3Paragraph{
+  top:40%;
+  left: 30%;
+ font-size:40px;
+ font-weight:800;
+ Line-height:
+35px;
+}
+.searchForm{
+  width:50% ;
+  height:35%;
+  top:55%;
+left:25%;
+padding-top:0%;
+padding-bottom:0%;
+padding-left: 0%;
+padding-right: 0%;
+}
+.firstSearchform{
+  display: flex;
+  justify-content:space-between;
+}
+.seconedSearchform{
+  display: flex;
+  justify-content:space-between;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:2%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:20px;
+  margin-bottom: 1.5%;
+}
+.searchForm ::placeholder{
+  font-size:16px;
+}
+.searchForm input{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom: 4%;
+}
+.searchForm .select{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom:4%;
+}
+
+.searchForm button{
+  width: 95%;
+  margin-top:12%;
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 4%;
+  padding-bottom:4%;
+}
+.services{
+  position: absolute;
+top:100%;
+left: 15%;
+margin-top: 20px;
+}
+
+.services a{
+  font-size:20px;
+font-weight: 400;
+line-height: 20px;
+}
+.services img{
+  width:100px;
+  height:100px;
+  margin-bottom: 4%;
+}
+.smallservices{
+  padding: 16px 30px;
+margin-left:3%;
+}
 }

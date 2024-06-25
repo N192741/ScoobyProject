@@ -20,70 +20,59 @@ color: rgba(15, 15, 15, 0.6);
 .headers{
   margin-top: 3%;
 }
-.finialdiv{
-margin-left:17%;
-background-color: rgba(241, 240, 240, 1);
-border-radius: 15px;
+.allservices{
+margin-left: 8%;
+margin-right: 8%;
 }
-.finialdiv img{
+.service{
+  border-radius: 12px;
+  background-color: rgba(241, 240, 240, 1);
+width: 330px;
+height: 360px;
+position: relative;
+border-color:  rgba(15, 15, 15, 0.5);
+border-width: .5px;
+
+}
+.info{
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-color:  rgba(15, 15, 15, 0.5);
+  border: .5px;
+  height: 110px;
+}
+.service img{
   width: 200px;
   height: 200px;
-margin-left: 15%;
+  margin-left: 19%;
+  margin-right: 18%;
+  margin-top: 8%;
 }
-.finialdiv a{
-  text-decoration: none;
+.info h6{
   font-family: Roboto;
 font-size: 28px;
 font-weight: 500;
 line-height: 38px;
 letter-spacing: 0.5px;
-color: rgba(15, 15, 15, 0.95);
-}
-.finialdiv p{
-  font-family: Roboto;
-font-size: 19px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0.5px;
-
-color: rgba(15, 15, 15, 0.6);
-
-}
-.borderForImages{
-  border-radius: 15px;
-  margin-left: 6%;
-  background-color:  rgba(241, 240, 240, 1);
-
-
-}
-.borderForImages img{
-  width: 200px;
-  height: 200px;
-  margin-left: 15%;
-}
-.borderForImages a{
-  text-decoration: none;
-  font-family: Roboto;
-font-size: 28px;
-font-weight: 500;
-line-height: 38px;
-letter-spacing: 0.5px;
+text-align: center;
 color: rgba(15, 15, 15, 0.95);
 
 }
-
-.borderForImages p{
-font-family: Roboto;
-font-size: 19px;
+.info p{
+  font-family: Roboto;
+font-size: 20px;
 font-weight: 400;
-line-height: 1;
-letter-spacing: 0.5px;
-
+line-height: 21px;
+letter-spacing:.5px 3px;
+text-align: center;
 color: rgba(15, 15, 15, 0.6);
-margin-top: 3%;
 }
-.borderSmall{
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  height: 120px;
+
+.final{
+  margin-left: 16%;
+  margin-right:16%;
 }

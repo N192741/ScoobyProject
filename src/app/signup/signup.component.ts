@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit {
 
     name :new FormControl(null,[Validators.required,Validators.minLength(3),Validators.maxLength(20)]),
     email :new FormControl(null,[Validators.email,Validators.required]),
-    password :new FormControl(null,[Validators.required, Validators.pattern(/^[A-Z][a-z]{4,8}$/)]),
+    password :new FormControl(null,[Validators.required]),
 
     } );
   submitSignUp(formInfo:FormGroup ){
@@ -25,11 +25,8 @@ export class SignupComponent implements OnInit {
 if(response.status == 'success'){
 this._Router.navigate(['/login']);
 }
-
  else {
-
 this.error=response.message;
-
 }
     });
   }

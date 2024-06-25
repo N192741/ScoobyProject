@@ -31,13 +31,15 @@ width:420px ;
   top:52%;
   left:18%;
   background-color:  rgba(245, 243, 243, 1);
-
+  font-family: Roboto;
 }
 .searchForm input{
   background-color:  rgba(245, 243, 243, 1);
+  font-family: Roboto;
 }
 .select{
   background-color:  rgba(245, 243, 243, 1);
+  font-family: Roboto;
 }
 
 .search{
@@ -307,4 +309,12 @@ color: rgba(15, 15, 15, 0.8);
   letter-spacing: 0.5px;
   text-align: center;
 margin-left:40%
+}
+.rating img{
+  object-fit: contain;
+  width: 25px;
+  height: 25px;
+}
+.rating{
+  margin-right: 5px;
 }

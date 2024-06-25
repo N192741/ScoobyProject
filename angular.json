@@ -28,13 +28,12 @@
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "./node_modules/ngx-toastr/toastr.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
-    "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-              ,"./node_modules/jquery/dist/jquery.min.js"
-            
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "./node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
@@ -97,12 +96,9 @@
               "src/assets"
             ],
             "styles": [
-              
               "src/styles.css"
             ],
-            "scripts": [
-              
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -131,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "scooby"
+    }
+  },
+  "defaultProject": "scooby",
+  "cli": {
+    "analytics": "2dfd2497-d359-4cb1-a992-c4363442685b"
+  }
 }

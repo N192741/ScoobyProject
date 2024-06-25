@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<div class="page">
+  <div class="firstSection">
+<p>Find your new best friend</p>
+<div class="d-flex  allSections ">
+<a class="border section py-3 mx-3 ">
+  <img class="" src="../../assets/images/dog (4) 1.png" alt="">
+  <p class="">Dogs</p>
+</a>
+<a routerLink="" class="border section py-3 mx-3">
+  <img class="" src="../../assets/images/cat.png" alt="">
+  <p >Cats</p>
+</a>
+<a routerLink="" class="border section py-3 mx-3">
+  <img src="../../assets/images/animal-shelter 1.png">
+  <p >Shelters & Rescues</p>
+</a>
+</div>
+  </div>
+  <div class="secondSection mx-5 ">
+<div class="d-flex mx-5 my-5 ">
+<div class="w-100  mx-1">
+  <div class="border smallShelter px-3 py-3 my-2" *ngFor="let shelter of shelters.slice(0,5)">
+<div class="d-flex">
+<img [src]="shelter.shelterImage" alt="">
+<div class="shelterInfo py-3">
+<h6 class="py-1 mb-2">{{shelter.shelterName}}</h6>
+<div class="d-flex py-1 rating align-items-center">
+<p class="mb-0 px-1 " >{{shelter.rate}}</p>
+<img class="mb-1" *ngFor="let star of stars.slice(0,shelter.rate)"
+ src="../../assets/images/material-symbols-light_star.png" alt="">
+ <p class="mb-0 px-1">({{shelter.numberOfRates}})</p>
+</div>
+<div class="d-flex location py-1 ">
+<p class="p1">{{shelter.description}}</p>
+<p>{{shelter.locations.address}}</p>
+</div>
+<div class="border view px-4 py-2">
+  <a class="mb-0 py-1 " [routerLink]="['/shelter-pets',shelter._id]" >View pets</a></div>
+</div>
+</div>
+  </div>
+</div>
+<div class="w-100  mx-1">
+  <div class="border smallShelter px-3 py-3 my-2" *ngFor="let shelter of shelters.slice(5,10)">
+    <div class="d-flex">
+      <img [src]="shelter.shelterImage">
+      <div  class="shelterInfo py-3">
+        <h6  class="py-1 mb-2">{{shelter.shelterName}}</h6>
+        <div class="d-flex py-1 rating  align-items-center">
+          <p class="mb-0 px-1">{{shelter.rate}}</p>
+          <img class="mb-1" *ngFor="let star of stars.slice(0,shelter.rate)"
+           src="../../assets/images/material-symbols-light_star.png" alt="">
+           <p class="mb-0 px-1">({{shelter.numberOfRates}})</p>
+          </div>
+          <div class="d-flex location py-1 ">
+            <p class="p1">{{shelter.description}}</p>
+            <p class="">{{shelter.locations.address}}</p>
+            </div>
+            <div class="border view px-4 py-2">
+              <a class="mb-0 py-1" [routerLink]="['/shelter-pets',shelter._id]">View pets</a></div>
+
+          </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+<div class="thirdSection ">
+  <h2 class="py-5">Planning to Adopt</h2>
+  <div class="d-flex samallsInfo">
+<div class="border mx-2 smallInfo">
+<img  class="my-4 " src="../../assets/images/pet-care (3) 1.png" alt="">
+<h5 class="mb-4">Checklist for new adopters</h5>
+<p class="mb-5">Make the adoption transition
+  as smooth as possible</p>
+<div class="border learn m-auto "><a routerLink="/learn-more-adoption" class="">Learn more</a></div>
+</div>
+
+<div class="border mx-2 smallInfo">
+  <img  class="my-4  " src="../../assets/images/favourite 1.png" alt="">
+  <h5 class="mb-4">COVID-19 Resources</h5>
+  <p class="mb-5">Find out how you can
+    help dogs and cats
+   </p>
+  <div class="border learn m-auto "><a routerLink="/learn-more-adoption"  class="">Learn more</a></div>
+  </div>
+
+  <div class="border mx-2 smallInfo">
+    <img  class="my-4 " src="../../assets/images/pet (2) 1.png" alt="">
+    <h5 class="mb-4">Pet adoption FAQs</h5>
+    <p class="mb-5">Answer all questions you haven’t
+      thought of for your adoption
+      </p>
+    <div class="border learn m-auto "><a routerLink="/learn-more-adoption" class="">Learn more</a></div>
+    </div>
+  </div>
+</div>
+<div class="fourthSection py-5 px-5">
+<h3 class="">Successful Adoptions</h3>
+<p class="py-3">Slide to see some of the animals we helped rehome in Egypt</p>
+<div class="   slider  ">
+  <owl-carousel-o [options]="customOptions" class=" ">
+    <ng-container class="" *ngFor="let SuccessfullAdoption of SuccessfullAdoptions" class="">
+      <ng-template carouselSlide [id]="SuccessfullAdoption._id">
+        <a class="" [routerLink]="[]">
+          <img class=" "  [src]="SuccessfullAdoption.petImage" alt="">
+        </a>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+  <div class="rightGray">
+    <img src="../../assets/images/Vector.png" alt="">
+  </div>
+  <div class="leftGray">
+    <img src="../../assets/images/vector2.png" alt="">
+  </div>
+</div>
+<div class="m-auto see px-4">
+  <a class="mb-0" routerLink="/see-more">See more</a>
+  </div>
+</div>
+
+  <div class="blogs ">
+    <h4 class="py-1 px-2">Blogs</h4>
+    <p class="px-2">Because we love to talk about pets.</p>
+    <div class="d-flex  my-4 ">
+  <div class="blog mx-2" >
+    <img class="w-100" src="../../assets/images/blog 1.png" alt="">
+    <div class="grayDiv"><p class="mb-0">Reasons for Pet Adoption</p></div>
+  </div>
+
+  <div class="blog mx-2" >
+    <img class="w-100" src="../../assets/images/blog 2.png" alt="">
+    <div class="grayDiv"><p class="mb-0">Health Benefits of adopting a Cat</p></div>
+  </div>
+
+  <div class="blog mx-2" >
+    <img class="w-100" src="../../assets/images/blog 3.png" alt="">
+    <div class="grayDiv"><p class="mb-0">Why pet adoption is a great idea</p></div>
+  </div>
+    </div>
+
+  </div >
+
+</div>
+

@@ -1,0 +1,143 @@
+.body{
+  background-color:rgba(222, 220, 226, 1) ;
+}
+.mainDiv{
+  margin-left: 7%;
+}
+.ra8ii{
+border-radius: 10px;
+border-width: 1px;
+background-color: rgba(255, 255, 255, 1);
+border-color: rgba(222, 220, 226, 1);
+}
+.ra8ii h2{
+  font-family: Roboto;
+font-size: 32px;
+font-weight: 600;
+line-height: 37.5px;
+
+}
+.shear{
+  border-radius:40px !important;
+  border-width: 1px !important;
+  border-color: rgba(81, 57, 115, 1) !important;
+}
+.shear h4{
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(81, 57, 115, 1);
+
+}
+.ra8ii p{
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+color: rgba(71, 70, 70, 1);
+
+}
+.header{
+  font-family: Roboto;
+font-size: 28px;
+font-weight: 600;
+line-height: 32px;
+text-align: left;
+color: rgba(81, 57, 115, 1);
+
+}
+
+.shear img{
+  width: 25px;
+  height: 20px;
+}
+
+
+
+.dot-icon{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(71, 70, 70, 1) ;
+  display: inline-block;
+  margin-right:15px;
+  margin-bottom: 5px;
+}
+.first img{
+width:202px;
+height: 440px;
+border-radius: 6px;
+}
+.adv{
+  width: 270px;
+  height: 545px;
+}
+.name{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+
+}
+.second img{
+  width: 202px;
+  height: 200px;
+  border-radius: 6px;
+}
+.blogs{
+  margin-left: 7%;
+  margin-top:7%;
+}
+.blogs img{
+  width: 370px;
+  height: 300px;
+}
+.blogs h4{
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44.53px;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+.blogs p{
+  font-family: Roboto;
+font-size: 28px;
+font-weight: 400;
+line-height: 32.81px;
+text-align: left;
+color: rgba(15, 15, 15, 0.8);
+
+}
+.blog{
+  width: 370px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+}
+.grayDiv{
+  width: 370px;
+  height:85px;
+  background-color: rgba(15, 15, 15, 0.6);
+  position: absolute;
+  bottom:0 ;
+  left:0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.grayDiv p{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 12px;
+letter-spacing: 0.5px;
+text-align: center;
+color: rgba(254, 251, 251, 1);
+padding-top:35px;
+}

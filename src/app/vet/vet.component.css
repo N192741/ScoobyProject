@@ -1,0 +1,405 @@
+.firstSection{
+  height:500px;
+  background-image: url(../../assets/images/vetbackground.png);
+  background-size: cover;
+  margin-bottom: 16%;
+}
+.firstSection h1{
+  font-family: Roboto;
+font-size: 52px;
+font-weight: 900;
+line-height: 52px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(15, 15, 15, 1);
+padding-top:17%;
+}
+.white{
+  font-family: Roboto;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  text-align: center;
+ color: rgba(254, 251, 251, 1);
+
+}
+.all{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 6%;
+}
+.section{
+  width: 250px;
+  height: 220px; background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  border-color:  rgba(222, 220, 226, 1);
+  border-width: 1px;
+}
+.Pharmacy{
+  color: rgba(15, 15, 15, 1);
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.13px;
+margin-left:26% !important;
+margin-right:26% !important;
+text-decoration: none;
+}
+.section a{
+color: rgba(15, 15, 15, 1);
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.13px;
+margin-left:34%;
+margin-right: 34%;
+text-decoration: none;
+}
+
+
+.section img{
+  width: 120px;
+  height: 120px;
+
+}
+.forall{
+  margin-left:24% ;
+  margin-right:24% ;
+}
+.hospitall{
+  margin-left:23.5% ;
+  margin-right:23% ;
+}
+.medicin{
+margin-left: 26%;
+margin-right:28%;
+}
+.secondSection{
+  margin-bottom: 8%;
+}
+.secondSection h2{
+  font-family: Roboto;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(15, 15, 15, 1);
+
+}
+.smallInfo{
+  width: 369px;
+  height: 420px;
+  border-radius: 7px;
+}
+.smallInfo img{
+  width:120px;
+  height:120px;
+ margin-left: 33%;
+ object-fit: contain;
+}
+.smallInfo h5{
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(81, 57, 115, 1);
+}
+.smallInfo p{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(136, 128, 128, 1);
+
+}
+.learn{
+  width:203px;
+  height:54px;
+  border-radius:24px;
+border-width: 2px !important;
+border-color:rgba(81, 57, 115, 1) !important;
+padding-top: 13px;
+}
+.learn a{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0.05em;
+margin-left: 37px;
+color: rgba(81, 57, 115, 1);
+
+}
+.smalls{
+  margin-top:5%;
+  margin-left:4%;
+  margin-right: 4%;
+}
+.thirdSection{
+  background-color: rgba(245, 240, 252, 0.8);
+ padding-top: 7%;
+height: 668px;
+}
+.thirdSection h3{
+  font-family: Roboto;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(15, 15, 15, 1);
+}
+.thirdP{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(136, 128, 128, 1);
+margin-left: 16%;
+margin-right: 16%;
+}
+.item{
+  background-color: rgba(255, 255, 255, 1);
+width: 466px;
+height: 138px;
+border-radius: 12px;
+border-color: rgba(232, 225, 225, 1);
+border-width: .5px;
+}
+.item img{
+  width: 40px;
+  height: 37px;
+  object-fit: contain;
+}
+.item h6{
+  font-family: Roboto;
+font-size: 26px;
+font-weight: 800;
+line-height: 26px;
+letter-spacing: 0.05em;
+text-align: left;
+color: rgba(81, 57, 115, 1);
+margin-left: 6%;
+}
+.item p{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.05em;
+color: rgba(136, 128, 128, 1);
+text-align: left;
+margin-left:16%;
+}
+.allItems{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.fourthSection{
+  height: 800px;
+  background-color: rgba(81, 57, 115, 1);
+  padding-top: 7%;
+}
+.fourthSection h4{
+  font-family: Roboto;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(254, 251, 251, 1);
+
+}
+.fourthP{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(205, 198, 198, 1);
+
+}
+.doctor{
+  width: Hug (270px)px;
+height: Hug (360px)px;
+}
+.doctor img{
+  border-radius: 50%;
+  width: 250px;
+height: 257px;
+border:  .5px dashed  rgba(255, 255, 255, .5);
+border-width: .5px 2px;
+padding-right: 7px;
+padding-left: 2px;
+padding-top: 1px;
+}
+.allDoctors{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.name{
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(254, 251, 251, 1);
+
+}
+.descrpition{
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(205, 198, 198, 1);
+
+}
+.fourthSection button{
+  width: 22%;
+  font-family: Roboto;
+font-size: 26px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(81, 57, 115, 1);
+background-color: rgba(255, 255, 255, 1);
+border-radius: 29px;
+border-width: 0px;
+margin-left: 39%;
+margin-right: 39%;
+margin-top: 2%;
+}
+.fifthSection{
+  height: 800px;
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 7%;
+}
+.fifthSection h4{
+  font-family: Roboto;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(81, 57, 115, 1);
+}
+.fifthP{
+  font-family: Roboto;
+font-size: 22px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(71, 70, 70, 1);
+}
+.vet{
+  width: Hug (270px)px;
+height: Hug (360px)px;
+}
+.vet img{
+  border-radius: 50%;
+  width: 250px;
+height: 257px;
+border:  .5px dashed   rgba(71, 70, 70, .4);;
+border-width: .5px 2px;
+padding-right: 7px;
+padding-left: 2px;
+padding-top: 1px;
+}
+.allvets{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.namevet{
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(81, 57, 115, 1);
+}
+.fifthSection button{
+  width: 20%;
+  font-family: Roboto;
+font-size: 26px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(81, 57, 115, 1);
+background-color: rgba(255, 255, 255, 1);
+border-color: rgba(81, 57, 115, 1) ;
+border-radius: 29px;
+margin-left: 39%;
+margin-right: 39%;
+margin-top: 2%;
+}
+.DoctorForm{
+width: 1100px;
+height: 430px;
+background-color:  rgba(81, 57, 115, 1);
+margin-right:9%;
+margin-left: 9%;
+padding-right: 7%;
+padding-left: 7%;
+padding-top: 3%;
+padding-bottom:3%;
+border-top-left-radius: 17px;
+border-bottom-right-radius: 17px;
+border-top-right-radius:90px;
+border-bottom-left-radius: 90px;
+}
+.DoctorForm h3{
+  font-family: Roboto;
+font-size: 40px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(254, 251, 251, 1);
+
+}
+.DoctorForm label{
+  font-family: Roboto;
+font-size: 24px;
+font-weight: 600;
+line-height: 28.13px;
+text-align: left;
+color: rgba(255, 255, 255, 1);
+
+}
+.DoctorForm input{
+  width:420px;
+height: 63px;
+}
+.subBook{
+  width: 366px;
+height:66px;
+font-family: Roboto;
+font-size: 24px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.05em;
+text-align: center;
+color: rgba(81, 57, 115, 1);
+background-color: rgba(254, 251, 251, 1);
+border-width: 0px;
+border-radius:33px;
+margin-left:32%;
+margin-right: 32%;
+margin-top: 1%;
+}

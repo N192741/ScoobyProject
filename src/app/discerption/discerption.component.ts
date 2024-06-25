@@ -3,8 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { BookService } from '../book.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
-
+import { HomeService } from '../home.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-discerption',
@@ -12,38 +12,73 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./discerption.component.css']
 })
 export class DiscerptionComponent implements OnInit {
+  max = 5;
+  rate = 0;
+  isReadonly = false;
+
+  overStar: number | undefined;
+  percent = 0;
+
+  hoveringOver(value: number): void {
+    this.overStar = value;
+    this.percent = (value / this.max) * 100;
+  }
+
+  resetStar(): void {
+    this.overStar = void 0;}
+    stars:any []=['../../assets/images/material-symbols-light_star.png',
+      '../../assets/images/material-symbols-light_star.png',
+    '../../assets/images/material-symbols-light_star.png',
+    '../../assets/images/material-symbols-light_star.png',
+    '../../assets/images/material-symbols-light_star.png'];
   Id:string='';
+  successMassege:any;
   serviceProfile:any={};
   sliderService:any=[];
   imagesArray:any=[];
   services:any=[];
 reviewsArray:any=[];
+serviceName:any=[];
 userId:any;
 isReviewVisible: boolean = false;
 isDescriptionVisible: boolean = false;
 date:any;
-  constructor(private _BookService:BookService ,private route: ActivatedRoute,private router: Router) {
+  constructor(private _BookService:BookService ,private route: ActivatedRoute,
+    private router: Router,private _HomeService:HomeService,private _tostar:ToastrService) {
     this.route.paramMap.subscribe(params => {
       this.Id= params.get('Id');
   });
   }
-  bookForm:FormGroup= new FormGroup({
-    duration:new FormControl(null),
-    date:new FormControl(null,),
-  });
   reviewForm:FormGroup= new FormGroup({
     name :new FormControl(null,[Validators.required]),
    email:new FormControl(null,[Validators.email,Validators.required]),
-   review:new FormControl(null),
+   review:new FormControl(null,[Validators.required]),
    rating:new FormControl(null),
    });
-  book(bookInfo:FormGroup){}
-  review(reviewInfo:FormGroup){}
-  submitBook(forminfo:FormGroup){
-    this._BookService.Book(forminfo.value).subscribe((response)=>{});
+
+
+  bookForm:FormGroup= new FormGroup({
+    duration:new FormControl(null),
+    date:new FormControl(null,),
+    serviceType:new FormControl(null),
+  });
+  submitbook(formInfo:FormGroup ){
+    this._HomeService.BookService(formInfo.value).subscribe((response)=>{
+
+      if(response.status == 'success'){
+        this._tostar.success('Book done');
+        console.log('book done');
+   } });
+
   }
-  submitReview(forminfo:FormGroup){
-    this._BookService.review(forminfo.value,this.Id).subscribe((response)=>{});
+  submitReview(formInfo:FormGroup){
+    this._BookService.review(formInfo.value,this.Id).subscribe((response)=>{
+
+        if(response.status == '201'){
+        this.successMassege='done';
+        console.log('done');
+        }
+    });
   }
 
   ngOnInit(): void {
@@ -53,6 +88,7 @@ this.serviceProfile=response.updatedDoc;
 this.imagesArray=response.updatedDoc.imagesProfile;
 this.reviewsArray=response.updatedDoc.reviewsOfService;
 this.date=response.updatedDoc.reviewsOfService.createdAt;
+this.serviceName=response.updatedDoc.name;
  });
 
 this._BookService.getServices('services').subscribe((response)=>{

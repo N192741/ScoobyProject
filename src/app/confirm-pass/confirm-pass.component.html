@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<div class="my-5 page">
+<h1 class="my-5">
+  Reset Password
+</h1>
+<form (ngSubmit)="submitpass(confirmPass)" [formGroup]="confirmPass">
+  <input type="" formControlName="password" id="password" class="input border py-3 my-3" >
+  <input type="" formControlName="confirmPassword" id="confirmPassword" class="input border py-3 my-3" >
+  <button [disabled]="confirmPass.invalid" type="submit" class="btn code py-3 my-2">
+    Reset Password
+  </button>
+      </form>
+</div>

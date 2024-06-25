@@ -17,8 +17,9 @@ error:string='';
     } );
     submitSendEmail(formInfo:FormGroup ){
 this._AuthService.forget(formInfo.value).subscribe((response)=>{
-  if(response.status == 'success'){
-    this._Router.navigate(['/login']);
+  if(response.message== 'check your email'){
+    this._Router.navigate(['/code-pass']);
+    console.log( 'step 1 done');
     }
      else {
     this.error=response.message;
