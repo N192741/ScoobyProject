@@ -34,7 +34,7 @@ import { ConfirmPassComponent } from './confirm-pass/confirm-pass.component';
 
 const routes: Routes = [
   {path:" ", redirectTo:"/login" , pathMatch:"full"},
-  {path:"home", canActivate:[AuthGuard] ,component:HomeComponent},
+  {path:"home",canActivate:[AuthGuard] ,component:HomeComponent},
   {path:"shelters", canActivate:[AuthGuard] ,component:SheltersComponent},
   {path:"admin", canActivate:[AuthGuard] ,component:AdminComponent},
   {path:"doctors", canActivate:[AuthGuard] ,component:DoctorsComponent},
@@ -66,13 +66,13 @@ const routes: Routes = [
   {path:"meet",canActivate:[AuthGuard] , component:MeetComponent},
   {path:"account",canActivate:[AuthGuard] , component:AccountComponent}
 
-  
+
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
- 
+
 
 
 exports: [RouterModule]

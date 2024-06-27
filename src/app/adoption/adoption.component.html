@@ -18,17 +18,14 @@
 
               <div class="  item border  ">
                 <img class=" item-img" src="../../assets/images/animal-shelter 1.png" alt="">
-                <div class=" text-center item-txt "><a routerLink="/shelter">Shelters & Rescues</a></div>
+                <div class=" text-center item-txt "><a routerLink="/shelters">Shelters & Rescues</a></div>
               </div>
 
     </div>
 
 </div>
 
-
-
 </div>
-
 <div class="adoption-1  ">
     <h4 class="title">Pets For Adoption</h4>
     <div class=" pics ">
@@ -36,7 +33,7 @@
             <div  *ngFor="let pet of petName" class="col-md-3  space ">
                 <div class="pet-cart   position-relative">
                     <div>
-                       
+
                         <img class="pet-img w-100 " [src]="pet.petImage">
                     </div>
                     <div class="d-flex ">
@@ -48,11 +45,11 @@
                         <i *ngIf="pet.favorite" class="fa-regular fas fa-heart bg-white rounded-circle position-absolute top-0 end-0 pt-2 pr-2 " [ngClass]="{ 'favorite': pet.favorite }" (click)="toggleFavorite(pet)"></i>
                         <i *ngIf="!pet.favorite" class="fa-regular bg-white rounded-circle  fa-heart  position-absolute top-0 end-0 pt-2 pr-2 "  (click)="toggleFavorite(pet)"></i>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
-           
+
         </div>
         <div class="meet1 text-center  ">
             <img class="paw1 pt-4" src="../../assets/images/paw 1.png" alt="">
@@ -63,18 +60,18 @@
             <div class="btn-meet">
                 <a routerLink="/meet" class="disc-end  text-center ">Meet them</a>
             </div>
-           
+
            <!-- <h6 class="disc-end  text-center pt-5">Meet them</h6> -->
         </div>
     </div>
-   
-   
+
+
     </div>
     <div>
 <h5 class="Planning ">Planning to Adopt</h5>
 <div class="  parts ">
     <div class="  part1 px-4 py-4">
-        
+
             <img class="Planning-img" src="../../assets/images/pet-care (3) 1.png" alt="">
             <h6 class="big pt-4">Checklist for new adopters</h6>
             <div class="pt-2">
@@ -82,14 +79,14 @@
                 <h6 class="small">as smooth as possible</h6>
             </div>
             <button class="Planning-btn ">Learn more</button>
-        
-       
-        
+
+
+
         </div>
 
 
         <div class="  part2 px-4 py-4 ">
-        
+
             <img class="Planning-img" src="../../assets/images/favourite 1.png" alt="">
             <h6 class="big pt-4">COVID-19 Resources</h6>
             <div class="pt-2">
@@ -97,13 +94,13 @@
                 <h6 class="small"> help dogs and cats</h6>
             </div>
             <button class="Planning-btn ">Learn more</button>
-        
-       
-        
+
+
+
         </div>
 
         <div class="  part3 px-4 py-4">
-        
+
             <img class="Planning-img" src="../../assets/images/pet (2) 1.png" alt="">
             <h6 class="big pt-4">Pet adoption FAQs</h6>
             <div class="pt-2">
@@ -111,9 +108,9 @@
                 <h6 class="small">thought of for your adoption</h6>
             </div>
             <button class="Planning-btn ">Learn more</button>
-        
-       
-        
+
+
+
         </div>
 </div>
 
@@ -130,10 +127,10 @@
                 <h6 class="disc-slide pt-3">Slide to see some of the animals we helped rehome in Egypt</h6>
             </div>
 
-            
+
                 <div class="  slider  ">
                     <owl-carousel-o [options]="customOptions" class=" ">
-                
+
                       <ng-container  *ngFor="let SuccessfullAdoption of  SuccessfullAdoptions " >
                         <ng-template carouselSlide [id]="SuccessfullAdoption._id">
                           <a class=" " [routerLink]="[]">
@@ -154,7 +151,7 @@
           </div>
         </div>
     </div>
-    
+
     <div class="adoption  ">
         <h4 class="title">Pets For Adoption nearby</h4>
         <div class=" pics ">
@@ -162,23 +159,23 @@
                 <div  *ngFor="let Near of Nears" class="col-md-3  space ">
                     <div class="pet-cart   position-relative">
                         <div>
-                           
+
                             <img class="pet-img w-100 " [src]="Near.petImage">
                         </div>
                         <div class="d-flex ">
                             <div class="disc-name">
                                 <h5 class="name-pet">{{Near.name}}</h5>
                                 <h6 class="type-pet pt-2">{{Near.profileBio}}</h6>
-    
+
                             </div>
                             <i *ngIf="Near.favorite" class="fa-regular fas fa-heart bg-white rounded-circle position-absolute top-0 end-0 pt-2 pr-2 " [ngClass]="{ 'favorite': Near.favorite }" (click)="toggleFavorite(Near)"></i>
                             <i *ngIf="!Near.favorite" class="fa-regular bg-white rounded-circle  fa-heart  position-absolute top-0 end-0 pt-2 pr-2 "  (click)="toggleFavorite(Near)"></i>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
-               
+
             </div>
             <div class="meet1 text-center  ">
                 <img class="paw1 pt-4" src="../../assets/images/paw 1.png" alt="">
@@ -191,8 +188,8 @@
                 </div>
             </div>
         </div>
-       
-       
+
+
         </div>
 
 
@@ -210,14 +207,13 @@
                 <div class="desc py-3 px-3 w-100"><a class="mb-0">{{blog.description}}</a></div>
               </div>
             </div>
-          
+
             </div>
-          
-          
+
+
           </div>
 
 
 
-    
-    
-                  
+
+

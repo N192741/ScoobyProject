@@ -16,12 +16,16 @@ export class LoginComponent implements OnInit {
      private _Router: Router,private _http:HttpClient) { }
   error: string = '';
 islog:boolean=false;
+userData:any=[];
+
   loginForm: FormGroup = new FormGroup({
 
     email: new FormControl(null, [Validators.email, Validators.required]),
     password: new FormControl(null, [Validators.required]),
 
     } );
+    
+
 submitLogin(formInfo:FormGroup){
  this._AuthService.login(formInfo.value).subscribe((response)=>{
 if(response.status =='success' && response.data.result.role == 'user'){
@@ -29,6 +33,9 @@ if(response.status =='success' && response.data.result.role == 'user'){
   localStorage.setItem('userName', JSON.stringify(response.data.result.name));
 this._AuthService.setUserData();
   this._Router.navigate(['/home']);
+  this._AuthService.google('userData').subscribe((response)=>{
+    
+  })
 console.log('login');
 }
 else if  (response.status == 'success' && response.data.result.role =='admin') {
@@ -43,15 +50,27 @@ else if(response.status == 'fail') {
 this.islog=true;
 }
 
-
   });
-  
 
-    
+
+
   }
 
   ngOnInit(): void {
+    
   }
-
-}
+  googleconf():void{
+    this._AuthService.google('userData').subscribe((response)=>{
+      if(response.status =='success' && response.data.result.role == 'user'){
+        localStorage.setItem('userToken',JSON.stringify(response.token));
+        localStorage.setItem('userName', JSON.stringify(response.data.result.name));
+      this._AuthService.setUserData();
+        this._Router.navigate(['/home']); 
+    }
+    else{
+      console.log('error');
+    }
+  });
+     
+}}
 
