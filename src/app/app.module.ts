@@ -46,8 +46,7 @@ import { CatsComponent } from './cats/cats.component';
 import { FavComponent } from './fav/fav.component';
 import { MeetComponent } from './meet/meet.component';
 import { AccountComponent } from './account/account.component';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthInterceptor } from './auth.interceptor';
+
 
 @NgModule({
   declarations: [
@@ -105,7 +104,6 @@ import { AuthInterceptor } from './auth.interceptor';
    HttpClientModule
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
 
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
