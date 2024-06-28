@@ -1,42 +1,41 @@
-<!DOCTYPE html><div class=" vh-100 page ">
-  <div class="first1">
+<!DOCTYPE html><div class=" vh-100 page first">
+  <div class="first1 ">
     <img src="../../assets/images/Rectangle 8.jpg" class="first" alt="not fuond">
 
   </div>
-  <div class="second">
-  <div class="  py-5 ">
-<h1 class="py-3 lead">Login </h1>
-<p class="py-2 lead ">Welcome Back!</p>
+  <div class="second ">
+  <div class="  py-3 ">
+<h1 class=" mb-4 lead">Login </h1>
+<p class=" lead mb-0">Welcome Back!</p>
 </div>
 <!--google and facebook icon---->
-<div class=" py-3 google-face d-flex justify-content-between">
+<div class=" py-3  google-face m-auto  ">
 
   <!--facebook contener-->
-<div class="face border border-2 rounded-pill  ">
-  <div class="py-3  ">
+<div class=" border border-2 rounded-pill p ">
+  <div class="facebook  ">
  <img class="mx-2 face-image " src="../../assets/images/facebook.png" alt="">
-<a href="https://scoobyfamily.onrender.com/scooby/api/users/facebook">Login with Facebook</a>
+<a href="https://scoobyfamily.onrender.com/scooby/api/users/facebook"
+class="mb-0">Login with Facebook</a>
 </div>
 </div>
 
 <!--google contener-->
-<div class=" face border border-2 rounded-pill ">
-  <div class=" py-3  ">
-
+<div class="  border border-2 rounded-pill  p">
+  <div class="  google  ">
   <img class="mx-2 google-image" src="../../assets/images/google.png" alt=" ">
- <button  type="submit"  (click)="googleconf()"> Login with Google</button>
-
+ <a type="submit"  (click)="googleconf()" class="mb-0"> Login with Google</a>
 </div>
 </div>
   </div>
 
-  <div class="container py-2 mb-3">
+  <div class="container or py-2 mb-3">
     <div><h2 class="lead">OR</h2></div>
    </div>
 
 
-<form  (ngSubmit)="submitLogin(loginForm)" [formGroup]="loginForm">
-<div *ngIf="islog" class="bg-info">
+<form  (ngSubmit)="submitLogin(loginForm)" [formGroup]="loginForm" class="form">
+<div *ngIf="islog" >
   <p>Incorrect Email or Password</p>
 </div>
   <label class="labels py-1" for="email">Email</label>
