@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject, observable } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
 import { Router } from '@angular/router';
 
@@ -47,7 +47,6 @@ export class AuthService {
     localStorage.removeItem('userName');
     this.userData.next(null);
     this._Router.navigate['/login'];
-
   }
   forget(userData: object): Observable<any> {
     return this._HttpClient.post('https://scoobyfamily.onrender.com/scooby/api/users/forgotPassword', userData);
@@ -66,4 +65,7 @@ sendCode(userData:object):Observable<any>{
   confirmpass(userData:object,idofuser:string):Observable<any>{
     return this._HttpClient.post(`https://scoobyfamily.onrender.com/scooby/api/users/reset-password/${idofuser}`,userData);
       }
+   google(userData:string):Observable<any>{
+    return this._HttpClient.get(`https://scoobyfamily.onrender.com/scooby/api/users/google`);
+   }
 }

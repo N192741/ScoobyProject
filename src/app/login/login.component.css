@@ -52,7 +52,6 @@ h2::before{
   width: 40%;
   height: 2px;
 
-
 }
 .face-image{
   width: 26px;
@@ -115,8 +114,11 @@ text-decoration: none;
 
 
  }
- .face{
-  width: 47%;
+ .facebook{
+  margin: auto;
+  text-align: center;
+ }
+ .google{
   margin: auto;
   text-align: center;
  }
@@ -149,10 +151,10 @@ text-align: end;
  @media screen and (min-width:0px) and (max-width:600px) {
 
   .first{
-    width:100%;
+    width:100%;}
     .first1{
-      width: 100%;
-    }
+
+    display:none ;
   }
   .second{
     width: 100%;
@@ -160,64 +162,106 @@ text-align: end;
 
   }
 
+  .p{
+    width:75%;
+    margin: auto;
+    margin-bottom: 2%;
+  }
+.facebook{
+padding-top:2.5%;
+padding-bottom:2.5%;
+}
+.google{
+  padding-top:2.5%;
+padding-bottom:2.5%;
+}
  }
 @media screen and (min-width:601px) and (max-width:768px) {
 
   .first{
-    width:100%;
+    width:100%;}
     .first1{
-      width: 100%;
-    }
+   display: none;
   }
+
   .second{
     width: 100%;
     padding: 10%;
 
-  }}
-  @media screen and (min-width:769px) and (max-width:992px) {
-
-      .first{
+  }
+.form input{
+  width: 90%;
+}
+.google-face{
+ display: flex;
+ justify-content: space-between;
+}
+.p{
+  width: 47%;padding-top: 2%; padding-bottom: 2%;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+  .first{
         width:100%;
-        .first1{
+        display: flex;}
+        .first1 img{
           width: 100%;
-        }
       }
       .second{
         width: 100%;
-        padding: 10%;
-
-      }}
-      @media screen and (min-width:1201px)  {
-        .page{
-          display: flex;
-        }
-        .first1{
-          width: 100%;
-        }
-          .first{
-            width:100%;
-
-          }
-          .second{
-            width: 100%;
-            padding-left: 5%;
-            padding-right: 5%;
-
-          }}
-          @media screen and (min-width:993px) and (max-width:1200px) {
-            .page{
-              display: flex;
-            }
-            .first1{
-              width: 100%;
-            }
-              .first{
-                width:100%;
-
+        padding:6%;
+      }
+    .google-face{
+display: none;
+    }
+    .or{
+      display: none;
+    }
+.paragraph{
+  display: none;
+}
+  }
+ @media screen and (min-width:993px) and (max-width:1200px) {
+.first{
+width:100%;
+display: flex;
               }
-              .second{
-                width: 100%;
+.first1 img{
+width:100%;
+}
+ .second{
+   width: 100%;
                 padding-left: 6%;
                 padding-right: 6%;
 
-              }}
+              }
+ .google-face {
+  display: flex;
+justify-content: space-between;}
+.p{
+padding: 4% 4%;
+width: 49%;
+}}
+@media screen and (min-width:1201px){
+.first{
+  display: flex;
+  width: 100%;
+}
+.first1 img{
+  width: 100%;
+}
+.first1{
+  width: 100%;
+}
+.second{
+  width: 100%;
+padding: 4% 5%;
+}
+.google-face {
+  display: flex;
+justify-content: space-between;}
+.p{
+padding: 2.5% 3%;
+width: 47%;
+}
+}

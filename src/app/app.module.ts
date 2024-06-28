@@ -74,8 +74,8 @@ import { AccountComponent } from './account/account.component';
     FavComponent,
     MeetComponent,
     AccountComponent,
-   
-  
+
+
 
     SheltersComponent,
    SeeMoreComponent,
@@ -105,7 +105,7 @@ import { AccountComponent } from './account/account.component';
   ],
   providers: [
 
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
+  ],
   bootstrap: [AppComponent]
 
 })
