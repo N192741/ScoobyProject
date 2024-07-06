@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<div class="firestSection">
+<div class="firestSection m-auto">
   <img class=" cover  homeimg" src="../../assets/images/home.png"
   alt="not found">
-  <h2 class="h2Paragraph">
+  <h2 class="h2Paragraph  mb-0" >
     Find a loving local pet sitter or dog Walker</h2>
-    <p class=" h3Paragraph">Who treats your pet like family</p>
+    <p class=" h3Paragraph ">Who treats your pet like family</p>
     <form class=" searchForm shape border" (ngSubmit)="submitbook(bookForm)"  [formGroup]="bookForm">
-    <div class="py-2 px-4 firstSearchform ">
-      <div class="px-2 itemSearch ">
+    <div class=" firstSearchform d-flex ">
+      <div class="itemSearch ">
 
          <label class=" " for="serviceType">I’m looking for</label>
          <select class="select  shape border form-control"  formControlName="serviceType" aria-placeholder="selectservice" id="serviceType">
@@ -20,19 +20,20 @@
           <option id="serviceType" formControlName="serviceType">Pet Taxi</option>
                   </select>
         </div>
-<div class="px-2 itemSearch">
+<div class=" itemSearch ">
   <label class=" " for="location">Near</label>
   <input type="text" formControlName="location" placeholder="Your location"
    class="  shape border form-control" id="location">
 </div>
     </div>
-    <div class=" py-2 px-4 seconedSearchform">
-      <div class="   px-2  itemSearch">
+    <div class="  seconedSearchform d-flex algin-items-center">
+      <div class=" itemSearch  ">
          <label class=" " for="date"> Dates</label>
         <input type="date" formControlName="date"
-         class="  shape border form-control" id="date">
+         class="date  shape border form-control" id="date">
         </div>
-<div class="    px-2 itemSearch">
+<div class="itemSearch m-auto">
+
   <button type="submit" class="shape border "><i class="fas fa-search "></i>
     search</button>
 </div>
@@ -40,28 +41,28 @@
     </div>
    </form>
    <!----------services------->
-   <div class="services">
-    <div class=" d-flex services2 ">
+   <div class="services m-auto  ">
+    <div class="  services2  ">
       <div class="  item smallservices border ">
-        <img class="py-1" src="../../assets/images/veterinary 1.png" alt="">
-        <div class="py-1 text-center"><a routerLink="/vet">Veterinary</a></div>
+        <img class=" " src="../../assets/images/veterinary 1.png" alt="">
+        <div class=" text-center"><a routerLink="/vet">Veterinary</a></div>
       </div>
       <div class=" item smallservices border ">
         <img class="" src="../../assets/images/dog (2) 1.png" alt="">
-        <div class="py-1 text-center"><a routerLink="/more">Day Care
+        <div class=" text-center"><a routerLink="/more">Day Care
           </a></div>
       </div>
       <div class="smallservices  item border ">
         <img class="" src="../../assets/images/pet-supplies 1.png" alt="">
-        <div class="py-1 text-center"><a routerLink="/shop">Supplies</a></div>
+        <div class=" text-center"><a routerLink="/shop">Supplies</a></div>
       </div>
       <div class="item border smallservices ">
         <img class="" src="../../assets/images/adoption 1.png" alt="">
-        <div class="py-1 text-center"><a routerLink="/adoption">Adoption</a></div>
+        <div class=" text-center"><a routerLink="/adoption">Adoption</a></div>
       </div>
       <div class="item border smallservices ">
         <img class="" src="../../assets/images/pets 1.png" alt="">
-        <div class="py-1 text-center"><a routerLink="/more">More</a></div>
+        <div class=" text-center"><a routerLink="/more">More</a></div>
       </div>
     </div>
 
@@ -69,68 +70,67 @@
     </div>
    <!---------paragraphs-->
    <div class= " secondSection ">
-      <h3 class="  py-2 text-center">Scooby made it easy for you</h3>
-<p class=" lead py-2 text-center">Search and connect with trusted
+      <h3 class="  ">Scooby made it easy for you</h3>
+<p class="pp">Search and connect with trusted
    pet services providers. It's easy as 1, 2, 3.</p>
    <!--------steps-->
-   <div class= " px-3 py-3  mx-5 d-flex justify-content-between ">
-    <div class="px-3 d-flex align-items-center">
-       <div class="iconDiv border border-1 rounded py-2 px-2 ">
-      <img src="../../assets/images/searchvector.png" alt="" class=" my-2">
+   <div class="steps">
+   <div class="item ">
+    <div class="d-flex item1">
+    <div class="icondiv border">
+      <img src="../../assets/images/searchvector.png" alt="">
     </div>
-    <div class="infoooo border border-1 rounded px-2 "><p class="mb-0 py-3 divstep "> 
-      Find pet Service provider</p></div>
+    <div class="border pdiv"><p class="mb-0">Find pet Service provider</p></div>
 
    </div>
-   <div class="px-3 py-3  d-flex align-items-center">
-    <div class=" iconDiv border border- rounded py-2 px-2">
-      <img  src="../../assets/images/Vector (1).png" alt="" class=" my-2">
- </div>
- <div class="infoooo border border-1 rounded px-2"><p class="mb-0 py-3 divstep"> 
-  Arrange a meet & greet</p></div>
-</div>
-<div class="px-3 d-flex align-items-center">
-  <div class="iconDiv border border-1 rounded py-1 px-2">
-    <img  src="../../assets/images/Vector (2).png" alt="" class="my-2">
-</div>
-<div class="infoooo border border-1 rounded px-2 "><p class="mb-0 py-3 divstep "> 
-  Book your appointment</p></div>
-</div>
-  </div>
-  <div class="finalsteps py-2  d-flex px-4  mx-5">
-    <div class=" w-100 pp1  "><p class="">Search, select your services and find
-      experienced pet lover nearby</p></div>
-      <div class="w-100  pp2 "><p class="">Get to know your pet lover in person</p></div>
-      <div class="w-100  pp3 " ><p class="">Book your pet lover through our safe online
-        system, with flexible cancellations
-        in case your plans change.</p></div>
+   <p class="p1">Search, select your services and find
+    experienced pet lover nearby</p></div>
+    <div class="item ">
+      <div class="d-flex item1">
+      <div class="icondiv border">
+        <img src="../../assets/images/Vector (1).png" alt="">
       </div>
+      <div class="border pdiv"><p class="mb-0">Arrange a meet & greet</p></div>
 
+     </div>
+     <p class="p1">Get to know your pet lover in person</p></div>
 
+     <div class="item ">
+      <div class="d-flex item1">
+      <div class="icondiv border">
+        <img src="../../assets/images/Vector (2).png" alt="">
+      </div>
+      <div class="border pdiv"><p class="mb-0">Book your appointment</p></div>
+
+     </div>
+     <p class="p1">Book your pet lover through our safe online
+      system, with flexible cancellations
+      in case your plans change.</p></div>
+  </div>
 </div >
 <!----------sliderreview-->
 <div class="sliderreview">
-<div class="   px-5 py-4">
+<div class="  ">
   <h5>Pet owners Reviews</h5>
-  <div class="   slider ">
+  <div class=" slider ">
     <owl-carousel-o [options]="customOptions" class=" ">
 
       <ng-container *ngFor="let review of reviews" class="">
         <ng-template carouselSlide [id]="review._id">
-          <a class="w-100 reviewDiv " [routerLink]="['/discerption',review.serviceProfile._id]">
+          <a class=" reviewDiv  " [routerLink]="['/discerption',review.serviceProfile._id]">
             <img class=" "  [src]="review.serviceImage" >
-            <div class="w-100 d-flex reviewDescription reviewDescriptionrigt reviewDescriptionLeft ">
-              <div class="w-100 py-4  px-3 reviewDescriptionrigt ">
-                <a [routerLink]="['/discerption',review.serviceProfile]" class=" fw-bolder mb-1 py-1">{{review.serviceType}}</a>
-                <p  class="mb-0 py-1">{{review.city}}</p>
+            <div class=" d-flex reviewDescription reviewDescriptionrigt reviewDescriptionLeft  py-2 px-1">
+              <div class="reviewDescriptionrigt w-100">
+                <a [routerLink]="['/discerption',review.serviceProfile]" class=" fw-bolder ">{{review.serviceType}}</a>
+                <p  class=" mb-0">{{review.city}}</p>
               </div>
-              <div class="w-100 reviewDescriptionLeft left py-4 px-3  ">
-                <div class="d-flex rate justify-content-end">
+              <div class=" reviewDescriptionLeft w-100 ">
+                <div class="d-flex rate w-100 justify-content-end">
                   <img src="../../assets/images/material-symbols-light_star.png" alt=""
-                  *ngFor="let star of stars.slice(0,review.rate)" class="star mb-1">
+                  *ngFor="let star of stars.slice(0,review.rate)" class="star ">
                 </div>
 
-                <p class="mb-0 py-1">From <span class="yelllow">${{review.price}}</span></p>
+                <p class="price mb-0 w-100 ">From <span class="yelllow ">${{review.price}}</span></p>
               </div>
             </div>
           </a>

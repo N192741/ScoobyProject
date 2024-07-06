@@ -1,87 +1,31 @@
-.firstSection{
-  height:500px;
-  background-image: url(../../assets/images/vetbackground.png);
-  background-size: cover;
-  margin-bottom: 16%;
-}
 .firstSection h1{
+  text-align: center;
+  color: rgba(15, 15, 15, 1);
   font-family: Roboto;
-font-size: 52px;
-font-weight: 900;
-line-height: 52px;
-letter-spacing: 0.05em;
-text-align: center;
-color: rgba(15, 15, 15, 1);
-padding-top:17%;
 }
 .white{
   font-family: Roboto;
-  font-size: 52px;
-  font-weight: 900;
   line-height: 52px;
   letter-spacing: 0.05em;
   text-align: center;
  color: rgba(254, 251, 251, 1);
 
 }
-.all{
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 6%;
-}
 .section{
-  width: 250px;
-  height: 220px; background: rgba(255, 255, 255, 1);
+ background: rgba(255, 255, 255, 1);
   border-radius: 10px;
   border-color:  rgba(222, 220, 226, 1);
   border-width: 1px;
 }
-.Pharmacy{
-  color: rgba(15, 15, 15, 1);
-font-family: Roboto;
-font-size: 24px;
-font-weight: 700;
-line-height: 28.13px;
-margin-left:26% !important;
-margin-right:26% !important;
-text-decoration: none;
-}
 .section a{
 color: rgba(15, 15, 15, 1);
 font-family: Roboto;
-font-size: 24px;
-font-weight: 700;
 line-height: 28.13px;
-margin-left:34%;
-margin-right: 34%;
 text-decoration: none;
-}
 
-
-.section img{
-  width: 120px;
-  height: 120px;
-
-}
-.forall{
-  margin-left:24% ;
-  margin-right:24% ;
-}
-.hospitall{
-  margin-left:23.5% ;
-  margin-right:23% ;
-}
-.medicin{
-margin-left: 26%;
-margin-right:28%;
-}
-.secondSection{
-  margin-bottom: 8%;
 }
 .secondSection h2{
   font-family: Roboto;
-font-size: 40px;
-font-weight: 800;
 line-height: 40px;
 letter-spacing: 0.05em;
 text-align: center;
@@ -89,20 +33,13 @@ color: rgba(15, 15, 15, 1);
 
 }
 .smallInfo{
-  width: 369px;
-  height: 420px;
   border-radius: 7px;
 }
 .smallInfo img{
-  width:120px;
-  height:120px;
- margin-left: 33%;
  object-fit: contain;
 }
 .smallInfo h5{
   font-family: Roboto;
-  font-size: 26px;
-  font-weight: 600;
   line-height: 26px;
   letter-spacing: 0.05em;
   text-align: center;
@@ -110,8 +47,6 @@ color: rgba(15, 15, 15, 1);
 }
 .smallInfo p{
   font-family: Roboto;
-font-size: 20px;
-font-weight: 400;
 line-height: 20px;
 letter-spacing: 0.05em;
 text-align: center;
@@ -119,28 +54,19 @@ color: rgba(136, 128, 128, 1);
 
 }
 .learn{
-  width:203px;
-  height:54px;
   border-radius:24px;
 border-width: 2px !important;
 border-color:rgba(81, 57, 115, 1) !important;
-padding-top: 13px;
+
 }
 .learn a{
   font-family: Roboto;
-font-size: 22px;
-font-weight: 600;
 line-height: 22px;
 letter-spacing: 0.05em;
-margin-left: 37px;
 color: rgba(81, 57, 115, 1);
 
 }
-.smalls{
-  margin-top:5%;
-  margin-left:4%;
-  margin-right: 4%;
-}
+
 .thirdSection{
   background-color: rgba(245, 240, 252, 0.8);
  padding-top: 7%;
@@ -402,4 +328,796 @@ border-radius:33px;
 margin-left:32%;
 margin-right: 32%;
 margin-top: 1%;
+}
+@media screen and (min-width:0px) and (max-width:450px) {
+  .page{
+    width: 100%;
+  }
+  .firstSection{
+
+    width: 100%;
+  }
+  .firstSection img{
+position: relative;
+    width: 100%;
+    height: vh -100px;;
+    margin: auto;
+  }
+
+  .firstSection h1{
+    position: absolute;
+    top: 12%;
+font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+width: 80%;
+margin-left: 10%;
+  }
+  .white{
+    top: 9%;
+    font-size: 20px;
+      font-weight: 600;
+  }
+  .first1{
+margin-top: 4%;
+  }
+  .all{
+    position: absolute;
+    top: 21%;
+    width: 55%;
+    display: flex;
+    margin-left: 22%;
+    /* justify-content: space-between; */
+  }
+  .doctor{
+    width: 30%;
+    height:40%;
+    padding: 1% 4%;
+    margin-right: 2%; margin-left: 3%;
+  }
+  .doctor img{
+    width: 50px;
+    height: 40px;
+    margin-left: 7%;
+  }
+
+  .section a{
+    font-size:13px;
+
+  }
+  .clinic{
+    width:30%;
+    height:50%;
+    padding: 1% 5%; margin-right: 2%;
+  }
+  .clinic img{
+    width: 40px;
+    height: 40px;
+
+  }
+  .Pharmacy{
+    width:30%;
+    height:50%;
+    padding-top: 1%;
+    padding-bottom: 1% ; margin-right: 2%;
+  }
+  .Pharmacy img{
+    width: 30px;
+    height: 40px;
+margin-left:27%;
+  }
+  .Pharmacy a{
+    margin-left: 1%;
+  }
+  .secondSection{
+    margin-top: 15%;
+  }
+  .secondSection h2{
+    font-size:20px;
+font-weight: 500;
+margin-bottom: 5%;
+  }
+  .smalls{
+    margin: auto;
+    width: 100%;
+    display: flex;
+  }
+  .smallInfo{
+    margin: auto;
+    width: 33.3%;
+    height:290px;padding: 1% 1%;
+  }
+  .smallInfo img{
+    width: 25%;
+    height: 25%;
+   margin-left: 37.5%;
+   margin-bottom: .5%;
+  }
+  .smallInfo h5{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .smallInfo p{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .learn{
+    width:95%;
+    height:12%;
+    margin-left: 6%;
+    padding: 2% 0%;
+  }
+.learn a{
+  font-size: 12px;
+  font-weight: 300; margin-left: 19%;
+}
+  .su p{
+    margin-bottom: 50%;
+
+  }
+}
+@media screen and (min-width:451px) and (max-width:650px) {
+  .page{
+    width: 100%;
+  }
+  .firstSection{
+
+    width: 100%;
+  }
+  .firstSection img{
+position: relative;
+    width: 100%;
+    height: vh -100px;;
+    margin: auto;
+  }
+
+  .firstSection h1{
+    position: absolute;
+    top: 17%;
+font-size: 22px;
+  font-weight: 600;
+  line-height: 52px;
+width: 80%;
+margin-left: 10%;
+  }
+  .white{
+    top: 9%;
+    font-size: 22px;
+      font-weight: 600;
+  }
+  .first1{
+margin-top: 4%;
+  }
+  .all{
+    position: absolute;
+    top: 30%;
+    width: 60%;
+    display: flex;
+    margin-left: 20%;
+
+    /* justify-content: space-between; */
+  }
+  .doctor{
+    width: 27%;
+    height:40%;
+    padding: 2% 1%;
+    margin-right: 2%; margin-left:8%;
+  }
+  .doctor img{
+    width: 50px;
+    height: 40px;
+    margin-left: 20%;
+  }
+.doctor a{
+  margin-left: 16%;
+}
+  .section a{
+    font-size:15px;
+
+  }
+  .clinic{
+    width:27%;
+    height:40%;
+    padding: 2% 5%; margin-right: 2%;
+  }
+  .clinic img{
+    width: 40px;
+    height: 40px;
+    margin-left: 11%;
+  }
+  .clinic a{
+    margin-left: 8%;
+  }
+  .Pharmacy{
+    width:27%;
+    height:40%;
+    padding-top: 2% ; padding-bottom: 2%; margin-right: 2%;
+  }
+  .Pharmacy img{
+    width: 30px;
+    height: 40px;
+margin-left: 33%;
+  }
+  .Pharmacy a{
+    margin-left: 10%;
+  }
+  .secondSection{
+    margin-top: 16%;
+  }
+  .secondSection h2{
+    font-size:25px;
+font-weight: 500;
+margin-bottom: 5%;
+  }
+  .smalls{
+    margin: auto;
+    display: flex;
+    width: 90%;
+  }
+  .smallInfo{
+    margin: auto;
+    width: 32%;
+    height:250px; padding: 3% 1%;
+  }
+  .smallInfo img{
+    width: 25%;
+    height: 25%;
+   margin-left: 37.5%;
+   margin-bottom: 1%;
+  }
+  .smallInfo h5{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .smallInfo p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20%;
+  }
+  .learn{
+    width:70%;
+    height:13%;
+    margin: auto !important;
+    padding: 0% 0%;
+  }
+  .su p{
+    margin-bottom: 31%;
+  }
+
+  .learn a{
+    font-size:15px;
+font-weight: 400; margin-left: 12%;
+  }
+
+}
+@media screen and (min-width:651px) and (max-width:900px) {
+  .page{
+    width: 100%;
+  }
+  .firstSection{
+
+    width: 100%;
+  }
+  .firstSection img{
+position: relative;
+    width: 100%;
+    height: vh -100px;;
+    margin: auto;
+  }
+
+  .firstSection h1{
+    position: absolute;
+    top: 22%;
+font-size: 28px;
+  font-weight: 600;
+  line-height: 52px;
+width: 80%;
+margin-left: 10%;
+  }
+  .white{
+    top: 9%;
+    font-size: 28px;
+      font-weight: 600;
+  }
+
+  .all{
+    position: absolute;
+    top:38%;
+    width: 55%;
+    display: flex;
+    margin-left: 22%;
+    /* justify-content: space-between; */
+  }
+  .doctor{
+    width: 26%;
+    height:80%;
+    padding: 2% 1%; margin-right: 2%; margin-left: 8%;
+  }
+  .doctor img{
+    width: 60px;
+    height: 65px;
+    margin-left:22%;
+  }
+  .doctor a{
+    margin-left:19%;
+
+  }
+  .section a{
+    font-size:17px;
+font-weight: 500;
+  }
+  .clinic{
+    width: 26%;
+    height:80%;
+    padding: 2% 1%;
+    margin-right: 2%;
+  }
+  .clinic img{
+    width: 60px;
+    height: 65px;
+    margin-left: 21%;
+  }
+  .clinic a{
+    margin-left: 26%;
+  }
+  .Pharmacy{
+    width: 26%;
+    height:80%;
+    padding: 2.5% 1%;
+    margin-right: 2%;
+  }
+  .Pharmacy img{
+    width: 60px;
+    height: 60px;
+margin-left: 23%;
+  }
+  .Pharmacy a{
+    margin-left: 13%;
+  }
+  .secondSection{
+    margin-top: 17%;
+  }
+  .secondSection h2{
+    font-size:27px;
+font-weight: 600;
+margin-bottom: 5%;
+  }
+  .smalls{
+    margin: auto;
+    width: 85%;
+    display: flex;
+  }
+  .smallInfo{
+    margin: auto;
+    width: 31%;
+    height:270px; padding: 3% 1%;
+  }
+  .smallInfo img{
+    width: 25%;
+    height: 25%;
+   margin-left: 37.5%;
+   margin-bottom: 1%;
+   margin-top: 1%;
+  }
+
+  .smallInfo h5{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .smallInfo p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20%;
+  }
+  .learn{
+    width:70%;
+    height:12%;
+    margin: auto !important;
+    padding: 0% 0%;
+  }
+
+  .su p{
+    margin-bottom:31%;
+  }
+  .learn a{
+    font-size:14px;
+font-weight: 400;  margin-left: 15%;
+  }
+
+
+
+}
+@media screen and (min-width:902px) and (max-width:1110px) {
+  .page{
+    width: 100%;
+  }
+  .firstSection{
+
+    width: 100%;
+  }
+  .firstSection img{
+    width: 100%;
+    position: relative;
+  }
+  .firstSection h1{
+    position: absolute;
+    top: 28%;
+font-size: 34px;
+  font-weight: 700;
+  line-height: 52px;
+width: 80%;
+margin-left: 10%;
+  }
+  .white{
+    font-size: 34px;
+  }
+  .all{
+    position: absolute;
+    top:58%;
+    width: 55%;
+display: flex;
+
+margin-left: 22%;}
+    .doctor{
+      width: 23%;
+      height:80%;
+      padding: 2% 1%; margin-right: 2%; margin-left: 13%;
+    }
+    .doctor img{
+      width: 70px;
+      height: 75px;
+      margin-left:22%;
+    }
+    .doctor a{
+      margin-left:20%;
+
+    }
+    .section a{
+      font-size:20px;
+  font-weight: 500;
+    }
+    .clinic{
+      width: 23%;
+      height:80%;
+      padding: 2% 2%;
+      margin-right: 2%;
+    }
+    .clinic img{
+      width: 70px;
+      height: 75px;
+      margin-left:17%;
+    }
+    .clinic a{
+      margin-left: 23%;
+    }
+    .Pharmacy{
+      width: 23%;
+      height:80%;
+      padding: 2.3% 1%;
+      margin-right: 2%;
+    }
+    .Pharmacy img{
+      width: 68px;
+      height:70px;
+  margin-left: 23%;
+    }
+    .Pharmacy a{
+      margin-left: 14%;
+    }
+    .secondSection{
+      margin-top: 23%;
+    }
+    .secondSection h2{
+      font-size:29px;
+  font-weight: 600;
+  margin-bottom: 5%;
+    }
+    .smalls{
+      margin: auto;
+      width: 89%;
+display: flex;
+    }
+    .smallInfo{
+      margin: auto;
+      width: 27%;
+      height:320px; padding: .5% 2%;
+    }
+    .smallInfo img{
+      width: 25%;
+      height: 25%;
+     margin-left: 37.5%;
+     margin-bottom: 3%;
+     margin-top: 9%;
+    }
+
+    .smallInfo h5{
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 3%;
+    }
+    .smallInfo p{
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 23%;
+    }
+
+    .learn{
+      width:60%;
+      height:12%;
+      margin: auto !important;
+      padding: 2.3% 0%;
+    }
+    .learn a{
+      font-size: 17px;
+      font-weight: 300;
+      margin-left: 10%;
+    }
+    .su p{
+      margin-bottom: 34%;
+    }
+}
+@media screen and (min-width:1111px) and (max-width:1300px){
+  .page{
+    width: 100%;
+  }
+  .firstSection{
+
+    width: 100%;
+  }
+  .firstSection img{
+    width: 100%;
+    position: relative;
+  }
+  .firstSection h1{
+    position: absolute;
+    top: 33%;
+font-size: 44px;
+  font-weight: 800;
+  line-height: 52px;
+width: 80%;
+margin-left: 10%;
+  }
+  .white{
+    font-size: 44px;   font-weight: 800;
+  }
+  .all{
+    position: absolute;
+    top:64%;
+    width: 55%;
+display: flex;
+
+margin-left: 22%;
+    }
+    .doctor{
+      width: 25%;
+      height:80%;
+      padding:2% 0%; margin-right: 4%; margin-left:8%;
+    }
+    .doctor img{
+      width: 90px;
+      height: 95px;
+      margin-left:25%;
+      margin-bottom: 2%;
+    }
+    .doctor a{
+      margin-left:28%;
+
+    }
+    .section a{
+      font-size:24px;
+  font-weight: 700;
+    }
+    .clinic{
+      width: 25%;
+      height:80%;
+      padding: 2% 0%;margin-right: 4%;
+    }
+    .clinic img{
+      width: 90px;
+      height: 95px;
+      margin-left:21%;
+      margin-bottom: 2%;
+    }
+    .clinic a{
+      margin-left: 27%;
+    }
+    .Pharmacy{
+      width:25%;
+      height:80%;
+      padding: 2.2% 0%;margin-right: 4%;
+
+    }
+    .Pharmacy img{
+      width: 88px;
+      height:90px;
+  margin-left: 25%;
+  margin-bottom: 3%;
+    }
+    .Pharmacy a{
+      margin-left: 17%;
+    }
+.secondSection{
+  margin-top: 20%;
+}
+    .secondSection h2{
+      font-size:34px;
+  font-weight: 700;
+  margin-bottom: 4%;
+    }
+    .smalls{
+      margin: auto;
+      width: 90%;
+display: flex;
+    }
+    .smallInfo{
+      margin: auto;
+      width: 27%;
+      height:380px;
+      padding: 3% 1.3%;
+    }
+    .smallInfo img{
+      width: 30%;
+      height: 30%;
+     margin-left: 30%;
+     margin-bottom: 3%;
+     margin-top: 1%;
+    }
+
+    .smallInfo h5{
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 5%;
+    }
+    .smallInfo p{
+      font-size: 19px;
+      font-weight: 400;
+      margin-bottom: 25%;
+    }
+    .learn{
+      width:60%;
+      height:12%;
+      margin: auto !important;
+      padding: 2.3% 0%;
+    }
+    .learn a{
+      font-size: 18px;
+      font-weight: 300;
+      margin-left: 19%;
+
+    }
+    .su p{
+      margin-bottom: 34%;
+    }
+}
+@media screen and (min-width:1301px) {
+  .page{
+    width: 100%;
+  }
+  .firstSection{
+    width: 100%;
+  }
+  .firstSection img{
+    width: 100%;
+    position: relative;
+  }
+  .firstSection h1{
+    position: absolute;
+    top: 41%;
+font-size: 52px;
+  font-weight: 800;
+  line-height: 52px;
+width: 80%;
+margin-left: 10%;
+  }
+  .white{
+    font-size: 52px;   font-weight: 800;
+  }
+  .all{
+    position: absolute;
+    top:70%;
+        width: 50%;
+display: flex;
+
+margin-left: 25%;}
+    .doctor{
+      width: 24%;
+      height:80%;
+      padding:2% 0%; margin-right:4%; margin-left: 10%;
+    }
+    .doctor img{
+      width: 100px;
+      height: 115px;
+      margin-left:23%;
+      margin-bottom: 2%;
+    }
+    .doctor a{
+      margin-left:27%;
+
+    }
+    .section a{
+      font-size:24px;
+  font-weight: 700;
+    }
+    .clinic{
+      width: 24%;
+      height:80%;
+      padding: 2% 0%; margin-right:4%;
+
+    }
+    .clinic img{
+      width: 110px;
+      height: 115px;
+      margin-left:15%;
+      margin-bottom: 2%;
+    }
+    .clinic a{
+      margin-left: 29%;
+    }
+    .Pharmacy{
+      width:24%;
+      height:80%;
+      padding: 2.2% 0%; margin-right:4%;
+
+    }
+    .Pharmacy img{
+      width: 98px;
+      height:108px;
+  margin-left: 23%;
+  margin-bottom: 3%;
+    }
+    .Pharmacy a{
+      margin-left: 16%;
+    }
+    .secondSection{
+      margin-top: 20%;
+    }
+        .secondSection h2{
+          font-size:38px;
+      font-weight: 700;
+      margin-bottom: 4%;
+        }
+        .smalls{
+          margin: auto;
+          width: 85%;
+    display: flex;
+        }
+        .smallInfo{
+          margin: auto;
+          width: 25%;
+          height:380px;
+          padding: 3% 1%;
+        }
+        .smallInfo img{
+          width: 30%;
+          height: 30%;
+         margin-left: 30%;
+         margin-bottom: 3%;
+
+        }
+
+        .smallInfo h5{
+          font-size: 26px;
+          font-weight: 500;
+          margin-bottom: 5%;
+        }
+        .smallInfo p{
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 25%;
+        }
+        .learn{
+          width:60%;
+          height:12%;
+          margin: auto !important;
+          padding: 2.3% 0%;
+        }
+        .learn a{
+          font-size: 20px;
+          font-weight: 300;
+          margin-left: 14%;
+
+        }
+ .su p{
+  margin-bottom: 32%;
+ }
 }

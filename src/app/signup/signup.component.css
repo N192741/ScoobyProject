@@ -44,10 +44,8 @@ h2::after{
 h2::before{
   content: "";
   background-color: rgba(96, 92, 92, 1);
-;
   position:absolute ;
   top: 50%;
-
   left: 0;
   width: 40%;
   height: 2px;
@@ -66,7 +64,7 @@ h2::before{
 }
 .google-face a{
 font-weight: 500;
-font-size: 16px;
+font-size: 18px;
 Line-height:
 18.75px;
 color:
@@ -82,7 +80,6 @@ color: rgba(14, 14, 14, 1);
 }
 .b1{
   background-color: rgba(81, 57, 115, 1);
-  width: 100%;
   color: rgba(255, 243, 243, 1);
   font-weight: 500;
   font-size: 20px;
@@ -113,11 +110,7 @@ text-decoration: none;
 
 
  }
- .face{
-  width: 47%;
-  margin: auto;
-  text-align: center;
- }
+
  .finial p{
   font-family: Roboto;
 font-size: 20px;
@@ -138,49 +131,120 @@ color: rgba(15, 15, 15, 0.8);
  @media screen and (min-width:0px) and (max-width:600px) {
 
   .first{
-    width:100%;
-    .first1{
-      width: 100%;
+    width:100%;}
+    .first1 img{
+      display: none;
     }
-  }
+
   .second{
     width: 100%;
-    padding: 10%;
-
+padding: 3% 7%;
   }
-
+  .face{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2%;
+   }
+   .smaldiv{
+    padding-top: 4%;
+    padding-bottom: 4%;
+   }
+   .b1{
+    width: 100%;
+   }
  }
 @media screen and (min-width:601px) and (max-width:768px) {
 
   .first{
-    width:100%;
+    width:100%;}
     .first1{
       width: 100%;
-    }
+
   }
+  .second{
+    width: 100%;
+    padding: 2% 2%;
+  }
+  .first{
+    width:100%;}
+    .first1 img{
+      display: none;
+    }
+
   .second{
     width: 100%;
     padding: 10%;
 
-  }}
+  }
+  .face{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2%;
+   }
+   .smaldiv{
+    padding-top: 2%;
+    padding-bottom: 2%;
+   }
+   .signup input{
+    width:90%;
+   }
+   .b1{
+    width: 100%;
+   }
+  }
   @media screen and (min-width:769px) and (max-width:992px) {
 
       .first{
-        width:100%;
+        width:100%;}
         .first1{
           width: 100%;
-        }
+
       }
       .second{
         width: 100%;
-        padding: 10%;
+        padding: 6%;
 
-      }}
+      }
+      .first1 img{
+        display:none;
+      }
+.google-face{
+  display: flex;
+ margin: auto;
+  justify-content: space-between;
+}
+.smaldiv{
+width: 100%;
+padding-top: 4%;
+padding-bottom: 4%;
+ }
+ .face{
+  width:45%;
+  margin: auto;
+  text-align: center;
+ }
+ .in{
+  width:95%;
+ }
+ .b1{
+  width:95%;
+ }
+ .signupform{
+  padding-left: 5%;
+ }
+ .paragraph{
+ width: 70%;
+    }}
       @media screen and (min-width:1201px)  {
         .page{
           display: flex;
         }
         .first1{
+          width: 100%;
+        }
+        .first1 img{
           width: 100%;
         }
           .first{
@@ -189,23 +253,65 @@ color: rgba(15, 15, 15, 0.8);
           }
           .second{
             width: 100%;
-            padding:2% 4%;
+            padding:3% 3%;
 
-          }}
-          @media screen and (min-width:993px) and (max-width:1200px) {
+          }
+  .b1{
+    width: 100%;
+  }
+  .paragraph{
+    width: 80%;
+  }
+  .google-face{
+    display: flex;
+   margin: auto;
+    justify-content: space-between;
+  }
+  .smaldiv{
+  width: 100%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+   }
+   .face{
+    width:47%;
+    margin: auto;
+    text-align: center;
+   }
+      }
+ @media screen and (min-width:993px) and (max-width:1200px) {
             .page{
+              width: 100%;
               display: flex;
+            }
+            .first1 img{
+              width: 100%;
             }
             .first1{
               width: 100%;
             }
-              .first{
-                width:100%;
-
-              }
               .second{
                 width: 100%;
-                padding:2% 4%;
-
-              }}
-
+                padding:1% 4%;
+              }
+              .google-face{
+                display: flex;
+               margin: auto;
+                justify-content: space-between;
+              }
+              .smaldiv{
+              width: 100%;
+              padding-top: 6%;
+              padding-bottom: 6%;
+               }
+               .face{
+                width:47%;
+                margin: auto;
+                text-align: center;
+               }
+               .b1{
+                width: 100%;
+               }
+               .paragraph{
+                width:85%;
+            }
+  }

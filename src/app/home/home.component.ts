@@ -42,7 +42,7 @@ this.blogs=response.data;
 
 
    this._HomeService.getreviews('reviews').subscribe((response)=>{
-    this.reviews=response.shuffledServices0;
+    this.reviews=response.shuffledServices;
    })
   }
   @ViewChild('owlCarousel') owlCarousel: any;
@@ -61,10 +61,10 @@ this.blogs=response.data;
 
     responsive: {
       0: {
-        items: 1
+        items: 3
       },
       400: {
-        items: 2
+        items: 3
       },
       740: {
         items: 3

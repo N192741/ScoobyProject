@@ -1,16 +1,16 @@
-<div class=" vh-100 page ">
-  <div class="first1">
-  <img src="../../assets/images/Rectangle 8.jpg" class="first" alt="not fuond">
+<div class="  page ">
+<div class="first1">
+  <img src="../../assets/images/Rectangle 8.jpg" class="" alt="not fuond">
 </div>
-<div class="second">
-  <div class="  py-5  ">
+<div class="second ">
+  <div class="py-2  ">
 <h1 class="py-3 lead">Sign Up </h1>
 <p class="py-2 lead ">Welcome Back!</p>
 </div>
 
-<form  (ngSubmit)="submitSignUp(signupForm)" [formGroup]="signupForm">
+<form  (ngSubmit)="submitSignUp(signupForm)" [formGroup]="signupForm" class="signupform">
   <label class="labels py-1" for="name">Name</label>
-  <input type="text" formControlName="name" class=" py-2 mb-2 border border-2 rounded-pill form-control" id="name">
+  <input type="text" formControlName="name" class=" in py-2 mb-2 border border-2 rounded-pill form-control" id="name">
 <div *ngIf="signupForm.get('name') ?.errors && signupForm.get('name')?.touched" class=" alert alert-danger my-2 py-2">
   <p *ngIf="signupForm.get('name') ?.errors ?.required" class="lead errors mb-0">name is required</p>
   <p *ngIf="signupForm.get('name') ?.errors ?.minlength" class="lead errors mb-0">mimmum length is </p>
@@ -18,14 +18,14 @@
 </div>
 
   <label class="labels py-1" for="email">Email</label>
-  <input type="email" formControlName="email" class="mb-2 py-2 form-control  border border-2 rounded-pill" id="email">
+  <input type="email" formControlName="email" class="in mb-2 py-2 form-control  border border-2 rounded-pill" id="email">
   <div  *ngIf="signupForm.get('email')?.errors && signupForm.get('email')?.touched" class="alert alert-danger my-2 py-2">
 <p *ngIf="signupForm.get('email')?.errors?.required" class="lead errors mb-0">email is required</p>
 <p *ngIf="signupForm.get('email')?.errors?.email"  class="lead errors mb-0"> email is invalid</p>
   </div>
 
   <label  class="labels py-1" for="password">Password</label>
-  <input type="password" formControlName="password" class=" mb-2  py-2  form-control  border border-2 rounded-pill" id="password">
+  <input type="password" formControlName="password" class=" mb-2 in py-2  form-control  border border-2 rounded-pill" id="password">
   <div *ngIf="signupForm.get('password')?.errors && signupForm.get('password')?.touched" class=" alert alert-danger my-2 py-2">
     <p *ngIf="signupForm.get('password')?.errors?.required" class="lead errors mb-0">password is required</p>
 
@@ -33,7 +33,7 @@
     <button  type="submit" class=" py-3 b2 b1 lead border border-1 rounded-pill btn mt-2">Sign Up</button>
 </form>
 <!--paragraph-->
-<div class="text-center mx-2 paragraph  py-3 px-5  ">
+<div class="text-center m-auto paragraph  py-3   ">
 <p class="   para">By clicking Sign up or Log in, I agree to  <a routerLink="/privecy" class=" para">Scooby’s
   Terms of Service </a>and<a routerLink="/privecy" class=" para"> Privacy Policy.</a> </p>
 </div>
@@ -42,21 +42,21 @@
   <div><h2 class="lead">OR</h2></div>
  </div>
  <!--google and facebook icon---->
- <div class=" py-3 google-face d-flex justify-content-between">
+ <div class=" py-3 google-face   ">
 
   <!--facebook contener-->
 <div class="face border border-2 rounded-pill  ">
-  <div class="py-3  ">
- <img class="mx-2 face-image " src="../../assets/images/facebook.png" alt="">
+  <div class="smaldiv ">
+ <img class=" face-image mx-2 " src="../../assets/images/facebook.png" alt="">
 <a>Login with Facebook</a>
 </div>
 </div>
 
 <!--google contener-->
 <div class=" face border border-2 rounded-pill ">
-  <div class=" py-3  ">
+  <div class="smaldiv   ">
 
-  <img  class="mx-2 google-image"src="../../assets/images/google.png" alt="">
+  <img  class=" google-image mx-2"src="../../assets/images/google.png" alt="">
  <a> Login with Google</a>
 
 </div>

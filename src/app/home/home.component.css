@@ -1,7 +1,6 @@
 
 .homeimg{
   width: 100%;
-  Height:1440;
   position: relative;
 }
 
@@ -9,13 +8,11 @@
   position: absolute;
   color:  rgba(15, 15, 15, 0.95);
  font-family:Roboto;
-text-align: center;
 }
 .h3Paragraph{
   position: absolute;
   color:  rgba(15, 15, 15, 0.95);
  font-family:Roboto;
-text-align: center;
 }
 .searchForm{
   position: absolute;
@@ -51,14 +48,10 @@ text-decoration: none;
 }
 
 .secondSection{
-  padding-top: 110px;
   background: rgba(241, 236, 236, 1);
-
 }
 .secondSection h3{
   font-family: Roboto;
-font-size: 38px;
-font-weight: 600;
 color: rgba(15, 15, 15, 0.95);
 line-height: 44px;
 }
@@ -67,56 +60,13 @@ line-height: 44px;
   {
     color: rgba(15, 15, 15, 0.8);
     font-family: Roboto;
-    font-size: 22px;
-    font-weight: 200;
-    line-height: 28px;
+
 }
 .iconDiv{
   background: rgba(81, 57, 115, 1);
-width:75px ;
-height:65px ;
-}
-.iconDiv img{
-  width: 30px;
-  height: 26px;
-  object-fit: contain;
-margin-left: 20%;
-}
-.infoooo{
-  width:290px;
-  height:65px ;
-}
-.pp1{
-  margin-left: 1%;
-}
-.pp2{
-  margin-left: 4%;
-  margin-right: 3.5%;
-}
-.pp3{
-margin-left: 2%;
-}
-.divstep{
-  padding-right:0px;
-}
-.finalsteps p{
-  font-family: Roboto;
-font-size: 18px;
-font-weight: 300;
-line-height: 21px;
-text-align: left;
-color: rgba(15, 15, 15, 0.6);
-
-}
-.sliderreview{
-  margin-top: 60px;
-  margin-left: 60px;
-  margin-right: 60px;
 }
 .sliderreview h5{
   font-family: Roboto;
-font-size: 40px;
-font-weight: 800;
 line-height: 45px;
 color: rgba(15, 15, 15, 0.95);
 text-align: left;
@@ -220,9 +170,7 @@ text-align: left;
   height: 100%;
   border-radius: 8px;
 }
-.slider{
-  padding-top:3%;
-}
+
 .sliderreview{background-color: rgba(254, 251, 251, 0.904);
 }
 .reviewDiv{
@@ -231,32 +179,22 @@ border-radius: 10px;
 .reviewDiv img{
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  width:355px;
-  height: 240px;
   }
   .reviewDescription{background-color: rgba(255, 255, 255, 1);
   }
  .reviewDescriptionrigt { border-bottom-right-radius:16px ;}
  .reviewDescriptionrigt a{
   font-family: Roboto;
-font-size: 20px;
-font-weight: 500;
 line-height: 23.44px;
-text-align:left;
 color: rgba(15, 15, 15, 0.95);
 text-decoration: none;
  }
  .reviewDescriptionrigt p{
+  text-align: left;
   font-family: Roboto;
-font-size: 15px;
 color: rgba(15, 15, 15, 0.5);
-
-
  }
  .reviewDescriptionLeft{border-bottom-left-radius:16px ;
-}
-.left{
-  text-align: end;
 }
 .yelllow{
   color: rgba(253, 202, 37, 1);
@@ -265,45 +203,40 @@ color: rgba(15, 15, 15, 0.5);
 .select{
   background-color:  rgba(245, 243, 243, 1);
 }
-.rate img{
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-}
-
-@media screen and (min-width:0px) and (max-width:600px) {
+@media screen and (min-width:0px) and (max-width:450px) {
   .firstSection{
     width: 100%;
   }
   .homeimg{
     width: 100%;
-    height:570px;
     position: relative;
   }
   .h2Paragraph{
-  top:20%;
-  left:9%;
-  font-size:24px;
+  top:7%;
+ width: 80%;
+ left: 10%;
+ font-size: 14px;
   Line-height:35px;
-  font-weight:600;
+  font-weight:600; text-align: center;
 }
 .h3Paragraph{
-  top:30%;
-  left:22%;
- font-size:22px;
+  top:11%;
+  left: 20%;
+  width: 60%;
+ font-size:14px;
  font-weight: 300;
  Line-height:
-35px;
+35px; text-align: center;
 }
 .searchForm{
-  width:55% ;
-  height:43%;
-  top:40%;
-left:22.5%;
+  width:70% ;
+  height:19%;
+  top:15%;
+left:15%;
+padding: 0% 1%;
 }
-.itemSearch{
-  width:100%;
-  margin-bottom: 2%;
+.date ::placeholder{
+ display: none;
 }
 .fas .fa-search{
   width: 8px;
@@ -312,26 +245,299 @@ left:22.5%;
 .searchForm label{
   font-size: 12px;
 }
+.itemSearch{
+  width: 90%;
+}
+.searchForm input{
+  width: 95%;
+}
+.searchForm .select{
+  width: 97%;
+}
+.searchForm ::placeholder{
+  font-size: 10px;
+}
+.searchForm button{
+  margin-right: 10%;
+  width: 100%;
+  margin-top: 16%;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 6%;
+  padding-top:6%;
+}
+.services2{
+  position: absolute;
+  top:35%;
+  width: 80%;
+  margin-left: 10%;
+}
+.services2{display: flex; justify-content: space-between; }
+.services a{
+  font-size:10px;
+font-weight: 400;
+line-height: 20px;
+}
+.services img{
+  width:40px;
+  height:40px;
+}
+.smallservices{
+padding: 0% 3%;
+margin-left: .5%;
+
+}
+.secondSection{padding-top: 15%;}
+.secondSection h3{
+  font-size: 20px; font-weight: 500;text-align: center; margin-bottom: 1%;
+}
+.steps{
+  width: 80%;
+  margin-left: 10%;
+}
+.pp{
+  font-size: 16px; font-weight: 300;text-align: center; margin-bottom: 4%; width: 85%; margin-left: 7.5%;
+}
+.icondiv img{
+  width:  15px; height: 15px; margin-left: 20%; margin-top: 3%;
+}
+.icondiv{
+  background-color:rgba(81, 57, 115, 1);
+  border-radius: 5px; width: 9%; border-width: 1px;
+  border-color: rgba(15, 15, 15, 0.5);
+}
+.pdiv{
+  border-radius: 5px;  border-width: 1px; width:60% ;
+  border-color: rgba(15, 15, 15, 0.5); padding: 0% 2%;
+}
+.pdiv p{
+  font-size: 14px; font-weight: 400;padding: 2% 0%;
+  color: rgba(15, 15, 15, 0.8); text-align: left;}
+.item{
+margin-bottom: 2%;
+}
+.item1{
+  margin-bottom: 1.5%;
+}
+.p1{
+  font-size: 12px; text-align: left; width: 85%; color: rgba(15, 15, 15, 0.6);
+
+}
+.sliderreview{
+  padding: 2% 0%;
+}
+.sliderreview h5{font-size: 22px; font-family: 800; padding: 0% 2%;}
+.slider{width: 98%; margin-left: 1%;}
+.reviewDiv{width: 32.5%;}
+.reviewDiv img{width: 100%; height: 130px;}
+.reviewDescriptionrigt a{font-size: 10px; font-weight: 500;}
+.reviewDescriptionrigt p{font-size: 10px; font-weight: 400;margin-top: 2%; }
+.rate img{width: 10px; height: 10px;}
+.rate{margin-top: 10%;}
+.reviewDescription{width: 100%;}
+.reviewDescriptionLeft{}
+.price{padding-top: 15%; margin-left: 9%;}
+}
+@media screen and (min-width:451px) and (max-width:550px) {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:9%;
+  width: 80%;
+  left: 10%;
+  font-size:16px;
+  Line-height:35px;
+  font-weight:800; text-align: center;
+}
+.h3Paragraph{
+  top:13%;
+  left: 15%;
+  width: 70%;
+ font-size:16px;
+ font-weight:400;
+ Line-height:
+35px; text-align: center;
+}
+.searchForm{
+  width:75% ;
+  height:20%;
+  top:19%;
+left:12.5%;
+padding: 0% 1%;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:1%;
+}
+.searchForm input{
+  width: 95%;
+}
+.searchForm .select{
+  width: 95%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:12px;
+}
 .searchForm ::placeholder{
   font-size: 12px;
 }
 .searchForm button{
-  width: 100%;
-  margin-top: 5%;
-  font-size: 16px;
+  width: 95%;
+  margin-top: 10%;
+  font-size: 18px;
   font-weight: 300;
-  padding-bottom: 3%;
-  padding-top: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
 .services2{
   position: absolute;
-  top:95%;
+  top:40%;
+  width: 80%;
+  margin-left: 10%;
+}
+.services2{display: flex; justify-content: space-between; }
+.services a{
+  font-size:12px;
+font-weight: 400;
+line-height: 20px;
+}
+.services img{
+  width:40px;
+  height:40px;
+}
+.smallservices{
+padding: 1% 2.5%; margin-right: 1%;
+}
+.secondSection{padding-top: 13%;}
+.secondSection h3{
+  font-size: 24px; font-weight: 500;text-align: center; margin-bottom: 1%;
+}
+.steps{
+  width: 80%;
+  margin-left: 10%;
+}
+.pp{
+  font-size: 16px; font-weight: 300;text-align: center; margin-bottom: 4%; width: 85%; margin-left: 7.5%;
+}
+.icondiv img{
+  width:  15px; height: 15px; margin-left: 20%; margin-top: 3%;
+}
+.icondiv{
+  background-color:rgba(81, 57, 115, 1);
+  border-radius: 5px; width: 9%; border-width: 1px;
+  border-color: rgba(15, 15, 15, 0.5);
+}
+.pdiv{
+  border-radius: 5px;  border-width: 1px; width:60% ;
+  border-color: rgba(15, 15, 15, 0.5); padding: 0% 2%;
+}
+.pdiv p{
+  font-size: 14px; font-weight: 400;padding: 2% 0%;
+  color: rgba(15, 15, 15, 0.8); text-align: left;}
+.item{
+margin-bottom: 2%;
+}
+.item1{
+  margin-bottom: 1.5%;
+}
+.p1{
+  font-size: 12px; text-align: left; width: 85%; color: rgba(15, 15, 15, 0.6);
+}
+.sliderreview{
+  padding: 2% 1%;
+}
+.sliderreview h5{font-size: 22px; font-family: 800; padding: 0% 2%;}
+.slider{width: 98%; margin-left: 1%;}
+.reviewDiv{width: 32.5%;}
+.reviewDiv img{width: 100%; height:160px;}
+.reviewDescriptionrigt a{font-size: 10px; font-weight: 500;}
+.reviewDescriptionrigt p{font-size: 10px; font-weight: 400; margin-top: 2%;}
+.rate img{width: 10px; height: 10px;}
+.rate{margin-top: 80%;}
+.reviewDescription{width: 100%;}
+.reviewDescriptionLeft{padding-top:10% ;}
+.price{text-align: right; margin-top: 2%;}
 
-left:11%;
+}
+@media screen and (min-width:551px) and (max-width:650px) {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:11%;
+  width: 80%;
+  left: 10%;
+  font-size:18px;
+  Line-height:35px;
+  font-weight:800; text-align: center;
+}
+.h3Paragraph{
+  top:16%;
+  left: 15%;
+  width: 70%;
+ font-size:18px;
+ font-weight:400;
+ Line-height:
+35px; text-align: center;
+}
+.searchForm{
+  width:70% ;
+  height:20%;
+  top:23%;
+left:15%;
+padding: 0% 1%;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:1%;
+}
+.searchForm input{
+  width: 95%;
+}
+.searchForm .select{
+  width: 95%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:12px;
+}
+.searchForm ::placeholder{
+  font-size: 12px;
+}
+.searchForm button{
+  width: 95%;
+  margin-top: 10%;
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
+.services2{
+  position: absolute;
+  top:48%;
+  width: 70%;
+  margin-left: 15%;
+}
 .services a{
-  font-size:11px;
+  font-size:12px;
 font-weight: 400;
 line-height: 20px;
 }
@@ -340,45 +546,96 @@ line-height: 20px;
   height:45px;
 }
 .smallservices{
-  padding: 5px 13px;
-  margin-left:2%;
+padding: 1% 3%; margin-right: 1%;
 }
+.secondSection{padding-top: 15%;}
+.secondSection h3{
+  font-size: 24px; font-weight: 600;text-align: center; margin-bottom: 1%;
 }
-@media screen and (min-width:601px) and (max-width:768px) {
+.services2{display: flex; justify-content: space-between; }
+.steps{
+  width: 100%;
+  margin-left: 0%; display: flex;
+}
+.pp{
+  font-size: 16px; font-weight: 300;text-align: center; margin-bottom: 4%; width: 85%; margin-left: 7.5%;
+}
+.icondiv img{
+  width:  15px; height: 15px; margin-left: 20%; margin-top: 3%;
+}
+.icondiv{
+  background-color:rgba(81, 57, 115, 1);
+  border-radius: 5px; width: 15%; border-width: 1px;
+  border-color: rgba(15, 15, 15, 0.5);
+}
+.pdiv{
+  border-radius: 5px;  border-width: 1px; width:80% ;
+  border-color: rgba(15, 15, 15, 0.5); padding: 0% 1%;
+}
+.pdiv p{
+  font-size: 14px; font-weight: 400;padding: 2% 0%;
+  color: rgba(15, 15, 15, 0.8); text-align: left;}
+.item{
+margin-bottom: 0%; width: 34%;
+}
+.item1{
+  margin-bottom: 2%;
+}
+.p1{
+  font-size: 12px; text-align: left; width: 95%; color: rgba(15, 15, 15, 0.6);
+
+}
+.sliderreview{
+  padding: 2% 1%;
+}
+.sliderreview h5{font-size: 22px; font-family: 800; padding: 0% 2%;}
+.slider{width: 94%; margin-left: 3%;}
+.reviewDiv{width: 32.5%;}
+.reviewDiv img{width: 100%; height:160px;}
+.reviewDescriptionrigt a{font-size: 12px; font-weight: 500;}
+.reviewDescriptionrigt p{font-size: 12px; font-weight: 400;margin-top: 3%; }
+.rate img{width: 10px; height: 12px;}
+.rate{margin-bottom: 8%;}
+.reviewDescription{width: 100%; }
+.reviewDescriptionLeft{}
+.price{text-align: right;margin-top: 3%;}
+
+}
+@media screen and (min-width:651px) and (max-width:800px) {
   .firstSection{
     width: 100%;
   }
   .homeimg{
     width: 100%;
-    height:700px;
     position: relative;
   }
   .h2Paragraph{
-  top:23%;
+  top:13%;
+  width: 80%;
   left:10%;
-  font-size:32px;
+  font-size:22px;
   Line-height:35px;
-  font-weight:800;
+  font-weight:800; text-align: center;
 }
 .h3Paragraph{
-  top:37%;
-  left: 22%;
- font-size:30px;
+  top:18%;
+width: 70%;
+left: 15%;
+ font-size:22px;
  font-weight:400;
  Line-height:
-35px;
+35px;text-align: center;
 }
 .searchForm{
-  width:50% ;
-  height:46%;
-  top:50%;
-left:25%;
-padding-top: 1%;
-padding-bottom: 1%;
+  width:60% ;
+  height:21%;
+  top:29%;
+left:20%;
+padding: 1% 2%;
 }
 .itemSearch{
   width:100%;
-  margin-bottom:1%;
+  margin-bottom:2%;
 }
 .fas .fa-search{
   width:10px;
@@ -386,165 +643,132 @@ padding-bottom: 1%;
 }
 .searchForm label{
   font-size:14px;
+  margin-bottom: .5%;
 }
 .searchForm ::placeholder{
   font-size: 14px;
 }
-.searchForm button{
-  width: 100%;
-  margin-top: 5%;
-  font-size: 18px;
-  font-weight: 300;
-  padding-top: 4%;
-  padding-bottom: 4%;
-}
-.services{
-  position: absolute;
-top:100%;
-margin-top:30px;
-left:5%;
-}
-
-.services a{
-  font-size:16px;
-font-weight: 400;
-line-height: 20px;
-}
-.services img{
-  width:70px;
-  height:70px;
-}
-.smallservices{
-  padding: 7px 17px;
-margin-left: 2.5%;
-}
-}
-@media screen and (min-width:768px) and (max-width:992px) {
-  .firstSection{
-    width: 100%;
-  }
-  .homeimg{
-    width: 100%;
-    height:750px;
-    position: relative;
-  }
-  .h2Paragraph{
-  top:23%;
-  left:10%;
-  font-size:38px;
-  Line-height:35px;
-  font-weight:800;
-}
-.h3Paragraph{
-  top:37%;
-  left: 22%;
- font-size:34px;
- font-weight:400;
- Line-height:
-35px;
-}
-.searchForm{
-  width:50% ;
-  height:53%;
-  top:55%;
-left:25%;
-padding-top: 2%;
-padding-bottom: 2%;
-}
-.itemSearch{
-  width:100%;
-  margin-bottom:2%;
-}
-.fas .fa-search{
-  width:10px;
-  height:10px;
-}
-.searchForm label{
-  font-size:16px;
-  margin-bottom: 1px;
-}
-.searchForm ::placeholder{
-  font-size: 16px;
-}
 .searchForm input{
   padding-top:2%;
   padding-bottom: 2%;
+  width: 95%;
 }
 .searchForm .select{
   padding-top:2%;
   padding-bottom: 2%;
+  width: 95%;
 }
 
 .searchForm button{
-  width: 100%;
-  margin-top: 4%;
+  width: 95%;
+  margin-top: 5%;
   font-size: 18px;
   font-weight: 300;
-  padding-top: 3%;
+  padding-top: 3.5%;
   padding-bottom: 3%;
 }
 .services{
+  width: 65%;
   position: absolute;
-top:100%;
-margin-top:80px;
-left: 11%;
+top:57%;
+left: 17.5%;
 }
-
+.services2{display: flex; justify-content: space-between; }
 .services a{
-  font-size:16px;
+  font-size:14px;
 font-weight: 400;
-line-height: 20px;
+line-height: 20px; text-align: center;
 }
 .services img{
-  width:75px;
-  height:75px;
+  width:45px;
+  height:45px;margin-left: 20%;
 }
 .smallservices{
-  padding: 8px 19px;
-margin-left: 3%;
+width: 19%; padding: 2.5% 0%;
+margin: auto;
 }
+.secondSection{padding-top: 15%;}
+.secondSection h3{
+  font-size: 28px; font-weight: 600;text-align: center; margin-bottom: 1%;
 }
-@media screen and (min-width:993px) and (max-width:1220px) {
+.steps{
+  width: 94%;
+  margin-left: 3%; display: flex; justify-content: space-between;
+}
+.pp{
+  font-size: 22px; font-weight: 300;text-align: center; margin-bottom: 4%; width: 85%; margin-left: 7.5%;
+}
+.icondiv img{
+  width:  15px; height: 15px; margin-left: 20%; margin-top: 3%;
+}
+.icondiv{
+  background-color:rgba(81, 57, 115, 1);
+  border-radius: 5px; width: 15%; border-width: 1px;
+  border-color: rgba(15, 15, 15, 0.5);
+}
+.pdiv{
+  border-radius: 5px;  border-width: 1px; width:80% ;
+  border-color: rgba(15, 15, 15, 0.5); padding: 0% 1%;
+}
+.pdiv p{
+  font-size: 14px; font-weight: 400;padding: 2% 0%;
+  color: rgba(15, 15, 15, 0.8); text-align: left;}
+.item{
+margin-bottom: 0%; width: 33%;
+}
+.item1{
+  margin-bottom: 3%;
+}
+.p1{
+  font-size: 13px; text-align: left; width: 95%; color: rgba(15, 15, 15, 0.6);
+
+}
+.sliderreview{
+  padding: 2% 2%;
+}
+.sliderreview h5{font-size: 22px; font-family: 800; padding: 0% 2%;}
+.slider{width: 90%; margin-left: 5%;}
+.reviewDiv{width: 32.5%;}
+.reviewDiv img{width: 100%; height:160px;}
+.reviewDescriptionrigt a{font-size: 12px; font-weight: 500;}
+.reviewDescriptionrigt p{font-size: 12px; font-weight: 400;  margin-top: 4%;}
+.rate img{width: 16px; height: 18px;}
+.rate{}
+.reviewDescription{width: 100%; }
+.reviewDescriptionLeft{}
+.price{text-align: right; margin-top: 4%;}
+
+}
+@media screen and (min-width:801px) and (max-width:1000px) {
   .firstSection{
     width: 100%;
   }
   .homeimg{
     width: 100%;
-    height:700px;
     position: relative;
   }
   .h2Paragraph{
-  top:25%;
+  top:16%;
   left:10%;
-  font-size:46px;
+  width: 80%;text-align: center;
+  font-size:30px;
   Line-height:38px;
   font-weight:800;
 }
 .h3Paragraph{
-  top:43%;
-  left: 20%;
- font-size:40px;
+  top:22%;
+  left: 15%;
+  width: 70%;text-align: center;
+ font-size:30px;
  font-weight:800;
  Line-height:
 35px;
 }
 .searchForm{
-  width:50% ;
-  height:35%;
-  top:60%;
-left:25%;
-padding-top:0%;
-padding-bottom:0%;
-padding-left: 0%;
-padding-right: 0%;
-}
-.firstSearchform{
-  display: flex;
-  justify-content:space-between;
-}
-.seconedSearchform{
-  display: flex;
-  justify-content:space-between;
+  width:60% ;
+  height:29%;
+  top:31%;
+left:20%; padding: 1% 3%;
 }
 .itemSearch{
   width:100%;
@@ -555,105 +779,8 @@ padding-right: 0%;
   height:10px;
 }
 .searchForm label{
-  font-size:20px;
-  margin-bottom: 1.5%;
-}
-.searchForm ::placeholder{
-  font-size:20px;
-}
-.searchForm input{
-  padding-top:4%;
-  width: 95%;
-  padding-bottom: 4%;
-}
-.searchForm .select{
-  padding-top:4%;
-  width: 95%;
-  padding-bottom:4%;
-}
-
-.searchForm button{
-  width: 95%;
-  margin-top:15%;
-  font-size: 22px;
-  font-weight: 300;
-  padding-top: 4%;
-  padding-bottom:4%;
-}
-.services{
-  position: absolute;
-top:100%;
-margin-top:25px;
-left: 10%;
-}
-
-.services a{
-  font-size:20px;
-font-weight: 400;
-line-height: 20px;
-}
-.services img{
-  width:90px;
-  height:90px;
-}
-.smallservices{
-  padding: 15px 27px;
-margin-left:2%;
-}
-}
-@media screen and (min-width:1221px)  {
-  .firstSection{
-    width: 100%;
-  }
-  .homeimg{
-    width: 100%;
-    height:700px;
-    position: relative;
-  }
-  .h2Paragraph{
-  top:25%;
-  left:17%;
-  font-size:48px;
-  Line-height:35px;
-  font-weight:800;
-}
-.h3Paragraph{
-  top:40%;
-  left: 30%;
- font-size:40px;
- font-weight:800;
- Line-height:
-35px;
-}
-.searchForm{
-  width:50% ;
-  height:35%;
-  top:55%;
-left:25%;
-padding-top:0%;
-padding-bottom:0%;
-padding-left: 0%;
-padding-right: 0%;
-}
-.firstSearchform{
-  display: flex;
-  justify-content:space-between;
-}
-.seconedSearchform{
-  display: flex;
-  justify-content:space-between;
-}
-.itemSearch{
-  width:100%;
-  margin-bottom:2%;
-}
-.fas .fa-search{
-  width:10px;
-  height:10px;
-}
-.searchForm label{
-  font-size:20px;
-  margin-bottom: 1.5%;
+  font-size:18px;
+  margin-bottom: 1%;
 }
 .searchForm ::placeholder{
   font-size:16px;
@@ -671,31 +798,350 @@ padding-right: 0%;
 
 .searchForm button{
   width: 95%;
-  margin-top:12%;
+  margin-top:10%;
   font-size: 22px;
   font-weight: 300;
-  padding-top: 4%;
-  padding-bottom:4%;
+  padding-top: 4.5%;
+  padding-bottom:4.5%;
 }
 .services{
   position: absolute;
-top:100%;
-left: 15%;
-margin-top: 20px;
+top:70%;
+width:75%;
+left: 12.5%;
 }
-
+.services2{display: flex; justify-content: space-between; }
 .services a{
-  font-size:20px;
+  font-size:16px;
 font-weight: 400;
-line-height: 20px;
+line-height: 20px;text-align: center;
 }
 .services img{
-  width:100px;
-  height:100px;
-  margin-bottom: 4%;
+  width:55px;
+  height:55px;margin-left: 20%;
 }
 .smallservices{
-  padding: 16px 30px;
-margin-left:3%;
+width: 18%;
+margin: auto;padding:2.5% 0%;
 }
+.secondSection{padding-top: 15%;}
+.secondSection h3{
+  font-size: 28px; font-weight: 600;text-align: center; margin-bottom: 1%;
+}
+.steps{
+  width:90%;
+  margin-left: 5%; display: flex; justify-content: space-between;
+}
+.pp{
+  font-size: 22px; font-weight: 300;text-align: center; margin-bottom: 4%; width: 85%; margin-left: 7.5%;
+}
+.icondiv img{
+  width:  15px; height: 15px; margin-left: 22%; margin-top: 3%;
+}
+.icondiv{
+  background-color:rgba(81, 57, 115, 1);
+  border-radius: 5px; width: 15%; border-width: 1px;
+  border-color: rgba(15, 15, 15, 0.5);
+}
+.pdiv{
+  border-radius: 5px;  border-width: 1px; width:80% ;
+  border-color: rgba(15, 15, 15, 0.5); padding: 0% 1%;
+}
+.pdiv p{
+  font-size: 16px; font-weight: 400;padding: 2% 0%;
+  color: rgba(15, 15, 15, 0.8); text-align: left;}
+.item{
+margin-bottom: 0%; width: 32%;
+}
+.item1{
+  margin-bottom: 5%;
+}
+.p1{
+  font-size: 14px; text-align: left; width: 95%; color: rgba(15, 15, 15, 0.6);
+
+}
+.sliderreview{
+  padding: 2% 2%;
+}
+.sliderreview h5{font-size: 24px; font-family: 800; padding: 0% 6%;  margin-bottom: 3%;}
+.slider{width: 88%; margin-left: 6%; margin-bottom: 5%;}
+.reviewDiv{width: 32.5%;}
+.reviewDiv img{width: 100%; height:160px;}
+.reviewDescriptionrigt a{font-size: 16px; font-weight: 500;}
+.reviewDescriptionrigt p{font-size: 16px; font-weight: 400; margin-top: 5%; }
+.rate img{width: 20px; height: 20px;}
+.rate{}
+.reviewDescription{width: 100%; }
+.price{text-align: right; margin-top: 5%;}
+}
+@media screen and (min-width:1001px) and (max-width:1190px) {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:20%;
+  left:10%;
+  width: 80%;text-align: center;
+  font-size:30px;
+  Line-height:38px;
+  font-weight:800;
+}
+.h3Paragraph{
+  top:27%;
+  left: 15%;
+  width: 70%;text-align: center;
+ font-size:30px;
+ font-weight:800;
+ Line-height:
+35px;
+}
+.searchForm{
+  width:60% ;
+  height:33%;
+  top:39%;
+left:20%; padding: 2% 4%;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:2%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:18px;
+  margin-bottom: 1%;
+}
+.searchForm ::placeholder{
+  font-size:16px;
+}
+.searchForm input{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom: 4%;
+}
+.searchForm .select{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom:4%;
+}
+
+.searchForm button{
+  width: 95%;
+  margin-top:6%;
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 4.5%;
+  padding-bottom:4.5%;
+}
+.services{
+  position: absolute;
+top:83%;
+width:70%;
+left:15%;
+}
+.services2{display: flex; justify-content: space-between; }
+.services a{
+  font-size:18px;
+font-weight: 400;
+line-height: 20px;text-align: center;
+}
+.services img{
+  width:60px;
+  height:60px;margin-left: 27%; margin-bottom: 2%;
+}
+.smallservices{
+width: 18%;
+margin: auto;padding:3% 0%;
+}
+.secondSection{padding-top: 15%;}
+.secondSection h3{
+  font-size:32px; font-weight: 800;text-align: center; margin-bottom: 1.5%;
+}
+.steps{
+  width:86%;
+  margin-left: 7%; display: flex; justify-content: space-between;
+}
+.pp{
+  font-size: 24px; font-weight: 300;text-align: center; margin-bottom: 5%; width: 85%; margin-left: 7.5%;
+}
+.icondiv img{
+  width:  20px; height: 20px; margin-left: 20%; margin-top: 20%;
+}
+.icondiv{
+  background-color:rgba(81, 57, 115, 1);
+  border-radius: 5px; width: 15%; border-width: 1px;
+  border-color: rgba(15, 15, 15, 0.5);
+}
+.pdiv{
+  border-radius: 5px;  border-width: 1px; width:80% ;
+  border-color: rgba(15, 15, 15, 0.5); padding: 1% 1%;
+}
+.pdiv p{
+  font-size: 18px; font-weight: 400;padding: 2% 0%;
+  color: rgba(15, 15, 15, 0.8); text-align: left;}
+.item{
+margin-bottom: 0%; width: 31%;
+}
+.item1{
+  margin-bottom: 5%;
+}
+.p1{
+  font-size: 15px; text-align: left; width: 100%; color: rgba(15, 15, 15, 0.6);
+
+}
+.sliderreview{
+  padding: 2% 2%;
+}
+.sliderreview h5{font-size: 28px; font-family: 800; padding: 0% 7%;  margin-bottom: 2%;}
+.slider{width: 86%; margin-left: 7%; margin-bottom: 5%;}
+.reviewDiv{width: 32.5%;}
+.reviewDiv img{width: 100%; height:180px;}
+.reviewDescriptionrigt a{font-size: 18px; font-weight: 500;}
+.reviewDescriptionrigt p{font-size: 18px; font-weight: 400; margin-top: 5%;}
+.rate img{width: 20px; height: 20px;}
+.rate{}
+.reviewDescription{width: 100%; }
+.reviewDescriptionLeft{}
+.price{text-align: right; margin-top: 5%;}
+}
+@media screen and (min-width:1191px)  {
+  .firstSection{
+    width: 100%;
+  }
+  .homeimg{
+    width: 100%;
+    position: relative;
+  }
+  .h2Paragraph{
+  top:30%;
+  left:10%;
+  width: 80%;text-align: center;
+  font-size:48px;
+  Line-height:48px;
+  font-weight:800;
+}
+.h3Paragraph{
+  top:46%;
+  left: 15%;
+  width: 70%;text-align: center;
+ font-size:40px;
+ font-weight:800;
+ Line-height:
+35px;
+}
+.searchForm{
+  width:50% ;
+  height:33%;
+  top:60%;
+left:25%; padding: 1.5% 3%;
+}
+.itemSearch{
+  width:100%;
+  margin-bottom:2%;
+}
+.fas .fa-search{
+  width:10px;
+  height:10px;
+}
+.searchForm label{
+  font-size:18px;
+  margin-bottom: 1%;
+}
+.searchForm ::placeholder{
+  font-size:16px;
+}
+.searchForm input{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom: 4%;
+}
+.searchForm .select{
+  padding-top:4%;
+  width: 95%;
+  padding-bottom:4%;
+}
+
+.searchForm button{
+  width: 95%;
+  margin-top:6%;
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 4.5%;
+  padding-bottom:4.5%;
+}
+.services{
+  position: absolute;
+top:106%;
+width:70%;
+left:15%;
+}
+.services2{display: flex; justify-content: space-between; }
+.services a{
+  font-size:22px;
+font-weight: 500;
+line-height: 20px;text-align: center;
+}
+.services img{
+  width:88px;
+  height:88px;margin-left: 22%; margin-bottom: 4%;
+}
+.smallservices{
+width: 15%; margin-left: 2%;
+padding:2.5% 0%;
+}
+.secondSection{padding-top: 15%;}
+.secondSection h3{
+  font-size:38px; font-weight: 800;text-align: center; margin-bottom: 1.5%;
+}
+.steps{
+  width:80%;
+  margin-left: 10%; display: flex; justify-content: space-between;
+}
+.pp{
+  font-size: 24px; font-weight: 400;text-align: center; margin-bottom: 5%; width: 85%; margin-left: 7.5%;
+}
+.icondiv img{
+  width:  30px; height: 30px; margin-left: 17%; margin-top: 12%;
+}
+.icondiv{
+  background-color:rgba(81, 57, 115, 1);
+  border-radius: 5px; width: 15%; border-width: 1px;
+  border-color: rgba(15, 15, 15, 0.5);
+}
+.pdiv{
+  border-radius: 5px;  border-width: 1px; width:80% ;
+  border-color: rgba(15, 15, 15, 0.5); padding: .1% 1%;
+}
+.pdiv p{
+  font-size: 20px; font-weight: 400;padding: 2% 0%;
+  color: rgba(15, 15, 15, 0.8); text-align: left;}
+.item{
+margin-bottom: 0%; width: 31%;
+}
+.item1{
+  margin-bottom: 4%;
+}
+.p1{
+  font-size: 18px; text-align: left; width:85%; color: rgba(15, 15, 15, 0.6);
+}
+.sliderreview{
+ padding-top: 6%; padding-bottom: 0%; padding-left: 2%; padding-right: 2%;
+}
+.sliderreview h5{font-size: 40px; font-family: 800; padding: 0% 7%;  margin-bottom: 2%;}
+.slider{width: 86%; margin-left: 7%; margin-bottom: 4%;}
+.reviewDiv{width: 32.5%;}
+.reviewDiv img{width: 100%; height:190px;}
+.reviewDescriptionrigt a{font-size: 20px; font-weight: 500; }
+.reviewDescriptionrigt p{font-size: 20px; font-weight: 400; margin-top: 7%;}
+.rate img{width: 25px; height: 25px;}
+
+.reviewDescription{width: 100%; height: 70px;}
+.reviewDescriptionLeft{}
+.price{ margin-top: 7%; margin-left: 45%;}
 }

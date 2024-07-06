@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<div class="my-5 page">
-  <h1 class="mb-4">OTP Verification</h1>
-  <p class="mb-5">We will send you a one time password on
+<div class=" page ">
+  <h1 class="">OTP Verification</h1>
+  <p class="">We will send you a one time password on
     your Email</p>
-    <form (ngSubmit)="submitcode(sendcode)" [formGroup]="sendcode">
-      <input type="" formControlName="code" id="code" class="input border py-3 my-3" >
-      <button [disabled]="sendcode.invalid" type="submit" class="code py-3 my-2">
-        Submit
-      </button>
+    <form (ngSubmit)="submitcode(sendcode)" [formGroup]="sendcode" class="">
+      <div class="buttons  m-auto ">
+        <input type="" formControlName="code" id="code" class="input border py-3 " >
+        <button [disabled]="sendcode.invalid" type="submit" class="code py-3 ">
+          Submit
+        </button>
+      </div>
+
           </form>
 </div>

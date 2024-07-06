@@ -1,15 +1,15 @@
 <nav  [ngStyle]="{'background-color':isLogin?'rgba(81, 57, 115, 1)': 'rgba(255, 255, 255, 1)
 '}"
 class=" main ">
-  <div class=" d-flex align-items-center bg-info rightsection  ">
+  <div class=" d-flex align-items-center rightsection  ">
   <img src="../../assets/images/icon.png " class="" alt="">
-      <ul class="ul1 m-auto list-unstyled   d-flex justify-content-around  algin-items-center ">
+      <ul class="ul1 m-auto list-unstyled   d-flex   algin-items-center ">
           <li >
               <a [ngStyle]="{'color':isLogin?'  rgba(245, 243, 243, 1) ':' rgba(15, 15, 15, 0.95)'}"
 
               [routerLink]="isLogin? '/home' : '/landing-page'" >Home</a>
           </li>
-          <li>
+          <li class="about">
            <a [ngStyle]="{'color':isLogin?'  rgba(245, 243, 243, 1) ':' rgba(15, 15, 15, 0.95)'}"
            [routerLink]="isLogin? '/' : '/landing-page'" class="mx-2">About Us</a>
           </li>
@@ -39,15 +39,15 @@ class=" main ">
       </ul>
   </div>
 
-<div  class="d-flex   align-items-center bg-danger  leftsection">
-    <div *ngIf="isLogin" class="soicalMedia  d-flex align-items-center">
-       <div class="icoon   border  mx-1 ">
+<div  class="d-flex   align-items-center  leftsection">
+    <div *ngIf="isLogin" class="soicalMedia m-auto d-flex align-items-center">
+       <div class="icoon   border   ">
        <i class="  fas fa-search   " routerLink="/services"></i></div>
-       <div class=" icoon   face  border  mx-1 ">
+       <div class=" icoon   face  border  ">
         <i class=" fas fa-heart  " routerLink="/favorite"></i></div>
-          <div class="icoon face  border mx-1   ">
+          <div class="icoon face  border ">
            <i class=" cart fas fa-shopping-cart  " routerLink="/cart" ></i></div>
-            <div class="icoon   face  border border-1 mx-1  ">
+            <div class="icoon   face  border border-1   ">
              <i class="  fas fa-user  "  (click)="toggleDropdownMenu()"></i>
              <div *ngIf="showDropdownMenu"  class="  ac-drop P-3" >
               <div class="d-flex">
@@ -62,12 +62,18 @@ class=" main ">
           </div>
             </div>
  </div>
-  <ul *ngIf="!isLogin" class="m-auto final bg-info third d-flex list-unstyled ">
-  <li><a  class="mx-1" routerLink="/signup">SignUp</a></li>
-   <li ><a  class="mx-1" routerLink="/login">Login</a></li>
-   <li><a *ngIf="isLogin" class="logout " (click)="callLogOut(userData)" routerLink="/login" >LogOut</a></li>
-     </ul>
+<div class="third m-auto ">
+  <div class="sign">
+    <ul *ngIf="!isLogin" class=" final  d-flex list-unstyled align-items-center ">
+      <li><a  class="signup  mb-0" routerLink="/signup">SignUp/</a></li>
+    <li ><a  class="mb-0 " routerLink="/login">Login</a></li>
+    </ul>
+  </div>
+<div class="log">
+   <a *ngIf="isLogin" class="logout" (click)="callLogOut(userData)" routerLink="/login" >LogOut</a></div>
 
+
+</div>
 
 
   </nav>

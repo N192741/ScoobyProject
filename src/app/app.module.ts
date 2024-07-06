@@ -104,7 +104,11 @@ import { AccountComponent } from './account/account.component';
    HttpClientModule
   ],
   providers: [
-
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass:AuthInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 
