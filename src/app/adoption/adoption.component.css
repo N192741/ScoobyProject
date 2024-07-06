@@ -239,67 +239,49 @@ margin-left: 26%;
   } */
   .sliderpets{
     background-color: #513973;
-    /* width:1,340px;
-height: 700px;
-top: 2067px;
-padding: 50px 152px 50px 152px;
-gap: 10px;
-margin-top: 11%; */
-width: 1,440px;
-height: 745px;
-top: 2067px;
-padding: 50px 152px 50px 152px;
-gap: 10px;
-opacity: 0px;
+ 
 
-margin-top: 8%;
+
+
   }
   .disc-Successful{
     font-family: Roboto;
-font-size: 38px;
+/* font-size: 38px;
 font-weight: 700;
-line-height: 40px;
+line-height: 40px; */
 letter-spacing: 0.05em;
 text-align: center;
 color: #FEFBFB;
   }
   .disc-slide{
     font-family: Roboto;
-font-size: 22px;
-font-weight: 400;
+/* font-size: 22px;
+font-weight: 400; */
 line-height: 22px;
 letter-spacing: 0.05em;
 text-align: center;
 color: #CDC6C6;
   }
-  .slider-img{
-    width: 330px;
-height: 395px;
 
-
-  }
   .slider{
 
-/* width: 1500px;
-height: 389px;
-padding-right: 24%; */
 position: relative;
-margin-top: 7%;
+margin-top: 5%;
   }
   .header h3{
     color: rgba(15, 15, 15, 0.95);
     font-family: Roboto;
-    font-size: 38px;
+    /* font-size: 38px;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 44px; */
     text-align: left;
     }
     .header p{
       color: rgba(15, 15, 15, 0.8);
       font-family: Roboto;
-      font-size: 28px;
+      /* font-size: 28px;
       font-weight: 400;
-      line-height: 32.81px;
+      line-height: 32.81px; */
       text-align: left;
     
     }
@@ -310,17 +292,17 @@ margin-top: 7%;
       bottom:0px ;
       border-bottom-right-radius: 8px;
       border-bottom-left-radius: 8px;
-      height: 75px;
+      
     }
     .desc a{
       color:  rgba(245, 243, 243, 1);
-      height: 70px;
+      /* height: 70px; */
       padding-top: 10px;
       text-decoration: none;
       font-family: Roboto;
-      font-size: 20px;
+      /* font-size: 20px;
       font-weight: 500;
-      line-height: 12px;
+      line-height: 12px; */
       letter-spacing: 0.5px;
       text-align: left;
     
@@ -328,7 +310,7 @@ margin-top: 7%;
     }
     .blog{
       position: relative;
-      height: 250px;
+      /* height: 250px; */
       border-radius: 10px;
     
     }
@@ -342,8 +324,8 @@ margin-top: 7%;
       bottom: 0;
       top: 0;
       right: 0;
-      width: 135px ;
-      height: 395px;
+      /* width: 135px ;
+      height: 395px; */
       background-color:rgba(255,255,255,0.4) ;
      
     }
@@ -353,31 +335,31 @@ margin-top: 7%;
       bottom: 0;
       top: 0;
       left: 0;
-      width: 137px ;
-      height: 395px;
+      /* width: 137px ;
+      height: 395px; */
       background-color:rgba(255,255,255,0.4) ;
      
     }
-    .right-img{
-    padding-top: 170px;
-    padding-left:50px ;
-
-    }
+   
     .button {
       width: Hug (200px)px;
 height: Hug (32px)px;
-padding: 11px 45px 11px 45px;
+/* padding: 11px 45px 11px 45px;
 gap: 10px;
 border-radius: 32px;
+margin-top: 4%;
+margin-left: 45%; */
 background-color:#FFFFFF;
 color: 
 #513973;
 text-decoration: none;
 cursor: pointer;
 display: inline-block;
-margin-top: 4%;
-margin-left: 45%;
+
    
+    }
+    .bg{
+      background-color: #FFFFFF;
     }
     
     @media screen and (min-width:0px) and (max-width:600px){
@@ -413,14 +395,15 @@ margin-left: 45%;
 font-weight: 350;
 padding-top: 4px;
      }
-     .adoption{
+     .adoption-1{
       padding-top: 23%;
       padding-left: 2%;
       font-family:  Roboto;
      
     }
+   
     .title{
-      padding-left: 45px;
+      padding-left: 3%;
      
   font-size: 15px;
   font-weight: 400;
@@ -541,9 +524,115 @@ padding-top: 4px;
                           .parts{
                             padding-left: 10%;
                             padding-top: 4%;
-                            
-
                           }
+                          .sliderpets{
+                            
+                         
+                        width: 100%;
+                        padding: 1% 5% 1% 5%;
+                        margin-top: 10%;
+
+                        
+                          }
+                          .disc-Successful{
+
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 40px;
+                        
+                              }
+                              .disc-slide{
+                  
+                                font-size: 16px;
+                                font-weight: 400;
+                              
+                                  }
+                                  .slider-img{
+                                    width: 15%;
+                                height: 230px;
+
+                                  }
+                                  .right-gray{
+
+                                    width: 90px ;
+                                    height: 230px;
+                                   
+                                   
+                                  }
+                                  .left-gray{
+                  
+                                    width: 90px ;
+                                    height: 230px;
+                  
+                                  }
+                                  .right-img{
+                                    padding-top: 130%;
+                                    padding-left:40% ;
+                                
+                                  }
+                                  .t-btn{
+                                    padding-right: 22%;
+                                  }
+                                  .button {
+                                    width: Hug (200px)px;
+                              height: Hug (32px)px;
+                              padding: 4px 22px 4px 22px;
+                              gap: 10px;
+                              border-radius: 32px;
+                              margin-top: 3%;
+                              margin-left: 45%;
+                
+                                  }
+                                  .adoption{
+                                    padding-top: 11%;
+                                    padding-left: 2%;
+                                    font-family:  Roboto;
+                                   
+                                  }
+                                  .header h3{
+                    
+                                    font-size: 20px;
+                                    font-weight: 6500;
+                                   
+                                  
+                                    }
+                                    .header p{
+                  
+                                      font-size: 15;
+                                      font-weight: 400;
+                                      
+                
+                                    
+                                    }
+                                    .t-blogs{
+                                      padding-top: 7%;
+                                    }
+
+                                    .blog{
+                                      height: 250px;
+                                      padding-left: 1.5%;
+                                     padding-top: 7%;
+                
+                                    }
+                                    .blog-im{
+                                      width: 120%;
+                                    }
+                                    .desc{
+                  
+                                     
+                                      height: 27%;
+                                      width: 118%;
+                                    }
+                                    .desc a{
+                                      color:  rgba(245, 243, 243, 1);
+                                      height: 70px;
+                                    
+                                      font-size: 10px;
+                                      font-weight: 500;
+                                      line-height: 12px;
+                   
+                                    }
+                                  
 
     }
     
@@ -582,7 +671,7 @@ padding-top: 4px;
 font-weight: 350;
 padding-top: 4px;
      }
-     .adoption{
+     .adoption-1{
       padding-top: 18%;
       padding-left: 4%;
       font-family:  Roboto;
@@ -667,6 +756,162 @@ padding-top: 4px;
                       .btn-meet{
                         padding-top: 7%;
                       }
+                      .Planning{
+                        font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 500;    
+                    padding-top: 11%;
+                      }
+                      .part1{
+ 
+                        width: 60%;
+                        height: 60%;
+                        margin-left: 15%;
+                      }
+                      .part2{
+ 
+                        width: 60%;
+                        height: 60%;
+                  margin-top: 5%;
+                  margin-bottom: 5%;
+                  margin-left: 15%;
+                  /* margin-right: 50%; */
+                      }
+                      .part3{
+ 
+                        width: 60%;
+                        height: 60%;
+                        margin-left: 15%;
+                  
+                      }
+                      .Planning-img{
+                        width: 110px;
+                    height: 90px;
+                    margin-left: 30%;
+                   
+                      }
+                      .big{
+                        font-size: 20px;
+                        font-weight: 50;
+                        line-height: 23px;
+                          }
+                          .Planning-btn {
+                            margin-top: 5%;
+                          }
+                          .parts{
+                            padding-left: 10%;
+                            padding-top: 4%;
+                            
+
+                          }
+                          .sliderpets{
+                            
+                         
+                            width: 100%;
+                            padding: 2% 5% 2% 5%;
+                            margin-top: 10%;
+    
+                            
+                              }
+                              .disc-Successful{
+    
+                                font-size: 22px;
+                                font-weight: 550;
+                                line-height: 40px;
+                            
+                                  }
+                                  .disc-slide{
+                      
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                  
+                                      } .slider-img{
+                                        width: 30%;
+                                    height: 280px;
+    
+                                      }
+                                      .right-gray{
+
+                                        width: 90px ;
+                                        height: 280px;
+                                       
+                                       
+                                      }
+                                      .left-gray{
+                      
+                                        width: 90px ;
+                                        height: 280px;
+                      
+                                      }
+                                      .right-img{
+                                        padding-top: 130%;
+                                        padding-left:40% ;
+                                    
+                                        }
+                                        .t-btn{
+                                          padding-right: 13%;
+                                        }
+                                       
+                                        .button {
+                                          width: Hug (200px)px;
+                                    height: Hug (32px)px;
+                                    padding: 6px 26px 6px 26px;
+                                    gap: 10px;
+                                    border-radius: 32px;
+                                    margin-top: 3%;
+                                    margin-left: 45%;
+                      
+                                        }
+                                        .adoption{
+                                          padding-top: 11%;
+                                          padding-left: 2%;
+                                          font-family:  Roboto;
+                                         
+                                        }
+                                        .header h3{
+                    
+                                          font-size: 26px;
+                                          font-weight: 550;
+                                         
+                                        
+                                          }
+                                          .header p{
+                        
+                                            font-size: 17px;
+                                            font-weight: 450;
+                                            
+                      
+                                          
+                                          }
+                                          .t-blogs{
+                                            padding-top: 3%;
+                                          }
+ 
+                                          .blog{
+                                            height: 250px;
+                                            padding-left: 1.5%;
+                                           padding-top: 7%;
+                      
+                                          }
+                                          .blog-im{
+                                            width: 100%;
+                                          }
+                                          .desc{
+                        
+                                           
+                                            height: 27%;
+                                            width: 99.1%;
+                                          }
+                                          .desc a{
+                                            color:  rgba(245, 243, 243, 1);
+                                            height: 70px;
+                                          
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            line-height: 12px;
+                         
+                                          }
+      
     }
     @media screen and (min-width:769px) and (max-width:992px){
       .big-img{
@@ -703,7 +948,7 @@ padding-top: 4px;
 font-weight: 350;
 padding-top: 6px;
      }
-     .adoption{
+     .adoption-1{
       padding-top: 19%;
       padding-left: 5%;
       font-family:  Roboto;
@@ -791,6 +1036,209 @@ margin-right: 5px; */
             .btn-meet{
               padding-top: 5%;
             }
+            .Planning{
+              font-family: Roboto;
+          font-size: 20px;
+          font-weight: 500;    
+          padding-top: 11%;
+            }
+            .part1{
+
+              width: 60%;
+              height: 60%;
+              margin-left: 15%;
+            }
+            .part2{
+
+              width: 60%;
+              height: 60%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 15%;
+        /* margin-right: 50%; */
+            }
+            .part3{
+
+              width: 60%;
+              height: 60%;
+              margin-left: 15%;
+        
+            }
+            .Planning-img{
+              width: 110px;
+          height: 90px;
+          margin-left: 30%;
+         
+            }
+            .big{
+              font-size: 20px;
+              font-weight: 50;
+              line-height: 23px;
+                }
+                .Planning-btn {
+                  margin-top: 5%;
+                }
+                .parts{
+                  padding-left: 10%;
+                  padding-top: 4%;
+
+                }
+                .sliderpets{
+                            
+                         
+                  width: 100%;
+                  padding: 2% 5% 2% 5%;
+                  margin-top: 10%;
+                  
+                    }
+                    .disc-Successful{
+
+                      font-size: 25px;
+                      font-weight: 550;
+                      line-height: 40px;
+                  
+                        }
+                        .disc-slide{
+            
+                          font-size: 16px;
+                          font-weight: 400;
+                        
+                            }
+                            .slider-img{
+                              width: 30%;
+                          height: 280px;
+
+                            }
+                            .right-gray{
+
+                              width: 90px ;
+                              height: 280px;
+                             
+                             
+                            }
+                            .left-gray{
+            
+                              width: 90px ;
+                              height: 280px;
+            
+                            }
+                            .right-img{
+                              padding-top: 130%;
+                              padding-left:40% ;
+                          
+                              }
+                              .t-btn{
+                                padding-right: 15%;
+                              }
+                              .t-btn{
+                                padding-right: 10%;
+                              }
+                              .button {
+                                width: Hug (200px)px;
+                          height: Hug (32px)px;
+                          padding: 6px 26px 6px 26px;
+                          gap: 10px;
+                          border-radius: 32px;
+                          margin-top: 3%;
+                          margin-left: 45%;
+            
+                              }
+                              .adoption{
+                                padding-top: 9%;
+                                padding-left: 2%;
+                                font-family:  Roboto;
+                               
+                              }
+                          .header h3{
+                    
+                                          font-size: 26px;
+                                          font-weight: 550;
+                                         
+                                        
+                                          }
+                                          .header p{
+                        
+                                            font-size: 17px;
+                                            font-weight: 450;
+                                            
+                      
+                                          
+                                          }
+                                          .t-blogs{
+                                            padding-top: 3%;
+                                          }
+ 
+                                          .blog{
+                                            height: 250px;
+                                            padding-left: 1.5%;
+                                           padding-top: 7%;
+                      
+                                          }
+                                          .blog-im{
+                                            width: 100%;
+                                          }
+                                          .desc{
+                        
+                                           
+                                            height: 27%;
+                                            width: 99.1%;
+                                          }
+                                          .desc a{
+                                            color:  rgba(245, 243, 243, 1);
+                                            height: 70px;
+                                          
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            line-height: 12px;
+                         
+                                          }
+                                          .header h3{
+                    
+                                            font-size: 34px;
+                                            font-weight: 700;
+                                            line-height: 44px;
+                                          
+                                            }
+                                            .header p{
+                          
+                                              font-size: 23px;
+                                              font-weight: 400;
+                                              line-height: 32.81px;
+                        
+                                            
+                                            }
+                                            .t-blogs{
+                                              padding-top: 6%;
+                                            }
+                                            .blog{
+                                              height: 250px;
+                                              padding-left: 1.5%;
+                                             
+                        
+                                            }
+                                            .blog-im{
+                                              width: 100%;
+                                            }
+                                            .desc{
+                          
+                                             
+                                              height: 30%;
+                                              width: 95.5%;
+                                            }
+                                            .desc a{
+                                              color:  rgba(245, 243, 243, 1);
+                                              height: 70px;
+                                            
+                                              font-size: 14px;
+                                              font-weight: 500;
+                                              line-height: 12px;
+                           
+                                            }
+                                            .blogss{
+                                              display: flex;
+                                            }
+
+            
     }
     @media screen and (min-width:993px) and (max-width:1200px){
       .big-img{
@@ -827,7 +1275,7 @@ margin-right: 5px; */
 font-weight: 350;
 padding-top: 8px;
      }
-     .adoption{
+     .adoption-1{
       padding-top: 21%;
       padding-left: 5%;
       font-family:  Roboto;
@@ -914,6 +1362,162 @@ margin-right: 15px; */
             .btn-meet{
               padding-top: 13%;
             }
+            .Planning{
+              font-family: Roboto;
+          font-size: 25px;
+          font-weight: 550;    
+          padding-top: 11%;
+            }
+            .part1{
+
+              width: 60%;
+              height: 60%;
+              margin-left: 15%;
+            }
+            .part2{
+
+              width: 60%;
+              height: 60%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 15%;
+        /* margin-right: 50%; */
+            }
+            .part3{
+
+              width: 60%;
+              height: 60%;
+              margin-left: 15%;
+        
+            }
+            .Planning-img{
+              width: 110px;
+          height: 90px;
+          margin-left: 30%;
+         
+            }
+            .big{
+              font-size: 20px;
+              font-weight: 50;
+              line-height: 23px;
+                }
+                .Planning-btn {
+                  margin-top: 5%;
+                }
+                .parts{
+                  padding-left: 10%;
+                  padding-top: 4%;
+ 
+                }
+                .sliderpets{
+                            
+                         
+                  width: 100%;
+                  padding: 2% 5% 2% 5%;
+                  margin-top: 10%;
+                  
+                    }
+                    .disc-Successful{
+
+                      font-size: 25px;
+                      font-weight: 550;
+                      line-height: 40px;
+                  
+                        }
+                        .disc-slide{
+            
+                          font-size: 16px;
+                          font-weight: 400;
+                        
+                            }
+                            .slider-img{
+                              width: 30%;
+                          height: 280px;
+
+                            }
+                            .right-gray{
+
+                              width: 90px ;
+                              height: 280px;
+                             
+                             
+                            }
+                            .left-gray{
+            
+                              width: 90px ;
+                              height: 280px;
+            
+                            }
+                            .right-img{
+                              padding-top: 130%;
+                              padding-left:40% ;
+                          
+                              }
+                              .t-btn{
+                                padding-right: 9%;
+                              }
+                            
+                              .button {
+                                width: Hug (200px)px;
+                          height: Hug (32px)px;
+                          padding: 6px 26px 6px 26px;
+                          gap: 10px;
+                          border-radius: 32px;
+                          margin-top: 3%;
+                          margin-left: 45%;
+            
+                              }
+                              .adoption{
+                                padding-top: 7%;
+                                padding-left: 2%;
+                                font-family:  Roboto;
+                               
+                              }
+                              .header h3{
+                    
+                                font-size: 31px;
+                                font-weight: 600;
+                               
+                              
+                                }
+                                .header p{
+              
+                                  font-size: 24px;
+                                  font-weight: 400;
+                                  
+            
+                                
+                                }
+                                .t-blogs{
+                                  padding-top: 4%;
+                                }
+                                .blog{
+                                  height: 250px;
+                                  padding-left: 1.5%;
+                                 
+            
+                                }
+                                .blog-im{
+                                  width: 100%;
+                                }
+                                .desc{
+              
+                                 
+                                  height: 30%;
+                                  width: 95.5%;
+                                }
+                                .desc a{
+                                  color:  rgba(245, 243, 243, 1);
+                                  height: 70px;
+                                
+                                  font-size: 15px;
+                                  font-weight: 500;
+                                  line-height: 12px;
+               
+                                }
+                                .blogss{
+                                  display: flex;
+                                }
     }
     @media screen and (min-width:1201px) {
       .big-img{
@@ -928,7 +1532,7 @@ margin-right: 15px; */
       .kinds{
         position: absolute;
         top:65%;
-        left:22%;
+        left:20%;
        
     } 
     .item{
@@ -965,7 +1569,7 @@ padding-top: 14px;
      
     }
     .title{
-      padding-left: 85px;
+      padding-left: 7%;
       
   font-size: 30px;
   font-weight: 600;
@@ -1098,4 +1702,111 @@ margin-right: 15px;
                   padding-left: 10%;
                   padding-top: 4%;
                 }
+                .sliderpets{
+                 
+               
+              width: 100%;
+              
+              margin-top: 8%;
+              padding: 3% 8% 3% 8%;
+              /* padding: 50px 152px 50px 152px; */
+/* gap: 10px; */
+
+                }
+                .disc-Successful{
+
+              font-size: 38px;
+              font-weight: 700;
+              line-height: 40px;
+          
+                }
+                .disc-slide{
+                  
+              font-size: 22px;
+              font-weight: 400;
+            
+                }
+                .slider-img{
+                  width: 70%;
+              height: 395px;
+              
+              
+                }
+                .right-gray{
+
+                  width: 140px ;
+                  height: 395px;
+                 
+                 
+                }
+                .left-gray{
+
+                  width: 140px ;
+                  height: 395px;
+
+                }
+                .right-img{
+                  padding-top: 130%;
+                  padding-left:40% ;
+              
+                  }
+                  .t-btn{
+                    padding-right: 3%;
+                  }
+                  .button {
+                    width: Hug (200px)px;
+              height: Hug (32px)px;
+              padding: 11px 45px 11px 45px;
+              gap: 10px;
+              border-radius: 32px;
+              margin-top: 4%;
+              margin-left: 45%;
+
+                  }
+                  .header h3{
+                    
+                    font-size: 38px;
+                    font-weight: 700;
+                    line-height: 44px;
+                  
+                    }
+                    .header p{
+  
+                      font-size: 28px;
+                      font-weight: 400;
+                      line-height: 32.81px;
+
+                    
+                    }
+                    .t-blogs{
+                      padding-top: 6%;
+                    }
+                    .blog{
+                      height: 250px;
+                      padding-left: 1.5%;
+                     
+
+                    }
+                    .blog-im{
+                      width: 100%;
+                    }
+                    .desc{
+  
+                     
+                      height: 30%;
+                      width: 95.5%;
+                    }
+                    .desc a{
+                      color:  rgba(245, 243, 243, 1);
+                      height: 70px;
+                    
+                      font-size: 20px;
+                      font-weight: 500;
+                      line-height: 12px;
+   
+                    }
+                    .blogss{
+                      display: flex;
+                    }
+                  
     }

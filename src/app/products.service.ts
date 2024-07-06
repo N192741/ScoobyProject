@@ -23,23 +23,23 @@ export class ProductsService {
   updateFavorite(productId: number, favorite: boolean) {
     console.log(favorite);
     const payload = { favorite: favorite };
-    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/fav/addfav/66138da36320a6b3105e2ad1?productId=${productId}`, payload);
+    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/fav/addfav?productId=${productId}`, payload);
   }
 
   getFavoriteProducts() {
-    return this._httpClient.get(`https://scoobyfamily.onrender.com/scooby/api/fav/getfavproduct/66138da36320a6b3105e2ad1`);
+    return this._httpClient.get(`https://scoobyfamily.onrender.com/scooby/api/fav/getfavproduct`);
   }
 
 
 
   addToCart(product: any): Observable<any> {
     // قم بتنفيذ طلب POST لإضافة المنتج إلى العربة
-    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/addproduct/66138da36320a6b3105e2ad1?productId=${product._id}`, product);
+    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/addproduct?productId=${product._id}`, product);
   }
 
   getcartProducts() {
     // قم بتنفيذ طلب GET لاسترداد بيانات العربة
-    return this._httpClient.get(`https://scoobyfamily.onrender.com/scooby/api/cart/getcart/66138da36320a6b3105e2ad1`);
+    return this._httpClient.get(`https://scoobyfamily.onrender.com/scooby/api/cart/getcart`);
   }
 
 
@@ -48,28 +48,28 @@ export class ProductsService {
 
 
   deleteItemFromCart(itemId: string): Observable<any> {
-    return this._httpClient.delete(`https://scoobyfamily.onrender.com/scooby/api/cart/removeproduct/66138da36320a6b3105e2ad1?itemId=${itemId}`);
+    return this._httpClient.delete(`https://scoobyfamily.onrender.com/scooby/api/cart/removeproduct?itemId=${itemId}`);
     
   }
   applyCoupon(couponCode: string): Observable<any> {
     const payload = { coupon: couponCode };
-    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/applycoupon/66138da36320a6b3105e2ad1`, payload);
+    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/applycoupon`, payload);
   }
   increaseProductQuantity(productId: number): Observable<any> {
-    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/plusquantity/66138da36320a6b3105e2ad1?productId=${productId}`, {});
+    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/plusquantity?productId=${productId}`, {});
   }
   
   reduceProductQuantity(productId: number): Observable<any> {
-    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/minusquantity/66138da36320a6b3105e2ad1?productId=${productId}`, {});
+    return this._httpClient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/minusquantity?productId=${productId}`, {});
   }
 
 
   placeCashOrder(cartId: string): Observable<any> {
-    return this._httpClient.post(`https://scoobyfamily.onrender.com/scooby/api/order/cashorder/66138da36320a6b3105e2ad1?cartId=${cartId}`, {});
+    return this._httpClient.post(`https://scoobyfamily.onrender.com/scooby/api/order/cashorder?cartId=${cartId}`, {});
   }
 
   getCheckoutSession(cartId: string): Observable<any> {
-    return this._httpClient.get(`https://scoobyfamily.onrender.com/scooby/api/order/checkout-session/66138da36320a6b3105e2ad1?cartId=${cartId}`);
+    return this._httpClient.get(`https://scoobyfamily.onrender.com/scooby/api/order/checkout-session?cartId=${cartId}`);
   }
 
 }

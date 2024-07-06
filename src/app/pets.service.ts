@@ -27,11 +27,11 @@ return this._httpclient.get(`https://scoobyfamily.onrender.com/scooby/api/shelte
  updateFavorite(petId: number, favorite: boolean) {
   console.log(favorite);
   const payload = { favorite: favorite };
-  return this._httpclient.patch(`https://scoobyfamily.onrender.com/scooby/api/fav/addfav/66138da36320a6b3105e2ad1?petId=${petId}`, payload);
+  return this._httpclient.patch(`https://scoobyfamily.onrender.com/scooby/api/fav/addfav?petId=${petId}`, payload);
 }
 
 getFavoritePets() {
-  return this._httpclient.get(`https://scoobyfamily.onrender.com/scooby/api/fav/getfavpet/66138da36320a6b3105e2ad1`);
+  return this._httpclient.get(`https://scoobyfamily.onrender.com/scooby/api/fav/getfavpet`);
 }
 
 getSuccessfullAdoption(SuccessfullAdoption:string):Observable<any>{
@@ -65,7 +65,7 @@ getSuccessfullAdoption(SuccessfullAdoption:string):Observable<any>{
    return this._httpclient.get(`https://scoobyfamily.onrender.com/scooby/api/Pets/filtercatsforkids`)
     }
     getFavoriteProducts() {
-      return this._httpclient.get(`https://scoobyfamily.onrender.com/scooby/api/fav/getfavpet/66138da36320a6b3105e2ad1`);
+      return this._httpclient.get(`https://scoobyfamily.onrender.com/scooby/api/fav/getfavpet`);
     }
 
 
@@ -78,6 +78,6 @@ getSuccessfullAdoption(SuccessfullAdoption:string):Observable<any>{
    
     addToCart(product: any): Observable<any> {
       // قم بتنفيذ طلب POST لإضافة المنتج إلى العربة
-      return this._httpclient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/addproduct/66138da36320a6b3105e2ad1?productId=${product._id}`, product);
+      return this._httpclient.patch(`https://scoobyfamily.onrender.com/scooby/api/cart/addproduct?productId=${product._id}`, product);
     }
   }

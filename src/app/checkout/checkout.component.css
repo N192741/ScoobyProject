@@ -10,6 +10,7 @@ border-radius: 4px ;
 .billing-form {
   display: flex;
   flex-direction: column;
+ 
 }
 
 .name-inputs {
@@ -200,3 +201,27 @@ border: none;
   font-size: 13px;
   font-weight: 400;
 }
+.bg{
+  background-color: #FFFFFF;
+}
+
+@media screen and (min-width:0px) and (max-width:600px){
+   
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px){
+   
+    }
+
+    @media screen and (min-width:769px) and (max-width:992px){
+       
+        }
+
+        @media screen and (min-width:993px) and (max-width:1200px){
+          
+            }
+
+            @media screen and (min-width:1201px) {
+              
+                }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -9,7 +10,9 @@ import { ProductsService } from '../products.service';
 })
 export class FavoriteComponent implements OnInit {
   favoriteProducts: any[] = [];
-  constructor(private _ProductsService:ProductsService) { }
+  isfavorite: boolean;
+
+  constructor(private _ProductsService:ProductsService, private _toaster: ToastrService) { }
 
   ngOnInit(): void {
     this.getFavoriteProducts();
@@ -21,6 +24,31 @@ export class FavoriteComponent implements OnInit {
       this.favoriteProducts=response.data;
       console.log( this.favoriteProducts);
     });
+  }
+  toggleFavorite(product: any) {
+    if (product.favorite) {
+      this.isfavorite = false;
+      this._ProductsService.updateFavorite(product._id,true).subscribe((response) => {
+        console.log(response);
+        product.favorite = !product.favorite;
+        this.getFavoriteProducts();
+      this._toaster.success("Your Item Added Successfully");
+
+      });
+    }
+    else {
+      this.isfavorite = true;
+      this._ProductsService.updateFavorite(product._id, false).subscribe((response) => {
+        console.log(response);
+        product.favorite = !product.favorite;
+        this.getFavoriteProducts();
+      this._toaster.success("Your Item Removed Successfully");
+
+
+      });
+    }
+
+  
   }
 
 }

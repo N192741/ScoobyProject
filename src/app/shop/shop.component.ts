@@ -26,6 +26,7 @@ export class ShopComponent implements OnInit {
   ngOnInit(): void {
     this._ProductsService.getProduct('').subscribe((response) => {
       this.productName = response.data;
+      console.log( response.data)
     })
   }
   pageChange(event: any) {
@@ -68,10 +69,16 @@ export class ShopComponent implements OnInit {
   toggleFavorite(product: any) {
     if (product.favorite) {
       this.isfavorite = true;
+      this._toaster.success("Your Item Removed Successfully");
+      
+      
 
     }
     else {
       this.isfavorite = false;
+      this._toaster.success("Your Item Added Successfully");
+
+
     }
 
     this._ProductsService.updateFavorite(product._id, this.isfavorite).subscribe((response) => {

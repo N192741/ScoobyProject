@@ -1,12 +1,13 @@
+<div class="bg">
 <div class="container">
    <div class=" pt-2  d-flex  ">
       <div class="cart-1 pt-4">Cart</div>
-      <div class="cart-length px-2 pt-2">({{cartProducts.length}} items)</div>
+      <div class="cart-length px-2 ">({{cartProducts.length}} items)</div>
    </div>
    <div class="pt-2">
    <div class="brdr-1"></div>
    </div>
-   <div class=" row pt-4 px-5 mx-3">
+   <div class=" row pt-4 ">
       <div class="col-md-8">
 
          <div class="row ">
@@ -25,7 +26,7 @@
 
                      </div>
                      <div class="Free-Delivery pt-3">Free Delivery</div>
-                     <div class="d-flex counter px-1 mt-3">
+                     <div class="d-flex counter px-1 ">
                         <button (click)="decreaseQuantity(product)" class="btn-1 px-1 ">-</button>
                         <p class="num px-2">{{ product.quantity }}</p>
                         <button (click)="increaseQuantity(product)" class="btn-1 px-1 ">+</button>
@@ -38,7 +39,7 @@
             </div>
          </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 px-5">
          <div class="row crt p-3 mt-3">
             <h4 class="Order-Summary">Order Summary  </h4>
             <div class=" d-flex justify-content-center">
@@ -60,7 +61,7 @@
                      <p class="design">Total</p>
                      <p>{{totalCartPrice}} EGP</p>
                   </div>
-                  <button class="checkout" routerLink="/checkout">checkout</button>
+                  <button class="checkout m-auto" routerLink="/checkout">checkout</button>
                   
                </div>
               
@@ -71,9 +72,9 @@
 
          </div>
 
-         <div class="row crt p-3 my-3 ">
+         <div class="row crt-1  my-3 ">
             <div class="Payment-Methods">Payment Methods</div>
-            <div class="  d-flex align-items-around pt-3">
+            <div class="  d-flex align-items-around pt-3 ">
                <img src="../../assets/images/Frame 280382.png" class="Methods"  alt="">
                <img src="../../assets/images/Frame 280383.png" class="Methods"  alt="">
                <img src="../../assets/images/Frame 280384.png" class="Methods"  alt="">
@@ -89,4 +90,5 @@
 
 
    </div>
+</div>
 </div>
