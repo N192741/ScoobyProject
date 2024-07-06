@@ -1,6 +1,4 @@
-.carts {
-    border: 1px solid #0c0c0c;
-}
+
 
 .EGP-2 {
     color: rgba(0, 0, 0, 0.478);
@@ -45,8 +43,8 @@ img {
 }
 
 .carts {
-    width: 670px;
-    height: 170px;
+    /* width: 670px;
+    height: 170px; */
     border-radius: 8px;
     border: 1px solid #0f0f0f33;
 }
@@ -67,18 +65,24 @@ font-weight: 500;
 
 .input {
     border: none !important;
-    width: 80%;
+   
 }
 
 .btn {
     background-color: #513973;
     color: #FEFBFB;
-    width: 20%;
+    /* width: 20%; */
 }
 
 .crt {
     border-radius: 8px;
     border: 1px solid #0f0f0f33;
+}
+.crt-1{
+    
+        border-radius: 8px;
+        border: 1px solid #0f0f0f33;
+    
 }
 
 .total-price {
@@ -114,11 +118,12 @@ font-weight: 500;
     font-family: Roboto;
     font-size: 13px;
     font-weight: 400;
+    /* padding-top: 2.7%; */
 }
 
 .checkout {
-    width: 316px;
-    height: 38px;
+    /* width: 316px;
+    height: 38px; */
     border-radius: 32px;
     background-color: #513973;
     color: #FEFBFB;
@@ -145,7 +150,7 @@ height: 30px;
 padding: 2px ;
 border-radius: 27px ;
 border: 1px solid #0c0c0c57;
-
+margin-top: 5.5%;
 }
 .btn-1{
  width: 20px;
@@ -156,3 +161,138 @@ color: #FEFBFB;
 border: none;
 
 }
+.bg{
+    background-color: #FFFFFF;
+  }
+@media screen and (min-width:0px) and (max-width:600px){
+    .carts {
+        width: 370px;
+        height: 170px;
+    }
+    .counter{
+        margin-top: 3.5%;
+        }
+        .cart-length {
+            padding-top: 8.7%;
+        }
+        .checkout {
+            width: 250px;
+            height: 38px;
+        }
+        .btn {
+            width: 24%;
+        }
+        .input {
+            width: 80%;
+        }
+        .crt-1{
+            padding: 5%;
+            
+
+        }
+    }
+
+
+    @media screen and (min-width:601px) and (max-width:768px){
+        .cart-length {
+            padding-top: 6.7%;
+        }
+        .checkout {
+            width: 335px;
+            height: 38px;
+            
+        }
+        .input {
+            width: 80%;
+        }
+        .crt-1{
+            padding: 5%;
+            
+
+        }
+        }
+
+        @media screen and (min-width:769px) and (max-width:992px){
+            .cart-length {
+                padding-top: 4.7%;
+            }
+            .checkout {
+                width: 170px;
+                height: 38px;
+                
+            }
+            .crt {
+               width: 225px;
+               height: 400px;
+            }
+            .crt-1 {
+                width: 225px;
+                height: 100px;
+             }
+            .btn {
+                width: 40%;
+                height: 55%;
+            }
+            .input {
+                width: 100%;
+                height: 55%;
+                /* margin-bottom: 60%; */
+            }
+            
+            }
+
+            @media screen and (min-width:993px) and (max-width:1200px){
+                .cart-length {
+                    padding-top: 3.7%;
+                }
+                .checkout {
+                    width: 170px;
+                    height: 38px;
+                    
+                }
+                
+                .btn {
+                    width: 50%;
+                    height: 90%;
+                }
+                .input {
+                    width: 100%;
+                    height: 90%;
+                    /* margin-bottom: 60%; */
+                }
+                .crt-1{
+                    padding: 5%;
+                    
+
+                }
+                }
+
+                @media screen and (min-width:1201px) {
+                    .carts {
+                        width: 670px;
+                        height: 170px;
+                    }
+                    .counter{
+                       margin-top: 5.5%;
+                       }
+                       .cart-length {
+                        padding-top: 2.7%;
+                    }
+                    .checkout {
+                        width: 316px;
+                        height: 38px;
+                    }
+                    .btn {
+                        width: 20%;
+                    }
+                    .input {
+                        width: 80%;
+                    }
+                    .crt-1{
+                        padding: 5%;
+                        
+
+                    }
+                   
+  
+                    }

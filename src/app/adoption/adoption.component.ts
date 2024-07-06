@@ -1,6 +1,7 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { PetsService } from './../pets.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-adoption',
@@ -14,7 +15,7 @@ export class AdoptionComponent implements OnInit {
   isfavorite: boolean;
   api: any;
   SuccessfullAdoptions: any[] = [];
-  constructor(private _PetsService:PetsService) { }
+  constructor(private _PetsService:PetsService, private _toaster: ToastrService) { }
 
   ngOnInit(): void {
     this._PetsService.getpet('').subscribe((Response)=>{
@@ -40,10 +41,14 @@ export class AdoptionComponent implements OnInit {
   toggleFavorite(Pet: any) {
     if (Pet.favorite) {
       this.isfavorite = true;
+      this._toaster.success("Your Item Removed Successfully");
+
 
     }
     else {
       this.isfavorite = false;
+      this._toaster.success("Your Item Added Successfully");
+
     }
 
     this._PetsService.updateFavorite(Pet._id, this.isfavorite).subscribe((Response) => {

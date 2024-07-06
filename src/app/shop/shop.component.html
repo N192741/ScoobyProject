@@ -1,7 +1,9 @@
-<div class="container">
-    <div class="row">
+
+<div class="bg">
+<div class="container ">
+    <div class="total">
         <div class=" col-md-4">
-            <div class="category my-5">
+            <div class="category ">
 
                 <div class="category-head pb-1">
                     <h5>categories</h5>
@@ -20,7 +22,7 @@
             </div>
         </div>
         <div class="col-md-8">
-            <div class="mt-5">
+            <div class="mt-5 b-search">
                 <input type="text"  [(ngModel)]="dataSearch" (keyup)="getSearch(dataSearch)" placeholder="What are you looking for?" class="input">
                 <button class="search " (click)="getSearch(dataSearch)">
                     <i class="fas fa-search "></i>
@@ -34,7 +36,7 @@
                         </div>
 
                         <div class="d-flex justify-content-between flex-column ">
-                            <!-- <i class="fas fa-heart position-absolute top-0 end-0" (click)="goToFavoritePage(product)"></i> -->
+                           
                             <h5 class="pt-3 name">{{product.name}}</h5>
                             <h6 class="">{{product.desc}}</h6>
                             <div class="d-flex justify-content-between align-items-center">
@@ -67,4 +69,5 @@
 
     </div>
 
+</div>
 </div>
