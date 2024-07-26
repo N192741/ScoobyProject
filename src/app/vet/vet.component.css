@@ -1174,24 +1174,13 @@ margin-left: 25%;}
           height:380px;
           padding: 3% 1%;
         }
-        .veet img{
-          width: 10px;
-          height: 10px;
-         margin-left: 30%;
-         margin-bottom: 3%;
-        }
-        .su img{
+
+        .smallInfo img{
           width: 30%;
           height: 30%;
          margin-left: 30%;
          margin-bottom: 3%;
 
-        }
-        .vac img{
-          width: 30%;
-          height: 30%;
-         margin-left: 30%;
-         margin-bottom: 3%;
         }
 
         .smallInfo h5{
