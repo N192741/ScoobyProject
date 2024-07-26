@@ -149,7 +149,7 @@ text-align: end;
  }
 
  @media screen and (min-width:0px) and (max-width:600px) {
-
+.page{margin-bottom: 9%;}
   .first{
     width:100%;}
     .first1{
@@ -243,6 +243,7 @@ padding: 4% 4%;
 width: 49%;
 }}
 @media screen and (min-width:1201px){
+  .page{margin-bottom: 13%;}
 .first{
   display: flex;
   width: 100%;
