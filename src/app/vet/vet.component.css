@@ -33,11 +33,9 @@ color: rgba(15, 15, 15, 1);
 
 }
 .smallInfo{
-  border-radius: 7px;
+  border-radius: 7px; border-width: 3px;
 }
-.smallInfo img{
- object-fit: contain;
-}
+
 .smallInfo h5{
   font-family: Roboto;
   line-height: 26px;
@@ -69,210 +67,125 @@ color: rgba(81, 57, 115, 1);
 
 .thirdSection{
   background-color: rgba(245, 240, 252, 0.8);
- padding-top: 7%;
-height: 668px;
 }
 .thirdSection h3{
   font-family: Roboto;
-font-size: 40px;
-font-weight: 800;
 line-height: 40px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(15, 15, 15, 1);
 }
 .thirdP{
   font-family: Roboto;
-font-size: 22px;
-font-weight: 500;
 line-height: 22px;
 letter-spacing: 0.05em;
 text-align: center;
 color: rgba(136, 128, 128, 1);
-margin-left: 16%;
-margin-right: 16%;
 }
 .item{
   background-color: rgba(255, 255, 255, 1);
-width: 466px;
-height: 138px;
 border-radius: 12px;
 border-color: rgba(232, 225, 225, 1);
 border-width: .5px;
 }
 .item img{
-  width: 40px;
-  height: 37px;
   object-fit: contain;
 }
 .item h6{
   font-family: Roboto;
-font-size: 26px;
-font-weight: 800;
-line-height: 26px;
 letter-spacing: 0.05em;
 text-align: left;
 color: rgba(81, 57, 115, 1);
-margin-left: 6%;
 }
 .item p{
   font-family: Roboto;
-font-size: 20px;
-font-weight: 400;
 line-height: 20px;
 letter-spacing: 0.05em;
 color: rgba(136, 128, 128, 1);
 text-align: left;
-margin-left:16%;
+
 }
 .allItems{
   margin-left: 8%;
   margin-right: 8%;
 }
 .fourthSection{
-  height: 800px;
   background-color: rgba(81, 57, 115, 1);
-  padding-top: 7%;
 }
 .fourthSection h4{
   font-family: Roboto;
-font-size: 40px;
-font-weight: 800;
 line-height: 40px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(254, 251, 251, 1);
 
 }
 .fourthP{
   font-family: Roboto;
-font-size: 22px;
 font-weight: 400;
 line-height: 22px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(205, 198, 198, 1);
 
 }
-.doctor{
-  width: Hug (270px)px;
-height: Hug (360px)px;
-}
 .doctor img{
   border-radius: 50%;
-  width: 250px;
-height: 257px;
 border:  .5px dashed  rgba(255, 255, 255, .5);
 border-width: .5px 2px;
-padding-right: 7px;
-padding-left: 2px;
-padding-top: 1px;
-}
-.allDoctors{
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .name{
   font-family: Roboto;
-font-size: 24px;
-font-weight: 600;
-line-height: 24px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(254, 251, 251, 1);
 
 }
 .descrpition{
   font-family: Roboto;
-font-size: 20px;
-font-weight: 400;
-line-height: 23px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(205, 198, 198, 1);
 
 }
 .fourthSection button{
-  width: 22%;
   font-family: Roboto;
-font-size: 26px;
-font-weight: 700;
 line-height: 26px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(81, 57, 115, 1);
 background-color: rgba(255, 255, 255, 1);
 border-radius: 29px;
 border-width: 0px;
-margin-left: 39%;
-margin-right: 39%;
-margin-top: 2%;
 }
 .fifthSection{
-  height: 800px;
   background-color: rgba(255, 255, 255, 1);
-  padding-top: 7%;
 }
 .fifthSection h4{
   font-family: Roboto;
-font-size: 40px;
-font-weight: 800;
 line-height: 40px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(81, 57, 115, 1);
 }
 .fifthP{
   font-family: Roboto;
-font-size: 22px;
-font-weight: 400;
 line-height: 22px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(71, 70, 70, 1);
-}
-.vet{
-  width: Hug (270px)px;
-height: Hug (360px)px;
 }
 .vet img{
   border-radius: 50%;
-  width: 250px;
-height: 257px;
 border:  .5px dashed   rgba(71, 70, 70, .4);;
 border-width: .5px 2px;
-padding-right: 7px;
-padding-left: 2px;
-padding-top: 1px;
-}
-.allvets{
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .namevet{
   font-family: Roboto;
-font-size: 24px;
-font-weight: 600;
-line-height: 24px;
+
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(81, 57, 115, 1);
 }
 .fifthSection button{
-  width: 20%;
   font-family: Roboto;
-font-size: 26px;
-font-weight: 700;
 line-height: 26px;
 letter-spacing: 0.05em;
-text-align: center;
 color: rgba(81, 57, 115, 1);
 background-color: rgba(255, 255, 255, 1);
 border-color: rgba(81, 57, 115, 1) ;
 border-radius: 29px;
-margin-left: 39%;
-margin-right: 39%;
-margin-top: 2%;
 }
 .DoctorForm{
 width: 1100px;
@@ -369,14 +282,14 @@ margin-top: 4%;
     margin-left: 22%;
     /* justify-content: space-between; */
   }
-  .doctor{
+  .doc{
     width: 30%;
     height:40%;
     padding: 1% 4%;
     margin-right: 2%; margin-left: 3%;
   }
-  .doctor img{
-    width: 50px;
+  .doc img{
+    width: 40px;
     height: 40px;
     margin-left: 7%;
   }
@@ -427,12 +340,15 @@ margin-bottom: 5%;
     width: 33.3%;
     height:290px;padding: 1% 1%;
   }
+.vet img{
+  width: 20%; height: 20%;
+}
   .smallInfo img{
-    width: 25%;
-    height: 25%;
+width: 25%; height: 25%;
    margin-left: 37.5%;
    margin-bottom: .5%;
   }
+
   .smallInfo h5{
     font-size: 18px;
     font-weight: 500;
@@ -455,6 +371,43 @@ margin-bottom: 5%;
     margin-bottom: 50%;
 
   }
+.thirdSection{
+
+  width:100%; padding: 3% 1%;
+}
+.thirdSection h3{margin-top: 6%; font-size: 20px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%; }
+.thirdP{font-size: 14px; font-weight: 400;  margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 9%;}
+.allItems{width: 85%;}
+.item img{width:13%; height: 13%; margin-top: 1%;}
+.item{width: 90%; padding: 5% 4%; margin-bottom: 5%; margin-left: 5%;}
+.allItems1{width: 100%;}
+.allItems2{width:100%;}
+.item h6{font-size: 14px; font-weight: 800; margin-left: 5%; margin-bottom: 2%; line-height: 18px;}
+.item p{font-size: 12px; font-weight: 400; margin-left: 20%; margin-bottom: 0%;}
+.fourthSection{padding: 7% 1%;}
+.fourthSection h4{
+  font-size: 20px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;
+}
+.fourthP{font-size: 14px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 5%;}
+.allDoctors {width: 85%; margin-left: 7.5%;}
+.doctor{width: 25%;  }
+.doctor img{width: 90%; height: 45%; margin-left:5%; padding-right: 2px;
+  padding-left: 1.5px;
+  padding-top: 1px; margin-bottom: 9%;}
+  .name{font-size: 12px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+  .descrpition{font-size: 10px; font-weight: 500; text-align: center; line-height: 13px;}
+  .fourthSection button{font-size: 14px; font-weight: 700; text-align: center; margin-top: 5%;
+  width: 35%; margin-left: 32.5%; margin-bottom: 3%;}
+  .fifthSection{padding: 7% 1%;}
+  .fifthSection h4{font-size: 20px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;}
+  .fifthP{font-size: 14px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 5%;}
+  .allvets{width: 80%; margin-left: 10%;}
+  .vet{width: 25%;}
+  .vet img{padding-right: 2px; width: 85%; height: 50%; margin-left: 7.5%;
+    padding-left: 1.5px;
+    padding-top: 1px; margin-bottom: 5%;}
+    .namevet{font-size: 12px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+    .fifthSection button{text-align: center;font-size: 14px; font-weight: 700;width: 35%; margin-left: 32.5%; margin-top: 5%; }
 }
 @media screen and (min-width:451px) and (max-width:650px) {
   .page{
@@ -497,13 +450,13 @@ margin-top: 4%;
 
     /* justify-content: space-between; */
   }
-  .doctor{
+  .doc{
     width: 27%;
     height:40%;
     padding: 2% 1%;
     margin-right: 2%; margin-left:8%;
   }
-  .doctor img{
+  .doc img{
     width: 50px;
     height: 40px;
     margin-left: 20%;
@@ -559,6 +512,9 @@ margin-bottom: 5%;
     width: 32%;
     height:250px; padding: 3% 1%;
   }
+  .vet img{
+    width:20%; height: 20%;
+  }
   .smallInfo img{
     width: 25%;
     height: 25%;
@@ -588,7 +544,40 @@ margin-bottom: 5%;
     font-size:15px;
 font-weight: 400; margin-left: 12%;
   }
-
+  .thirdSection{ padding-bottom: 15%;}
+  .thirdSection h3{margin-top: 9%; font-size: 20px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;padding-top: 7%;}
+  .thirdP{font-size: 14px; font-weight: 400;  margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 8%;}
+  .allItems{width: 85%; }
+  .item img{width:13%; height: 13%; margin-top: 1%;}
+  .item{width: 90%; padding: 5% 4%; margin-bottom: 5%; margin-left: 5%;}
+  .allItems1{width: 100%;}
+  .allItems2{width:100%;}
+  .item h6{font-size: 14px; font-weight: 800; margin-left: 5%; margin-bottom: 2%; line-height: 18px;}
+  .item p{font-size: 12px; font-weight: 400; margin-left: 20%; margin-bottom: 0%;}
+  .fourthSection{padding: 7% 1%;}
+.fourthSection h4{
+  font-size: 20px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;
+}
+.fourthP{font-size: 14px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 2%;}
+.allDoctors {width: 85%; margin-left: 7.5%;}
+.doctor{width: 24%; margin-right: .5%;margin-left: .5%; }
+.doctor img{width: 85%; height:80px; margin-left: 5%; padding-right: 2px;
+  padding-left: 1.5px;
+  padding-top: 1px; margin-bottom: 9%;}
+  .name{font-size: 12px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+  .descrpition{font-size: 12px; font-weight: 500; text-align: center; line-height: 13px;}
+  .fourthSection button{font-size: 14px; font-weight: 700; text-align: center; margin-top: 5%;
+  width: 35%; margin-left: 32.5%; margin-bottom: 3%;}
+  .fifthP{font-size: 14px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 5%;}
+  .fifthSection{padding: 7% 1%;}
+  .fifthSection h4{font-size: 20px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;}
+  .allvets{width: 80%; margin-left: 10%;}
+  .vet{width: 25%;}
+  .vet img{padding-right: 2px; width: 85%; height: 52%; margin-left: 7.5%;
+    padding-left: 1.5px;
+    padding-top: 1px; margin-bottom: 5%;}
+    .namevet{font-size: 12px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+    .fifthSection button{text-align: center;font-size: 14px; font-weight: 700;width: 35%; margin-left: 32.5%; margin-top: 5%; }
 }
 @media screen and (min-width:651px) and (max-width:900px) {
   .page{
@@ -628,17 +617,17 @@ margin-left: 10%;
     margin-left: 22%;
     /* justify-content: space-between; */
   }
-  .doctor{
-    width: 26%;
+  .doc{
+    width: 30%;
     height:80%;
     padding: 2% 1%; margin-right: 2%; margin-left: 8%;
   }
-  .doctor img{
+  .doc img{
     width: 60px;
     height: 65px;
-    margin-left:22%;
+    margin-left:20%;
   }
-  .doctor a{
+  .doc a{
     margin-left:19%;
 
   }
@@ -647,7 +636,7 @@ margin-left: 10%;
 font-weight: 500;
   }
   .clinic{
-    width: 26%;
+    width: 30%;
     height:80%;
     padding: 2% 1%;
     margin-right: 2%;
@@ -655,13 +644,13 @@ font-weight: 500;
   .clinic img{
     width: 60px;
     height: 65px;
-    margin-left: 21%;
+    margin-left: 17%;
   }
   .clinic a{
     margin-left: 26%;
   }
   .Pharmacy{
-    width: 26%;
+    width: 30%;
     height:80%;
     padding: 2.5% 1%;
     margin-right: 2%;
@@ -723,9 +712,40 @@ margin-bottom: 5%;
     font-size:14px;
 font-weight: 400;  margin-left: 15%;
   }
-
-
-
+  .thirdSection{ padding-bottom: 12%;}
+  .thirdSection h3{margin-top: 9%; font-size: 24px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;padding-top: 7%;}
+  .thirdP{font-size: 14px; font-weight: 400;  margin-top: 1%; width: 75%; margin-left: 12.5%; margin-bottom: 5%;}
+  .allItems{width: 85%; }
+  .item img{width:11%; height: 11%; margin-top: 0%;}
+  .item{width: 90%; padding: 4% 5%; margin-bottom: 5%; margin-left: 5%;}
+  .allItems1{width: 100%;}
+  .allItems2{width:100%;}
+  .item h6{font-size: 14px; font-weight: 800; margin-left: 5%; margin-bottom: 4%; line-height: 18px;}
+  .item p{font-size: 12px; font-weight: 400; margin-left: 16%; margin-bottom: 0%;}
+  .fourthSection{padding: 7% 1%;}
+.fourthSection h4{
+  font-size: 22px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;
+}
+.fourthP{font-size: 16px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 2%;}
+.allDoctors {width: 80%; margin-left: 10%;}
+.doctor{width: 24%; margin-right: .5%;margin-left: .5%; }
+.doctor img{width: 90%; height:110px; margin-left: 5%; padding-right: 3px;
+  padding-left: 2px;
+  padding-top: 1px; margin-bottom: 9%;}
+  .name{font-size: 14px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+  .descrpition{font-size: 14px; font-weight: 500; text-align: center; line-height: 13px;}
+  .fourthSection button{font-size: 16px; font-weight: 700; text-align: center; margin-top: 5%;
+  width: 30%; margin-left: 35%; margin-bottom: 3%;}
+  .fifthP{font-size: 14px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 5%;}
+  .fifthSection{padding: 7% 1%;}
+  .fifthSection h4{font-size: 20px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;}
+  .allvets{width: 80%; margin-left: 10%;}
+  .vet{width: 25%;}
+  .vet img{padding-right: 2px; width: 85%; height: 110px; margin-left: 7.5%;
+    padding-left: 1.5px;
+    padding-top: 1px; margin-bottom: 5%;}
+    .namevet{font-size: 12px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+    .fifthSection button{text-align: center;font-size: 14px; font-weight: 700;width: 35%; margin-left: 32.5%; margin-top: 5%; }
 }
 @media screen and (min-width:902px) and (max-width:1110px) {
   .page{
@@ -753,22 +773,22 @@ margin-left: 10%;
   }
   .all{
     position: absolute;
-    top:58%;
+    top:52%;
     width: 55%;
 display: flex;
 
 margin-left: 22%;}
-    .doctor{
+    .doc{
       width: 23%;
       height:80%;
       padding: 2% 1%; margin-right: 2%; margin-left: 13%;
     }
-    .doctor img{
+    .doc img{
       width: 70px;
       height: 75px;
       margin-left:22%;
     }
-    .doctor a{
+    .doc a{
       margin-left:20%;
 
     }
@@ -855,6 +875,40 @@ display: flex;
     .su p{
       margin-bottom: 34%;
     }
+    .thirdSection{ padding-bottom: 12%;}
+    .thirdSection h3{margin-top: 7%; font-size: 28px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;padding-top: 7%;}
+    .thirdP{font-size: 18px; font-weight: 400;  margin-top: 1%; width: 70%; margin-left: 15%; margin-bottom: 5%;}
+    .allItems{width: 85%; }
+    .item img{width:10%; height: 11%; margin-top: 0%;}
+    .item{width: 90%; padding: 5% 5%; margin-bottom: 6%; margin-left: 5%;}
+    .allItems1{width: 100%;}
+    .allItems2{width:100%;}
+    .item h6{font-size: 18px; font-weight: 800; margin-left: 5%; margin-bottom: 4%; line-height: 18px; margin-top: 1%;}
+    .item p{font-size: 16px; font-weight: 400; margin-left: 15%; margin-bottom: 0%;}
+    .fourthSection{padding: 6% 1%;}
+    .fourthSection h4{
+      font-size: 26px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;
+    }
+    .fourthP{font-size: 18px; text-align: center; margin-top: 1%; width: 85%; margin-left: 7.5%; margin-bottom: 2%;}
+    .allDoctors {width: 75%; margin-left: 12.5%;}
+    .doctor{width: 24%; margin-right: .5%;margin-left: .5%; }
+    .doctor img{width: 90%; height:150px; margin-left: 5%; padding-right: 3px;
+      padding-left: 2px;
+      padding-top: 1px; margin-bottom: 9%;}
+      .name{font-size: 18px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+      .descrpition{font-size: 16px; font-weight: 500; text-align: center; line-height: 13px;}
+      .fourthSection button{font-size: 18px; font-weight: 700; text-align: center; margin-top: 5%;
+      width: 22%; margin-left: 39%; margin-bottom: 3%; padding: .5% 0%;}
+      .fifthP{font-size: 18px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 5%;}
+      .fifthSection{padding: 7% 1%;}
+      .fifthSection h4{font-size: 24px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;}
+      .allvets{width: 80%; margin-left: 10%;}
+      .vet{width: 25%;}
+      .vet img{padding-right: 2px; width: 85%; height: 150px; margin-left: 7.5%;
+        padding-left: 1.5px;
+        padding-top: 1px; margin-bottom: 5%;}
+        .namevet{font-size: 14px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%;}
+        .fifthSection button{text-align: center;font-size: 20px; font-weight: 700;width: 35%; margin-left: 32.5%; margin-top: 5%; }
 }
 @media screen and (min-width:1111px) and (max-width:1300px){
   .page{
@@ -888,18 +942,18 @@ display: flex;
 
 margin-left: 22%;
     }
-    .doctor{
+    .doc{
       width: 25%;
       height:80%;
       padding:2% 0%; margin-right: 4%; margin-left:8%;
     }
-    .doctor img{
+    .doc img{
       width: 90px;
       height: 95px;
       margin-left:25%;
       margin-bottom: 2%;
     }
-    .doctor a{
+    .doc a{
       margin-left:28%;
 
     }
@@ -988,6 +1042,40 @@ display: flex;
     .su p{
       margin-bottom: 34%;
     }
+    .thirdSection{ padding-bottom: 12%;}
+    .thirdSection h3{margin-top: 7%; font-size: 34px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;padding-top: 7%;}
+    .thirdP{font-size: 20px; font-weight: 400;  margin-top: 1%; width: 70%; margin-left: 15%; margin-bottom: 5%;}
+    .allItems{width: 85%; }
+    .item img{width:10%; height: 11%; margin-top: 0%;}
+    .item{width: 80%; padding: 5% 5%; margin-bottom: 6%; margin-left: 10%;}
+    .allItems1{width: 100%;}
+    .allItems2{width:100%;}
+    .item h6{font-size: 24px; font-weight: 800; margin-left: 5%; margin-bottom: 7%; line-height: 18px; margin-top: 1%;}
+    .item p{font-size: 18px; font-weight: 400; margin-left: 15%; margin-bottom: 0%;}
+    .fourthSection{padding: 6% 1%;}
+    .fourthSection h4{
+      font-size: 40px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%; margin-bottom: 2%;
+    }
+    .fourthP{font-size: 22px; text-align: center; margin-top: 1%; width: 85%; margin-left: 7.5%; margin-bottom: 3%;}
+    .allDoctors {width: 85%; margin-left: 7.5%;}
+    .doctor{width: 24.5%; margin-right: 0%;margin-left: .5%; }
+    .doctor img{width: 90%; height:180px; margin-left: 5%; padding-right: 5px;
+      padding-left: 3px;
+      padding-top: 1px; margin-bottom: 9%;}
+      .name{font-size: 24px; font-weight: 700; text-align: center; line-height: 23px; margin-bottom: 5%; width: 100%;}
+      .descrpition{font-size: 20px; font-weight: 500; text-align: center; line-height: 23px; width: 100%;}
+      .fourthSection button{font-size: 26px; font-weight: 700; text-align: center; margin-top: 5%;
+      width: 25%; margin-left: 37.5%; margin-bottom: 3%; padding: 1% 0%;}
+      .fifthP{font-size: 22px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 5%;}
+      .fifthSection{padding: 7% 1%;}
+      .fifthSection h4{font-size: 40px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;}
+      .allvets{width: 80%; margin-left: 10%;}
+      .vet{width: 24.5%; margin-left: .5%;}
+      .vet img{padding-right: 2px; width: 90%; height: 180px; margin-left: 7.5%;
+        padding-left: 1.5px;
+        padding-top: 1px; margin-bottom: 5%;}
+        .namevet{font-size: 24px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%; line-height:24px}
+        .fifthSection button{text-align: center;font-size: 24px; font-weight: 700;width: 25%; margin-left: 37.5%; margin-top: 5%;  padding: 1% 0%;}
 }
 @media screen and (min-width:1301px) {
   .page{
@@ -1015,22 +1103,21 @@ margin-left: 10%;
   .all{
     position: absolute;
     top:70%;
+    margin-left: 25%;
         width: 50%;
 display: flex;
 
 margin-left: 25%;}
-    .doctor{
-      width: 24%;
+    .doc{
+      width: 30%;
       height:80%;
-      padding:2% 0%; margin-right:4%; margin-left: 10%;
+      padding:2% 0%; margin-right: 4%; margin-left: 10%;
     }
-    .doctor img{
-      width: 100px;
-      height: 115px;
-      margin-left:23%;
-      margin-bottom: 2%;
+    .doc img{
+      width: 90px; height:120px; margin-left: 20%;
     }
-    .doctor a{
+
+    .doc a{
       margin-left:27%;
 
     }
@@ -1039,7 +1126,7 @@ margin-left: 25%;}
   font-weight: 700;
     }
     .clinic{
-      width: 24%;
+      width: 30%;
       height:80%;
       padding: 2% 0%; margin-right:4%;
 
@@ -1054,7 +1141,7 @@ margin-left: 25%;}
       margin-left: 29%;
     }
     .Pharmacy{
-      width:24%;
+      width:30%;
       height:80%;
       padding: 2.2% 0%; margin-right:4%;
 
@@ -1069,7 +1156,7 @@ margin-left: 25%;}
       margin-left: 16%;
     }
     .secondSection{
-      margin-top: 20%;
+      margin-top:15%; margin-bottom: 10%;
     }
         .secondSection h2{
           font-size:38px;
@@ -1087,12 +1174,24 @@ margin-left: 25%;}
           height:380px;
           padding: 3% 1%;
         }
-        .smallInfo img{
+        .veet img{
+          width: 10px;
+          height: 10px;
+         margin-left: 30%;
+         margin-bottom: 3%;
+        }
+        .su img{
           width: 30%;
           height: 30%;
          margin-left: 30%;
          margin-bottom: 3%;
 
+        }
+        .vac img{
+          width: 30%;
+          height: 30%;
+         margin-left: 30%;
+         margin-bottom: 3%;
         }
 
         .smallInfo h5{
@@ -1120,4 +1219,38 @@ margin-left: 25%;}
  .su p{
   margin-bottom: 32%;
  }
+ .thirdSection{ padding-bottom: 5%;}
+ .thirdSection h3{margin-top: 5%; font-size: 40px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;padding-top: 7%;}
+ .thirdP{font-size: 22px; font-weight: 400;  margin-top: 2%; width: 70%; margin-left: 15%; margin-bottom: 4%;}
+ .allItems{width: 85%; }
+ .item img{width:10%; height: 11%; margin-top: 0%;}
+ .item{width: 80%; padding: 4% 6%; margin-bottom: 6%; margin-left: 10%;}
+ .allItems1{width: 100%;}
+ .allItems2{width:100%;}
+ .item h6{font-size: 26px; font-weight: 800; margin-left: 5%; margin-bottom: 6%; line-height: 18px; margin-top: 1.5%;}
+ .item p{font-size: 20px; font-weight: 400; margin-left: 15%; margin-bottom: 0%;}
+ .fourthSection{padding: 7% 1%;}
+ .fourthSection h4{
+   font-size: 40px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%; margin-bottom: 2%;
+ }
+ .fourthP{font-size: 22px; text-align: center; margin-top: 1%; width: 85%; margin-left: 7.5%; margin-bottom: 3%;}
+ .allDoctors {width: 85%; margin-left: 7.5%;}
+ .doctor{width: 25%; margin-right: 0%;margin-left:0%; }
+ .doctor img{width: 90%; height:220px; margin-left: 5%; padding-right: 5px;
+   padding-left: 3px;
+   padding-top: 1px; margin-bottom: 9%;}
+   .name{font-size: 24px; font-weight: 700; text-align: center; line-height: 23px; margin-bottom: 5%; width: 100%;}
+   .descrpition{font-size: 20px; font-weight: 500; text-align: center; line-height: 23px; width: 100%;}
+   .fourthSection button{font-size: 26px; font-weight: 700; text-align: center; margin-top: 5%;
+   width: 25%; margin-left: 37.5%; margin-bottom: 0%; padding: 1% 0%;}
+   .fifthP{font-size: 22px; text-align: center; margin-top: 2%; width: 85%; margin-left: 7.5%; margin-bottom: 5%;}
+      .fifthSection{padding: 7% 1%;}
+      .fifthSection h4{font-size: 40px; font-weight: 800; width: 60%; text-align: center; margin-left: 20%;}
+      .allvets{width: 80%; margin-left: 10%;}
+      .vet{width: 24.5%; margin-left: .5%;}
+      .vet img{padding-right: 2px; width: 90%; height: 210px; margin-left: 7.5%;
+        padding-left: 1.5px;
+        padding-top: 1px; margin-bottom: 5%;}
+        .namevet{font-size: 24px; font-weight: 700; text-align: center; line-height: 15px; margin-bottom: 5%; line-height:24px}
+        .fifthSection button{text-align: center;font-size: 24px; font-weight: 700;width: 25%; margin-left: 37.5%; margin-top: 5%;  padding: 1% 0%;}
 }

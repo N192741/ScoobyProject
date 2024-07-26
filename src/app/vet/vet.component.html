@@ -4,8 +4,8 @@
  <div class="firstSection">
   <img src="../../assets/images/vetbackground.png" alt="">
 <h1 class=" mb-0">We<span class="white"> care </span>about your Pets</h1>
-  <div class="all ">
-    <div class="border section doctor  " >
+  <div class="all  ">
+    <div class="border section doc  " >
       <img class=" " src="../../assets/images/veterinary 1.png" alt="">
       <a routerLink="/doctors">Doctors</a>
     </div>
@@ -20,21 +20,21 @@
     </div>
 </div>
 
-
-
-  <div class="secondSection  bg-info ">
+  <div class="secondSection   ">
 <h2 class="">Providing our best veterinary Services</h2>
-<div class=" smalls bg-danger">
-  <div class="border vac bg-dark smallInfo">
+<div class=" smalls ">
+  <div class="border vac  smallInfo">
     <img  class=" " src="../../assets/images/veterinary (4) 1.png" alt="">
     <h5 class="">Pet Vaccination</h5>
     <p class=""> Keep your pet healthy and happy
       get them vaccinated!</p>
-    <div class="border learn  "><a routerLink="/learn-more-adoption" class="bg-info">Learn more</a></div>
+    <div class="border learn  "><a routerLink="/learn-more-adoption" class="">Learn more</a></div>
     </div>
 
  <div class="border vet smallInfo">
-      <img  class=" " src="../../assets/images/vet 1.png" alt="">
+  <div class="veet">
+    <img  class=" " src="../../assets/images/vet 1.png" alt="">
+  </div>
       <h5 class="">Pet Veterinary</h5>
       <p class=""> Keep your pet healthy and happy
         with monthly checkup</p>
@@ -44,48 +44,48 @@
       <div class="border su smallInfo">
         <img  class="" src="../../assets/images/surgery 1.png" alt="">
         <h5 class="">Pet Surgery</h5>
-        <p class=" bg-info"> Keep your pet healthy and
+        <p > Keep your pet healthy and
           happy </p>
         <div class="border learn "><a routerLink="/learn-more-adoption" class="">Learn more</a></div>
         </div>
 </div>
   </div>
   <div class="thirdSection ">
-<h3 class="mb-4">Why relay on us?</h3>
+<h3 class="">Why relay on us?</h3>
 <p class="thirdP">We understand that your furry friend is a treasured member of your family and
   deserves pets are the best care and attention possible.</p>
-  <div class="d-flex my-4 allItems ">
-<div class="mx-5">
-  <div class="item border px-4 py-4 my-4">
-<div class="d-flex  mb-2">
+  <div class="d-flex  allItems ">
+<div class=" allItems1">
+  <div class="item border ">
+<div class="d-flex ">
   <img src="../../assets/images/VectorVet.png" alt="">
-  <h6 class=" py-1">Experienced, Pro staff</h6>
+  <h6 class=" ">Experienced, Pro staff</h6>
 </div>
 <p class="">Be confident in the treatment
   plan and your doctor’s abilities.</p>
   </div>
-  <div class="item border px-4 py-4 my-4">
-    <div class="d-flex  mb-2">
+  <div class="item border ">
+    <div class="d-flex">
       <img src="../../assets/images/VectorVet.png" alt="">
-      <h6 class=" py-1">Affordable Pricing</h6>
+      <h6 class="">Affordable Pricing</h6>
     </div>
     <p class="">Be confident in the treatment
       plan and your doctor’s abilities.</p>
       </div>
 </div>
-<div class="mx-5">
-  <div class="item border px-4 py-4 my-4">
-    <div class="d-flex  mb-2">
+<div class=" allItems2">
+  <div class="item border ">
+    <div class="d-flex  ">
       <img src="../../assets/images/VectorVet.png" alt="">
-      <h6 class=" py-1">Modern Pet Training</h6>
+      <h6 class=" ">Modern Pet Training</h6>
     </div>
     <p class="">Be confident in the treatment
       plan and your doctor’s abilities.</p>
       </div>
-      <div class="item border px-4 py-4 my-4">
-        <div class="d-flex  mb-2">
+      <div class="item border ">
+        <div class="d-flex">
           <img src="../../assets/images/VectorVet.png" alt="">
-          <h6 class=" py-1">Book Service 24/7</h6>
+          <h6 class="">Book Service 24/7</h6>
         </div>
         <p class="">Be confident in the treatment
           plan and your doctor’s abilities.</p>
@@ -95,27 +95,27 @@
   </div>
 <div class="fourthSection">
 <h4>Meet Our Best Doctors</h4>
-<p class="fourthP py-3">We change your life & world with our valuable expert Doctors team</p>
-<div class="d-flex allDoctors my-4 ">
-<div *ngFor="let doctor of doctors.slice(0,4)" class="doctor mx-2 ">
-<img class="mb-4 " [src]="doctor.doctorImage">
+<p class="fourthP">We change your life & world with our valuable expert Doctors team</p>
+<div class="d-flex allDoctors ">
+<div *ngFor="let doctor of doctors.slice(0,4)" class="doctor">
+<img class="" [src]="doctor.doctorImage">
 <p class="name">{{doctor.name}}</p>
 <p class="descrpition">{{doctor.specialized_in.slice(0,1)}}</p>
 </div>
 </div>
-<button class=" py-3"routerLink="/doctors" >See all doctors</button>
+<button class=""routerLink="/doctors" >See all doctors</button>
 </div>
 <div class="fifthSection">
   <h4>Meet Our Best Clinics</h4>
-  <p class="fifthP py-3">We change your life & world with valuable expert Clinics</p>
-  <div class="d-flex allvets my-4 ">
-  <div *ngFor="let vet of vets.slice(1,5)" class=" mx-2 vet ">
-  <img class="mb-4 " [src]="vet.vetImage">
+  <p class="fifthP ">We change your life & world with valuable expert Clinics</p>
+  <div class="d-flex allvets  ">
+  <div *ngFor="let vet of vets.slice(1,5)" class=" vet ">
+  <img class="" [src]="vet.vetImage">
   <p class="namevet">{{vet.vetName}}</p>
   <p class="descrpition"></p>
   </div>
   </div>
-  <button class=" py-3 ">See all Clinics</button>
+  <button class="">See all Clinics</button>
   </div>
   <div class="requestForm">
 

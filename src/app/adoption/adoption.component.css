@@ -1,3 +1,4 @@
+
 .big-img{
     position: relative;
 }
@@ -11,7 +12,7 @@ color: #FEFBFB;
     position: absolute;
     /* top:70%;
     left:20%; */
-   
+
 }
 .item{
     background:#FFFFFF;
@@ -27,13 +28,13 @@ color: #FEFBFB;
     /* padding-top: 15%;
     padding-left: 5%; */
     font-family:  Roboto;
-   
+
   }
   .pet-img{
-  
+
    /* width: 300px ;
     height: 205.9px; */
-    
+
     border-radius: 7% 7% 0 0;
 
 
@@ -67,16 +68,16 @@ border-radius: 7%;
  margin-left: 3% !important;
  } */
   .meet1{
-   
-    border-radius: 
+
+    border-radius:
     16px;
     border:1px solid #DEDCE2 ;
     background-color:#513973 ;
-   
-  
+
+
    /* width: 290px;
     height: 340px; */
-   
+
 
   }
   .paw1{
@@ -103,7 +104,7 @@ font-weight: 500; */
 text-align: center;
 color:#FEFBFB;
   }
- 
+
   .title{
     /* padding-left: 85px; */
     font-family: Roboto;
@@ -121,14 +122,14 @@ line-height: 28.13px; */
 text-align: center;
 
   }
- 
+
   /* .fav1{
-    
-    
+
+
     width:1010px;
     height: 300px;
-    
-   
+
+
   } */
 
   i{
@@ -139,7 +140,7 @@ text-align: center;
   .fa-regular{
     color: #513973;
   }
- 
+
 
   .fa-heart {
     font-size: 40px;
@@ -167,7 +168,7 @@ text-align: center;
 /* padding-top: 7%; */
   }
   .part1{
- 
+
     /* width: 395px;
     height: 380px; */
 
@@ -239,7 +240,7 @@ margin-left: 26%;
   } */
   .sliderpets{
     background-color: #513973;
- 
+
 
 
 
@@ -283,16 +284,16 @@ margin-top: 5%;
       font-weight: 400;
       line-height: 32.81px; */
       text-align: left;
-    
+
     }
     .desc{
-  
+
       background: rgba(15, 15, 15, 0.6);
       position: absolute;
       bottom:0px ;
       border-bottom-right-radius: 8px;
       border-bottom-left-radius: 8px;
-      
+
     }
     .desc a{
       color:  rgba(245, 243, 243, 1);
@@ -305,14 +306,14 @@ margin-top: 5%;
       line-height: 12px; */
       letter-spacing: 0.5px;
       text-align: left;
-    
-      
+
+
     }
     .blog{
       position: relative;
       /* height: 250px; */
       border-radius: 10px;
-    
+
     }
     .blog img{
       height: 100%;
@@ -327,7 +328,7 @@ margin-top: 5%;
       /* width: 135px ;
       height: 395px; */
       background-color:rgba(255,255,255,0.4) ;
-     
+
     }
     .left-gray{
       position: absolute;
@@ -338,9 +339,9 @@ margin-top: 5%;
       /* width: 137px ;
       height: 395px; */
       background-color:rgba(255,255,255,0.4) ;
-     
+
     }
-   
+
     .button {
       width: Hug (200px)px;
 height: Hug (32px)px;
@@ -350,18 +351,18 @@ border-radius: 32px;
 margin-top: 4%;
 margin-left: 45%; */
 background-color:#FFFFFF;
-color: 
+color:
 #513973;
 text-decoration: none;
 cursor: pointer;
 display: inline-block;
 
-   
+
     }
     .bg{
       background-color: #FFFFFF;
     }
-    
+
     @media screen and (min-width:0px) and (max-width:600px){
       .big-img{
         width: 100%;
@@ -374,10 +375,10 @@ display: inline-block;
         position: absolute;
         top:22%;
         left:10%;
-       
+
     }
     .item{
-    
+
       width: 90px;
       height: 80px;
       margin-left: 6px;
@@ -385,7 +386,7 @@ display: inline-block;
       padding-top: 6px;
     }
     .item-img{
-      
+
       width: 59px;
       height: 50px;
       padding-left: 30px;
@@ -399,12 +400,12 @@ padding-top: 4px;
       padding-top: 23%;
       padding-left: 2%;
       font-family:  Roboto;
-     
+
     }
-   
+
     .title{
       padding-left: 3%;
-     
+
   font-size: 15px;
   font-weight: 400;
     }
@@ -422,13 +423,13 @@ padding-top: 4px;
       width: 70%;
       height: 190px;
       margin-top: 6%;
-     
+
      }
      /* .fav1{
       width:400px;
       height: 150px;
-      
-     
+
+
     } */
     .space{
       padding-top: 3%;
@@ -437,13 +438,13 @@ padding-top: 4px;
       margin-left: 25px; */
       }
       .pet-img{
-  
+
         width: 80px ;
          height: 110px;
-     
+
        }
        .name-pet{
-      
+
         font-size: 12px;
         font-weight: 350;
         /* line-height: 16px; */
@@ -453,8 +454,8 @@ padding-top: 4px;
             font-size: 11px;
             font-weight: 350;
             /* line-height: 16px; */
-            
-            
+
+
               }
               .disc{
                 padding-left: 3px;
@@ -463,20 +464,20 @@ padding-top: 4px;
                 padding-left: 3px;
               }
               .disc1{
-              
+
                 font-size: 12px;
                 font-weight: 450;
-      
+
                   }
                   .paw1{
                     width: 60px;
                 height: 60px;
-                
+
                   }
                   .disc-end{
                     font-size: 12px;
                     font-weight: 450;
-                    
+
                       }
                       .disc-name{
                         padding-top: 6%;
@@ -484,17 +485,17 @@ padding-top: 4px;
                       .Planning{
                         font-family: Roboto;
                     font-size: 20px;
-                    font-weight: 500;    
+                    font-weight: 500;
                     padding-top: 11%;
                       }
                       .part1{
- 
+
                         width: 320px;
                         height: 320px;
-                  
+
                       }
                       .part2{
- 
+
                         width: 320px;
                         height: 320px;
                   margin-top: 5%;
@@ -502,16 +503,16 @@ padding-top: 4px;
                   /* margin-right: 50%; */
                       }
                       .part3{
- 
+
                         width: 320px;
                         height: 320px;
-                  
+
                       }
                       .Planning-img{
                         width: 110px;
                     height: 90px;
                     margin-left: 30%;
-                   
+
                       }
                       .big{
                         font-size: 20px;
@@ -526,26 +527,26 @@ padding-top: 4px;
                             padding-top: 4%;
                           }
                           .sliderpets{
-                            
-                         
+
+
                         width: 100%;
                         padding: 1% 5% 1% 5%;
                         margin-top: 10%;
 
-                        
+
                           }
                           .disc-Successful{
 
                             font-size: 20px;
                             font-weight: 500;
                             line-height: 40px;
-                        
+
                               }
                               .disc-slide{
-                  
+
                                 font-size: 16px;
                                 font-weight: 400;
-                              
+
                                   }
                                   .slider-img{
                                     width: 15%;
@@ -556,19 +557,19 @@ padding-top: 4px;
 
                                     width: 90px ;
                                     height: 230px;
-                                   
-                                   
+
+
                                   }
                                   .left-gray{
-                  
+
                                     width: 90px ;
                                     height: 230px;
-                  
+
                                   }
                                   .right-img{
                                     padding-top: 130%;
                                     padding-left:40% ;
-                                
+
                                   }
                                   .t-btn{
                                     padding-right: 22%;
@@ -581,28 +582,28 @@ padding-top: 4px;
                               border-radius: 32px;
                               margin-top: 3%;
                               margin-left: 45%;
-                
+
                                   }
                                   .adoption{
                                     padding-top: 11%;
                                     padding-left: 2%;
                                     font-family:  Roboto;
-                                   
+
                                   }
                                   .header h3{
-                    
+
                                     font-size: 20px;
                                     font-weight: 6500;
-                                   
-                                  
+
+
                                     }
                                     .header p{
-                  
+
                                       font-size: 15;
                                       font-weight: 400;
-                                      
-                
-                                    
+
+
+
                                     }
                                     .t-blogs{
                                       padding-top: 7%;
@@ -612,30 +613,30 @@ padding-top: 4px;
                                       height: 250px;
                                       padding-left: 1.5%;
                                      padding-top: 7%;
-                
+
                                     }
                                     .blog-im{
                                       width: 120%;
                                     }
                                     .desc{
-                  
-                                     
+
+
                                       height: 27%;
                                       width: 118%;
                                     }
                                     .desc a{
                                       color:  rgba(245, 243, 243, 1);
                                       height: 70px;
-                                    
+
                                       font-size: 10px;
                                       font-weight: 500;
                                       line-height: 12px;
-                   
+
                                     }
-                                  
+
 
     }
-    
+
     @media screen and (min-width:601px) and (max-width:768px){
       .big-img{
         width: 100%;
@@ -650,10 +651,10 @@ padding-top: 4px;
         position: absolute;
         top:34%;
         left:16%;
-       
+
     }
     .item{
-    
+
       width: 120px;
       height: 100px;
       margin-left: 10px;
@@ -661,7 +662,7 @@ padding-top: 4px;
       padding-top: 9px;
     }
     .item-img{
-      
+
       width: 90px;
       height: 64px;
       padding-left: 34px;
@@ -675,11 +676,11 @@ padding-top: 4px;
       padding-top: 18%;
       padding-left: 4%;
       font-family:  Roboto;
-     
+
     }
     .title{
       padding-left: 47px;
-     
+
   font-size: 23px;
   font-weight: 450;
     }
@@ -696,13 +697,13 @@ padding-top: 4px;
       width: 60%;
       height: 230px;
       margin-top: 6%;
-     
+
      }
      /* .fav1{
       width:400px;
       height: 150px;
-      
-     
+
+
     } */
     .space{
       padding-top: 3%;
@@ -711,13 +712,13 @@ padding-top: 4px;
       margin-left: 25px; */
       }
       .pet-img{
-  
+
         width: 90px ;
          height: 140px;
-     
+
        }
        .name-pet{
-      
+
         font-size: 16px;
         font-weight: 400;
         padding-top: 10%;
@@ -728,8 +729,8 @@ padding-top: 4px;
             font-size: 16px;
             font-weight: 400;
             /* line-height: 16px; */
-            
-            
+
+
               }
               .disc{
                 padding-left: 5px;
@@ -738,20 +739,20 @@ padding-top: 4px;
                 padding-left: 12px;
               }
               .disc1{
-              
+
                 font-size: 16px;
                 font-weight: 500;
-      
+
                   }
                   .paw1{
                     width: 60px;
                 height: 60px;
-                
+
                   }
                   .disc-end{
                     font-size: 16px;
                     font-weight: 450;
-                    
+
                       }
                       .btn-meet{
                         padding-top: 7%;
@@ -759,17 +760,17 @@ padding-top: 4px;
                       .Planning{
                         font-family: Roboto;
                     font-size: 20px;
-                    font-weight: 500;    
+                    font-weight: 500;
                     padding-top: 11%;
                       }
                       .part1{
- 
+
                         width: 60%;
                         height: 60%;
                         margin-left: 15%;
                       }
                       .part2{
- 
+
                         width: 60%;
                         height: 60%;
                   margin-top: 5%;
@@ -778,17 +779,17 @@ padding-top: 4px;
                   /* margin-right: 50%; */
                       }
                       .part3{
- 
+
                         width: 60%;
                         height: 60%;
                         margin-left: 15%;
-                  
+
                       }
                       .Planning-img{
                         width: 110px;
                     height: 90px;
                     margin-left: 30%;
-                   
+
                       }
                       .big{
                         font-size: 20px;
@@ -801,57 +802,57 @@ padding-top: 4px;
                           .parts{
                             padding-left: 10%;
                             padding-top: 4%;
-                            
+
 
                           }
                           .sliderpets{
-                            
-                         
+
+
                             width: 100%;
                             padding: 2% 5% 2% 5%;
                             margin-top: 10%;
-    
-                            
+
+
                               }
                               .disc-Successful{
-    
+
                                 font-size: 22px;
                                 font-weight: 550;
                                 line-height: 40px;
-                            
+
                                   }
                                   .disc-slide{
-                      
+
                                     font-size: 16px;
                                     font-weight: 400;
-                                  
+
                                       } .slider-img{
                                         width: 30%;
                                     height: 280px;
-    
+
                                       }
                                       .right-gray{
 
                                         width: 90px ;
                                         height: 280px;
-                                       
-                                       
+
+
                                       }
                                       .left-gray{
-                      
+
                                         width: 90px ;
                                         height: 280px;
-                      
+
                                       }
                                       .right-img{
                                         padding-top: 130%;
                                         padding-left:40% ;
-                                    
+
                                         }
                                         .t-btn{
                                           padding-right: 13%;
                                         }
-                                       
+
                                         .button {
                                           width: Hug (200px)px;
                                     height: Hug (32px)px;
@@ -860,58 +861,58 @@ padding-top: 4px;
                                     border-radius: 32px;
                                     margin-top: 3%;
                                     margin-left: 45%;
-                      
+
                                         }
                                         .adoption{
                                           padding-top: 11%;
                                           padding-left: 2%;
                                           font-family:  Roboto;
-                                         
+
                                         }
                                         .header h3{
-                    
+
                                           font-size: 26px;
                                           font-weight: 550;
-                                         
-                                        
+
+
                                           }
                                           .header p{
-                        
+
                                             font-size: 17px;
                                             font-weight: 450;
-                                            
-                      
-                                          
+
+
+
                                           }
                                           .t-blogs{
                                             padding-top: 3%;
                                           }
- 
+
                                           .blog{
                                             height: 250px;
                                             padding-left: 1.5%;
                                            padding-top: 7%;
-                      
+
                                           }
                                           .blog-im{
                                             width: 100%;
                                           }
                                           .desc{
-                        
-                                           
+
+
                                             height: 27%;
                                             width: 99.1%;
                                           }
                                           .desc a{
                                             color:  rgba(245, 243, 243, 1);
                                             height: 70px;
-                                          
+
                                             font-size: 15px;
                                             font-weight: 500;
                                             line-height: 12px;
-                         
+
                                           }
-      
+
     }
     @media screen and (min-width:769px) and (max-width:992px){
       .big-img{
@@ -922,15 +923,15 @@ padding-top: 4px;
         left:35%;
      font-weight: 300px;
      font-size: 28px;
-      }  
+      }
       .kinds{
         position: absolute;
         top:40%;
         left:17%;
-       
+
     }
     .item{
-    
+
       width: 150px;
       height: 130px;
       margin-left: 11px;
@@ -938,7 +939,7 @@ padding-top: 4px;
       padding-top: 11px;
     }
     .item-img{
-      
+
       width: 130px;
       height: 80px;
       padding-left: 21px;
@@ -952,11 +953,11 @@ padding-top: 6px;
       padding-top: 19%;
       padding-left: 5%;
       font-family:  Roboto;
-     
+
     }
     .title{
       padding-left: 47px;
-     
+
   font-size: 26px;
   font-weight: 500;
     }
@@ -981,31 +982,31 @@ margin-right: 5px; */
     .meet1{
       width: 220px;
       height: 220px;
-    
+
     }
     .fav1{
-    
-    
+
+
       width:700px;
       height: 100px;
-      
-     
+
+
     }
     .pet-img{
-  
+
       width: 170px ;
        height: 130px;
-       
+
        border-radius: 7% 7% 0 0;
-   
-   
+
+
      }
      .name-pet{
       padding-top: 16%;
       font-size: 15px;
       font-weight: 550;
       line-height: 16px;
-      
+
         }
         .type-pet{
           padding-top: 5%;
@@ -1018,7 +1019,7 @@ margin-right: 5px; */
               padding-left: 5%;
             }
             .disc1{
-              
+
           font-size: 13px;
           font-weight: 500;
 
@@ -1026,12 +1027,12 @@ margin-right: 5px; */
             .paw1{
               width: 70px;
           height: 70px;
-          
+
             }
             .disc-end{
           font-size: 14px;
           font-weight: 500;
-          
+
             }
             .btn-meet{
               padding-top: 5%;
@@ -1039,7 +1040,7 @@ margin-right: 5px; */
             .Planning{
               font-family: Roboto;
           font-size: 20px;
-          font-weight: 500;    
+          font-weight: 500;
           padding-top: 11%;
             }
             .part1{
@@ -1062,13 +1063,13 @@ margin-right: 5px; */
               width: 60%;
               height: 60%;
               margin-left: 15%;
-        
+
             }
             .Planning-img{
               width: 110px;
           height: 90px;
           margin-left: 30%;
-         
+
             }
             .big{
               font-size: 20px;
@@ -1084,25 +1085,25 @@ margin-right: 5px; */
 
                 }
                 .sliderpets{
-                            
-                         
+
+
                   width: 100%;
                   padding: 2% 5% 2% 5%;
                   margin-top: 10%;
-                  
+
                     }
                     .disc-Successful{
 
                       font-size: 25px;
                       font-weight: 550;
                       line-height: 40px;
-                  
+
                         }
                         .disc-slide{
-            
+
                           font-size: 16px;
                           font-weight: 400;
-                        
+
                             }
                             .slider-img{
                               width: 30%;
@@ -1113,19 +1114,19 @@ margin-right: 5px; */
 
                               width: 90px ;
                               height: 280px;
-                             
-                             
+
+
                             }
                             .left-gray{
-            
+
                               width: 90px ;
                               height: 280px;
-            
+
                             }
                             .right-img{
                               padding-top: 130%;
                               padding-left:40% ;
-                          
+
                               }
                               .t-btn{
                                 padding-right: 15%;
@@ -1141,71 +1142,71 @@ margin-right: 5px; */
                           border-radius: 32px;
                           margin-top: 3%;
                           margin-left: 45%;
-            
+
                               }
                               .adoption{
                                 padding-top: 9%;
                                 padding-left: 2%;
                                 font-family:  Roboto;
-                               
+
                               }
                           .header h3{
-                    
+
                                           font-size: 26px;
                                           font-weight: 550;
-                                         
-                                        
+
+
                                           }
                                           .header p{
-                        
+
                                             font-size: 17px;
                                             font-weight: 450;
-                                            
-                      
-                                          
+
+
+
                                           }
                                           .t-blogs{
                                             padding-top: 3%;
                                           }
- 
+
                                           .blog{
                                             height: 250px;
                                             padding-left: 1.5%;
                                            padding-top: 7%;
-                      
+
                                           }
                                           .blog-im{
                                             width: 100%;
                                           }
                                           .desc{
-                        
-                                           
+
+
                                             height: 27%;
                                             width: 99.1%;
                                           }
                                           .desc a{
                                             color:  rgba(245, 243, 243, 1);
                                             height: 70px;
-                                          
+
                                             font-size: 15px;
                                             font-weight: 500;
                                             line-height: 12px;
-                         
+
                                           }
                                           .header h3{
-                    
+
                                             font-size: 34px;
                                             font-weight: 700;
                                             line-height: 44px;
-                                          
+
                                             }
                                             .header p{
-                          
+
                                               font-size: 23px;
                                               font-weight: 400;
                                               line-height: 32.81px;
-                        
-                                            
+
+
                                             }
                                             .t-blogs{
                                               padding-top: 6%;
@@ -1213,32 +1214,32 @@ margin-right: 5px; */
                                             .blog{
                                               height: 250px;
                                               padding-left: 1.5%;
-                                             
-                        
+
+
                                             }
                                             .blog-im{
                                               width: 100%;
                                             }
                                             .desc{
-                          
-                                             
+
+
                                               height: 30%;
                                               width: 95.5%;
                                             }
                                             .desc a{
                                               color:  rgba(245, 243, 243, 1);
                                               height: 70px;
-                                            
+
                                               font-size: 14px;
                                               font-weight: 500;
                                               line-height: 12px;
-                           
+
                                             }
                                             .blogss{
                                               display: flex;
                                             }
 
-            
+
     }
     @media screen and (min-width:993px) and (max-width:1200px){
       .big-img{
@@ -1249,15 +1250,15 @@ margin-right: 5px; */
         left:37%;
      font-weight: 300px;
      font-size: 30px;
-      }  
+      }
       .kinds{
         position: absolute;
         top:46%;
         left:22%;
-       
-    } 
+
+    }
     .item{
-    
+
       width: 170px;
       height: 150px;
       margin-left: 13px;
@@ -1265,7 +1266,7 @@ margin-right: 5px; */
       padding-top: 11px;
     }
     .item-img{
-      
+
       width: 150px;
       height: 90px;
       padding-left: 21px;
@@ -1279,11 +1280,11 @@ padding-top: 8px;
       padding-top: 21%;
       padding-left: 5%;
       font-family:  Roboto;
-     
+
     }
     .title{
       padding-left: 47px;
-     
+
   font-size: 28px;
   font-weight: 550;
     }
@@ -1310,28 +1311,28 @@ margin-right: 15px; */
     margin-right: 10%;
     }
     .fav1{
-    
-    
+
+
       width:700px;
       height: 200px;
       margin-left: 2%;
-     
+
     }
     .pet-img{
-  
+
       width: 200px ;
        height: 150px;
-       
+
        border-radius: 7% 7% 0 0;
-   
-   
+
+
      }
      .name-pet{
       padding-top: 16%;
       font-size: 17px;
       font-weight: 550;
       line-height: 16px;
-      
+
         }
         .type-pet{
           padding-top: 5%;
@@ -1344,7 +1345,7 @@ margin-right: 15px; */
               padding-left: 5%;
             }
             .disc1{
-              
+
           font-size: 14px;
           font-weight: 500;
 
@@ -1352,12 +1353,12 @@ margin-right: 15px; */
             .paw1{
               width: 80px;
           height: 80px;
-          
+
             }
             .disc-end{
           font-size: 12px;
           font-weight: 500;
-          
+
             }
             .btn-meet{
               padding-top: 13%;
@@ -1365,7 +1366,7 @@ margin-right: 15px; */
             .Planning{
               font-family: Roboto;
           font-size: 25px;
-          font-weight: 550;    
+          font-weight: 550;
           padding-top: 11%;
             }
             .part1{
@@ -1388,13 +1389,13 @@ margin-right: 15px; */
               width: 60%;
               height: 60%;
               margin-left: 15%;
-        
+
             }
             .Planning-img{
               width: 110px;
           height: 90px;
           margin-left: 30%;
-         
+
             }
             .big{
               font-size: 20px;
@@ -1407,28 +1408,28 @@ margin-right: 15px; */
                 .parts{
                   padding-left: 10%;
                   padding-top: 4%;
- 
+
                 }
                 .sliderpets{
-                            
-                         
+
+
                   width: 100%;
                   padding: 2% 5% 2% 5%;
                   margin-top: 10%;
-                  
+
                     }
                     .disc-Successful{
 
                       font-size: 25px;
                       font-weight: 550;
                       line-height: 40px;
-                  
+
                         }
                         .disc-slide{
-            
+
                           font-size: 16px;
                           font-weight: 400;
-                        
+
                             }
                             .slider-img{
                               width: 30%;
@@ -1439,24 +1440,24 @@ margin-right: 15px; */
 
                               width: 90px ;
                               height: 280px;
-                             
-                             
+
+
                             }
                             .left-gray{
-            
+
                               width: 90px ;
                               height: 280px;
-            
+
                             }
                             .right-img{
                               padding-top: 130%;
                               padding-left:40% ;
-                          
+
                               }
                               .t-btn{
                                 padding-right: 9%;
                               }
-                            
+
                               .button {
                                 width: Hug (200px)px;
                           height: Hug (32px)px;
@@ -1465,28 +1466,28 @@ margin-right: 15px; */
                           border-radius: 32px;
                           margin-top: 3%;
                           margin-left: 45%;
-            
+
                               }
                               .adoption{
                                 padding-top: 7%;
                                 padding-left: 2%;
                                 font-family:  Roboto;
-                               
+
                               }
                               .header h3{
-                    
+
                                 font-size: 31px;
                                 font-weight: 600;
-                               
-                              
+
+
                                 }
                                 .header p{
-              
+
                                   font-size: 24px;
                                   font-weight: 400;
-                                  
-            
-                                
+
+
+
                                 }
                                 .t-blogs{
                                   padding-top: 4%;
@@ -1494,26 +1495,26 @@ margin-right: 15px; */
                                 .blog{
                                   height: 250px;
                                   padding-left: 1.5%;
-                                 
-            
+
+
                                 }
                                 .blog-im{
                                   width: 100%;
                                 }
                                 .desc{
-              
-                                 
+
+
                                   height: 30%;
                                   width: 95.5%;
                                 }
                                 .desc a{
                                   color:  rgba(245, 243, 243, 1);
                                   height: 70px;
-                                
+
                                   font-size: 15px;
                                   font-weight: 500;
                                   line-height: 12px;
-               
+
                                 }
                                 .blogss{
                                   display: flex;
@@ -1532,11 +1533,11 @@ margin-right: 15px; */
       .kinds{
         position: absolute;
         top:65%;
-        left:20%;
-       
-    } 
+        right:18%;
+
+    }
     .item{
-    
+
       width: 260px;
       height: 220px;
       margin-left: 15px;
@@ -1544,10 +1545,10 @@ margin-right: 15px; */
       padding-top: 26px;
     }
     .item-img{
-      
+
       width: 120px;
       height: 120px;
-      
+
       margin-left: 26%;
      }
      .item-txt{
@@ -1558,19 +1559,22 @@ padding-top: 14px;
      }
      .adoption-1{
       padding-top: 16%;
-      padding-left: 5%;
+      padding-right: 5%;
       font-family:  Roboto;
-     
+
     }
     .adoption{
       padding-top: 10%;
-      padding-left: 5%;
+      padding-right: 5%;
       font-family:  Roboto;
-     
+
+    }
+    .t-adopt{
+      margin-right: 8%;
     }
     .title{
       padding-left: 7%;
-      
+
   font-size: 30px;
   font-weight: 600;
     }
@@ -1594,31 +1598,31 @@ margin-right: 15px;
     .meet1{
      width: 290px;
       height: 340px;
-    
+
     }
     .fav1{
-    
-    
+
+
       width:1010px;
       height: 300px;
-      
-     
+
+
     }
     .pet-img{
-  
+
       width: 300px ;
        height: 205.9px;
-       
+
        border-radius: 7% 7% 0 0;
-   
-   
+
+
      }
      .name-pet{
       padding-top: 16%;
       font-size: 22px;
       font-weight: 550;
       line-height: 16px;
-      
+
         }
         .type-pet{
           padding-top: 5%;
@@ -1631,7 +1635,7 @@ margin-right: 15px;
               padding-left: 5%;
             }
             .disc1{
-              
+
           font-size: 16px;
           font-weight: 500;
 
@@ -1639,12 +1643,12 @@ margin-right: 15px;
             .paw1{
               width: 100px;
           height: 100px;
-          
+
             }
             .disc-end{
           font-size: 16px;
           font-weight: 500;
-          
+
             }
             .btn-meet{
               padding-top: 18%;
@@ -1652,7 +1656,7 @@ margin-right: 15px;
             .Planning{
               font-family: Roboto;
           font-size: 30px;
-          font-weight: 700;    
+          font-weight: 700;
           padding-top: 7%;
             }
             .parts{
@@ -1660,7 +1664,7 @@ margin-right: 15px;
               align-items: center;
             }
             .part1{
- 
+
               width: 395px;
               height: 380px;
             }
@@ -1672,17 +1676,17 @@ margin-right: 15px;
               margin-right: 2%;
                 }
                 .part3{
-              
+
                   width: 395px;
                   height: 380px;
 
-              
+
                 }
                 .Planning-img{
                   width: 120px;
               height: 120px;
               margin-left: 30%;
-             
+
                 }
                 .big{
               font-size: 25px;
@@ -1693,7 +1697,7 @@ margin-right: 15px;
               font-size: 19px;
               font-weight: 450;
               line-height: 20px;
-             
+
                 }
                 .Planning-btn {
                   margin-top: 10%;
@@ -1703,10 +1707,10 @@ margin-right: 15px;
                   padding-top: 4%;
                 }
                 .sliderpets{
-                 
-               
+
+
               width: 100%;
-              
+
               margin-top: 8%;
               padding: 3% 8% 3% 8%;
               /* padding: 50px 152px 50px 152px; */
@@ -1718,26 +1722,26 @@ margin-right: 15px;
               font-size: 38px;
               font-weight: 700;
               line-height: 40px;
-          
+
                 }
                 .disc-slide{
-                  
+
               font-size: 22px;
               font-weight: 400;
-            
+
                 }
                 .slider-img{
                   width: 70%;
               height: 395px;
-              
-              
+
+
                 }
                 .right-gray{
 
                   width: 140px ;
                   height: 395px;
-                 
-                 
+
+
                 }
                 .left-gray{
 
@@ -1748,7 +1752,7 @@ margin-right: 15px;
                 .right-img{
                   padding-top: 130%;
                   padding-left:40% ;
-              
+
                   }
                   .t-btn{
                     padding-right: 3%;
@@ -1764,19 +1768,19 @@ margin-right: 15px;
 
                   }
                   .header h3{
-                    
+
                     font-size: 38px;
                     font-weight: 700;
                     line-height: 44px;
-                  
+
                     }
                     .header p{
-  
+
                       font-size: 28px;
                       font-weight: 400;
                       line-height: 32.81px;
 
-                    
+
                     }
                     .t-blogs{
                       padding-top: 6%;
@@ -1784,29 +1788,29 @@ margin-right: 15px;
                     .blog{
                       height: 250px;
                       padding-left: 1.5%;
-                     
+
 
                     }
                     .blog-im{
                       width: 100%;
                     }
                     .desc{
-  
-                     
+
+
                       height: 30%;
                       width: 95.5%;
                     }
                     .desc a{
                       color:  rgba(245, 243, 243, 1);
                       height: 70px;
-                    
+
                       font-size: 20px;
                       font-weight: 500;
                       line-height: 12px;
-   
+
                     }
                     .blogss{
                       display: flex;
                     }
-                  
+
     }

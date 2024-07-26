@@ -31,7 +31,7 @@
                         <p class="num px-2">{{ product.quantity }}</p>
                         <button (click)="increaseQuantity(product)" class="btn-1 px-1 ">+</button>
                      </div>
-                 
+
                   </div>
                   <i class="fas fa-trash-alt position-absolute top-0 end-0 p-2"
                      (click)="deleteItemFromCart(product.product._id)"></i>
@@ -62,9 +62,9 @@
                      <p>{{totalCartPrice}} EGP</p>
                   </div>
                   <button class="checkout m-auto" routerLink="/checkout">checkout</button>
-                  
+
                </div>
-              
+
             </div>
 
 

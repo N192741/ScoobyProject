@@ -65,7 +65,7 @@ font-weight: 500;
 
 .input {
     border: none !important;
-   
+
 }
 
 .btn {
@@ -79,10 +79,10 @@ font-weight: 500;
     border: 1px solid #0f0f0f33;
 }
 .crt-1{
-    
+
         border-radius: 8px;
         border: 1px solid #0f0f0f33;
-    
+
 }
 
 .total-price {
@@ -187,7 +187,7 @@ border: none;
         }
         .crt-1{
             padding: 5%;
-            
+
 
         }
     }
@@ -200,14 +200,14 @@ border: none;
         .checkout {
             width: 335px;
             height: 38px;
-            
+
         }
         .input {
             width: 80%;
         }
         .crt-1{
             padding: 5%;
-            
+
 
         }
         }
@@ -219,7 +219,7 @@ border: none;
             .checkout {
                 width: 170px;
                 height: 38px;
-                
+
             }
             .crt {
                width: 225px;
@@ -238,7 +238,7 @@ border: none;
                 height: 55%;
                 /* margin-bottom: 60%; */
             }
-            
+
             }
 
             @media screen and (min-width:993px) and (max-width:1200px){
@@ -248,9 +248,9 @@ border: none;
                 .checkout {
                     width: 170px;
                     height: 38px;
-                    
+
                 }
-                
+
                 .btn {
                     width: 50%;
                     height: 90%;
@@ -262,7 +262,7 @@ border: none;
                 }
                 .crt-1{
                     padding: 5%;
-                    
+
 
                 }
                 }
@@ -279,20 +279,20 @@ border: none;
                         padding-top: 2.7%;
                     }
                     .checkout {
-                        width: 316px;
-                        height: 38px;
+                        width: 250px;
+                        height: 31px;
                     }
                     .btn {
-                        width: 20%;
+                        width: 30%;
                     }
                     .input {
                         width: 80%;
                     }
                     .crt-1{
                         padding: 5%;
-                        
+
 
                     }
-                   
-  
+
+
                     }

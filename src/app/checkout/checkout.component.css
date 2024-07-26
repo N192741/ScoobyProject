@@ -1,7 +1,7 @@
 .Billing {
   border: 1px solid  #FFFFFF ;
-  width: 625px;
-height: 682px;
+  width: 695px;
+height: 782px;
 border-radius: 4px ;
 
 
@@ -10,7 +10,7 @@ border-radius: 4px ;
 .billing-form {
   display: flex;
   flex-direction: column;
- 
+
 }
 
 .name-inputs {
@@ -57,6 +57,7 @@ color:#0f0f0f96;
 }
 .details{
   background-color: #FFFFFF;
+  margin-right: 20%;
 }
 .Order-Summary {
   color: #513973;
@@ -64,11 +65,12 @@ color:#0f0f0f96;
 .small-order{
   border: 1px solid rgba(0, 0, 0, 0.341);
   border-radius: 4px;
+
 }
 .small-img{
   width: 60px;
   height: 60px;
-  
+
 }
 .Order-Summary{
   font-family: Roboto;
@@ -84,7 +86,7 @@ font-weight: 500;
 padding-left: 10px;
 }
 p{
-  
+
   font-family: Roboto;
 font-size: 15px;
 font-weight: 500;
@@ -98,8 +100,8 @@ font-weight: 600;
 
 }
 
- 
- 
+
+
 .ft{
   width: 1px;
 padding-right: 6px;
@@ -120,7 +122,7 @@ color: #0f0f0f6a;
 }
 .i{
   padding-right: 8px;
-  
+
 }
 .circle-icon {
   display: inline-flex;
@@ -132,7 +134,7 @@ color: #0f0f0f6a;
   background-color:#FFFFFF;
   color:#0000005c;
   border: 1px solid #0f0f0f64;
-  
+
 }
 .small-price{
   padding-left: 120px;
@@ -144,7 +146,7 @@ color: #0f0f0f6a;
   width: 99.98%;
   margin-left: 0.1%;
   margin-right: 0.1%;
-  
+
 
 
 }
@@ -206,22 +208,22 @@ border: none;
 }
 
 @media screen and (min-width:0px) and (max-width:600px){
-   
+
 }
 
 
 @media screen and (min-width:601px) and (max-width:768px){
-   
+
     }
 
     @media screen and (min-width:769px) and (max-width:992px){
-       
+
         }
 
         @media screen and (min-width:993px) and (max-width:1200px){
-          
+
             }
 
             @media screen and (min-width:1201px) {
-              
+
                 }
